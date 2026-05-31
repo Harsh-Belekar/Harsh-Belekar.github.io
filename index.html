@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Portfolio</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="profile-info-box">
+                <figure>
+                    <img src="./Assets/Images/Avatar.png" alt="Harsh" id="avatar" width="120" height="120">
+                </figure>
+
+                <div class="profile-meta">
+                    <h2>Harsh Belekar</h2>
+
+                    <div class="typing-wrapper">
+                        <span class="word word-1">Data Analyst</span>
+                        <span class="word word-2">Python Developer</span>
+                        <span class="word word-3">SQL Expert</span>
+                    </div>
+                </div>
+
+                <button class="info_more-btn" id="toggle-btn">
+                    <img src="./Assets/Images/SVG/chevron-down-outline.svg" alt="chevron-down" class="toggle-icon icon-down"
+                        width="16px" height="16px">
+                    <img src="./Assets/Images/SVG/chevron-up-outline.svg" alt="chevron-up" class="toggle-icon icon-up"
+                        width="16px" height="16px">
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <div class="contact">
+                    <ul class="contacts-list">
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <img src="./Assets/Images/SVG/mail-outline.svg" alt="mail" class="contact-icon" width="21px"
+                                    height="21px">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+                                <a href="mailto:harshbelekar74@gmail.com"
+                                    class="contact-link">harshbelekar74@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <img src="./Assets/Images/SVG/phone-portrait-outline.svg" alt="phone" class="contact-icon"
+                                    width="21px" height="21px">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="tel:+91 8856035110" class="contact-link">+91 8856035110</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <img src="./Assets/Images/SVG/calendar-outline.svg" alt="calender" class="contact-icon"
+                                    width="21px" height="21px">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Birthday</p>
+                                <time datetime="2005-01-24" id="birthday">24 January, 2005</time>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <img src="./Assets/Images/SVG/location-outline.svg" alt="loc" class="contact-icon" width="21px"
+                                    height="21px">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+                                <address id="address">Pune, India</address>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="social">
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="https://www.linkedin.com/in/harshbelekar/" target="_blank" class="social-link">
+                                <img src="./Assets/Images/SVG/linkedin.svg" alt="linkedin" class="social-icon" width="23px"
+                                    height="23px">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://github.com/Harsh-Belekar" target="_blank" class="social-link">
+                                <img src="./Assets/Images/SVG/github.svg" alt="github" class="social-icon" width="23px"
+                                    height="23px">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://www.instagram.com/harsh17.belekar" target="_blank" class="social-link">
+                                <img src="./Assets/Images/SVG/instagram.svg" alt="Instagram" class="social-icon" width="23px"
+                                    height="23px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- NavBar -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Skills</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Projects</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Gallery</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- About Section -->
+            <article class="about-container active" data-page="about">
+                <header class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </header>
+
+                <!-- About Me -->
+                <section class="about-text">
+
+                    <p>
+                        I am an aspiring Data Analyst and Python Developer passionate about Building
+                        Intelligent, Data-driven, and Interactive Software solutions. I enjoy transforming
+                        complex ideas into practical applications through Clean code, Analytics,
+                        and modern Technologies. My interests include Data Analytics, Artificial Intelligence,
+                        Software Development, IoT, and Automation.
+                    </p>
+
+                    <p>
+                        Over the past few years, I have worked on multiple hands-on projects including
+                        an Autonomous Drone System, Face Detection Attendance System,
+                        2D Games, Data Analysis Projects, SQL Data Engineering Projects, and Interactive desktop
+                        applications using Python. These projects helped me strengthen my Problem-Solving,
+                        Analytical Thinking, and Development skills while gaining Real-World project Experience.
+                    </p>
+
+                    <p>
+                        I continuously explore new Technologies and improve my skills in Python,
+                        SQL, Power BI, Tableau, Data Visualization, and AI development. My goal is to become
+                        a skilled AI & Data professional capable of building Impactful solutions that
+                        combine Analytics, Automation, and Intelligent Systems.
+                    </p>
+
+                </section>
+
+                <!-- What I Do -->
+                <header class="sub-header">
+                    <h3 class="sub-title">What I Do</h3>
+                </header>
+
+                <section class="what-i-do-grid">
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon">
+                                <img src="./Assets/Images/SVG/layers-outline.svg" alt="layers" width="25px" height="25px">
+                            </div>
+                            <div class="service-content">
+                                <h4>Data Engineering & ETL Workflows</h4>
+                                <p>
+                                    Architecting efficient database structures and cleaning complex datasets using SQL
+                                    and Python to ensure data is optimized, structured, and reliable.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon">
+                                <img src="./Assets/Images/SVG/bar-chart-outline.svg" alt="bar-chart" width="25px"
+                                    height="25px">
+                            </div>
+                            <div class="service-content">
+                                <h4>Business Intelligence & Visualization</h4>
+                                <p>Transforming raw metrics into interactive, actionable visual stories using Power BI,
+                                    Tableau, and Excel as showcased in my Swiggy and Samsung projects.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon">
+                                <img src="./Assets/Images/SVG/hardware-chip-outline.svg" alt="hardware" width="25px"
+                                    height="25px">
+                            </div>
+                            <div class="service-content">
+                                <h4>AI, ML & Intelligent Automation</h4>
+                                <p>Exploring predictive modeling and computer vision. Built an Autonomous Drone
+                                    utilizing a
+                                    Raspberry Pi Zero W to bridge software with the physical world.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon">
+                                <img src="./Assets/Images/SVG/game-controller-outline.svg" alt="game" width="25px"
+                                    height="25px">
+                            </div>
+                            <div class="service-content">
+                                <h4>Creative Coding & UI/UX Design</h4>
+                                <p>Combining programming logic with creative design to build engaging projects like my
+                                    game
+                                    Shinobi Saga, handling both core development and user experience.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Resume -->
+                <section class="resume-section">
+                    <div class="resume-container">
+
+                        <!-- Education -->
+                        <div class="resume-column">
+                            <h2 class="column-title">Education</h2>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="title-wrapper">
+                                        <img src="./Assets/Images/SVG/school-outline.svg" alt="school" width="24px"
+                                            height="24px">
+                                        <h3 class="item-title">B.Sc. In Information Technology</h3>
+                                    </div>
+                                    <span class="item-meta">
+                                        <span class="highlight">Jul 2022 - Apr 2025</span>
+                                        <span class="item-desc"> | </span>
+                                        N.B Mehta Science College, Bordi-Dahanu, Maharashtra
+                                    </span>
+                                    <p class="item-desc">Completed graduation under Mumbai University with focus on
+                                        Programming, Database Management, Software Development, IoT, Analytics, and
+                                        modern IT
+                                        Technologies.
+                                    </p>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="title-wrapper">
+                                        <img src="./Assets/Images/SVG/school-outline.svg" alt="school" width="24px"
+                                            height="24px">
+                                        <h3 class="item-title">Higher Secondary Certificate (HSC)</h3>
+                                    </div>
+                                    <span class="item-meta">
+                                        <span class="highlight">Jul 2020 - Apr 2022</span>
+                                        <span class="item-desc"> | </span>
+                                        New English High School, Ulhasnagar, Maharashtra
+                                    </span>
+                                    <p class="item-desc">Completed Higher Secondary Education from Maharashtra Board
+                                        with academic focus on Finance and Computer-related subjects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="resume-column">
+                            <h2 class="column-title">Experience</h2>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="title-wrapper">
+                                        <img src="./Assets/Images/SVG/briefcase-outline.svg" alt="briefcase" width="22px"
+                                            height="22px">
+                                        <h3 class="item-title">Data Analyst Intern</h3>
+                                    </div>
+                                    <span class="item-meta">
+                                        <span class="highlight">Nov 2025 - Feb 2026</span>
+                                        <span class="item-desc"> | </span>
+                                        Unified Mentor
+                                    </span>
+                                    <p class="item-desc">
+                                        Completed a 3-month Data Analytics internship using Python, SQL, Excel & Tableau
+                                        for real world Data Analysis projects. Performed Data Cleaning, Exploratory Data
+                                        Analysis (EDA) & Business Insights generation using Python, SQL & Tableau.
+                                    </p>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="title-wrapper">
+                                        <img src="./Assets/Images/SVG/briefcase-outline.svg" alt="briefcase" width="22px"
+                                            height="22px">
+                                        <h3 class="item-title">Data Science Intern</h3>
+                                    </div>
+                                    <span class="item-meta">
+                                        <span class="highlight">Dec 2025 - Jan 2026</span>
+                                        <span class="item-desc"> | </span>
+                                        HexSoftwares
+                                    </span>
+                                    <p class="item-desc">
+                                        Assisted in Data Science workflows including Preprocessing Datasets, Exploratory
+                                        Data Analysis, and Machine Learning Experimentation using Python, SQL & Power
+                                        BI.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+
+            <!-- Skills Section -->
+            <article class="skill-container" data-page="skills">
+
+                <header class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="title-underline"></div>
+                </header>
+
+                <section class="main-skill-box">
+
+                    <div class="skill-box">
+                        <div class="skill-title-wrapper">
+                            <img src="./Assets/Images/SVG/server-outline.svg" alt="server" width="25px" height="25px">
+                            <h3 class="skill-title">
+                                Data Engineering & Database Systems
+                            </h3>
+                        </div>
+                        <div class="skill-content">
+                            <div class="tree-card">
+                                <div class="skill-text">Programming Languages</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Python</span></li>
+                                    <li><span class="sub-text">SQL</span></li>
+                                    <li><span class="sub-text">C++</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Data & Database Libraries</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">psycopg2</span></li>
+                                    <li><span class="sub-text">SQLAlchemy</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Database Technologies</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">PostgreSQL</span></li>
+                                    <li><span class="sub-text">MySQL</span></li>
+                                    <li><span class="sub-text">SQLite</span></li>
+                                    <li><span class="sub-text">RDBMS</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Data Engineering Workflows</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">ETL Pipelines</span></li>
+                                    <li><span class="sub-text">Data Cleaning</span></li>
+                                    <li><span class="sub-text">Data Transformation</span></li>
+                                    <li><span class="sub-text">Data Quality Management</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Data Architecture & Optimization</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Database Design</span></li>
+                                    <li><span class="sub-text">Data Modeling</span></li>
+                                    <li><span class="sub-text">Data Warehousing</span></li>
+                                    <li><span class="sub-text">Data Normalization</span></li>
+                                    <li><span class="sub-text">Query Optimization</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-title-wrapper">
+                            <img src="./Assets/Images/SVG/bar-chart-outline.svg" alt="chart" width="25px" height="25px">
+                            <h3 class="skill-title">
+                                Data Analytics & Data Science
+                            </h3>
+                        </div>
+                        <div class="skill-content">
+                            <div class="tree-card">
+                                <div class="skill-text">Data Science Libraries</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Pandas</span></li>
+                                    <li><span class="sub-text">NumPy</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Data Science Environment</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Jupyter Notebook</span></li>
+                                    <li><span class="sub-text">Jupyter Lab</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Data Analysis Techniques</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Exploratory Data Analysis (EDA)</span></li>
+                                    <li><span class="sub-text">Statistical Analysis</span></li>
+                                    <li><span class="sub-text">Descriptive Statistics</span></li>
+                                    <li><span class="sub-text">Hypothesis Testing</span></li>
+                                    <li><span class="sub-text">Data Interpretation</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Advanced Analytics</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">RFM Analysis</span></li>
+                                    <li><span class="sub-text">Cohort Analysis</span></li>
+                                    <li><span class="sub-text">Customer Lifetime Value (CLV)</span></li>
+                                    <li><span class="sub-text">Predictive Analytics</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Business Analytics</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">KPI Analysis</span></li>
+                                    <li><span class="sub-text">Reporting</span></li>
+                                    <li><span class="sub-text">Business Insights</span></li>
+                                    <li><span class="sub-text">Data-driven Decision Making</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-title-wrapper">
+                            <img src="./Assets/Images/SVG/bulb-outline.svg" alt="layers" width="25px" height="25px">
+                            <h3 class="skill-title">
+                                Data Visualization & Business Intelligence (BI)
+                            </h3>
+                        </div>
+                        <div class="skill-content">
+                            <div class="tree-card">
+                                <div class="skill-text">BI Platforms</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Power BI</span></li>
+                                    <li><span class="sub-text">Tableau</span></li>
+                                    <li><span class="sub-text">Microsoft Excel</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Power BI Technologies</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">DAX</span></li>
+                                    <li><span class="sub-text">Power Query</span></li>
+                                    <li><span class="sub-text">Power Pivot</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Python Visualization Libraries</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Matplotlib</span></li>
+                                    <li><span class="sub-text">Seaborn</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Dashboard & Presentation Design</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Dashboard Development</span></li>
+                                    <li><span class="sub-text">KPI Reporting</span></li>
+                                    <li><span class="sub-text">Data Storytelling</span></li>
+                                    <li><span class="sub-text">UI/UX Design</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-title-wrapper">
+                            <img src="./Assets/Images/SVG/desktop-outline.svg" alt="layers" width="25px" height="25px">
+                            <h3 class="skill-title">
+                                Software Development & Automation
+                            </h3>
+                        </div>
+                        <div class="skill-content">
+                            <div class="tree-card">
+                                <div class="skill-text">Automation & Scripting</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Python Automation</span></li>
+                                    <li><span class="sub-text">Task Automation</span></li>
+                                    <li><span class="sub-text">Scripting</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">GUI & Interactive Development</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Tkinter</span></li>
+                                    <li><span class="sub-text">Pygame</span></li>
+                                    <li><span class="sub-text">2D Game Development</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Core Development Concepts</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Object-Oriented Programming (OOP)</span></li>
+                                    <li><span class="sub-text">Software Development</span></li>
+                                    <li><span class="sub-text">Problem Solving</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Frontend Technologies</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">HTML</span></li>
+                                    <li><span class="sub-text">CSS</span></li>
+                                    <li><span class="sub-text">JavaScript</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Backend Development</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Flask</span></li>
+                                    <li><span class="sub-text">FAST API</span></li>
+                                    <li><span class="sub-text">API Integration</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Development Tools & Platforms</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Git</span></li>
+                                    <li><span class="sub-text">GitHub</span></li>
+                                    <li><span class="sub-text">Linux</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-title-wrapper">
+                            <img src="./Assets/Images/SVG/hardware-chip-outline.svg" alt="layers" width="25px" height="25px">
+                            <h3 class="skill-title">
+                                AI, Computer Vision & Intelligent Systems
+                            </h3>
+                        </div>
+                        <div class="skill-content">
+                            <div class="tree-card">
+                                <div class="skill-text">Computer Vision</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">OpenCV</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">AI Concepts</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Intelligent Automation</span></li>
+                                    <li><span class="sub-text">Predictive Systems</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Intelligent Systems & Control</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Sensor Fusion</span></li>
+                                    <li><span class="sub-text">Extended Kalman Filter (EKF)</span></li>
+                                    <li><span class="sub-text">PID Control</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-title-wrapper">
+                            <img src="./Assets/Images/SVG/construct-outline.svg" alt="layers" width="25px" height="25px">
+                            <h3 class="skill-title">
+                                IoT & Embedded Systems
+                            </h3>
+                        </div>
+                        <div class="skill-content">
+                            <div class="tree-card">
+                                <div class="skill-text">Hardware Platforms</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Raspberry Pi</span></li>
+                                    <li><span class="sub-text">ESP32</span></li>
+                                    <li><span class="sub-text">Arduino</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="tree-card">
+                                <div class="skill-text">Embedded & IoT Development</div>
+                                <ul class="sub-text-list">
+                                    <li><span class="sub-text">Arduino Programming</span></li>
+                                    <li><span class="sub-text">IoT System Development</span></li>
+                                    <li><span class="sub-text">Hardware-Software Integration</span></li>
+                                    <li><span class="sub-text">Sensor Integration</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </article>
+
+
+            <!-- Projects Section -->
+            <article class="project-container" data-page="projects">
+                <header class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                </header>
+
+                <div class="project-filter-menu">
+                    <button class="filter-btn active" data-filter="top-6">Top-6</button>
+                    <button class="filter-btn" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="sql">SQL</button>
+                    <button class="filter-btn" data-filter="power-bi">Power BI</button>
+                    <button class="filter-btn" data-filter="game-dev">Game Dev</button>
+                    <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                </div>
+
+                <div class="project-filter-dropdown-wrapper">
+                    <select class="filter-dropdown" id="projectFilterSelect">
+                        <option value="top-6">Top-6</option>
+                        <option value="all">All</option>
+                        <option value="data-analysis">Data Analysis</option>
+                        <option value="python">Python</option>
+                        <option value="sql">SQL</option>
+                        <option value="power-bi">Power BI</option>
+                        <option value="game-dev">Game Dev</option>
+                        <option value="web-dev">Web Dev</option>
+                        <option value="iot">IoT</option>
+                    </select>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Top 6 -->
+                        <!-- Drone -->
+                    <article class="project-card" 
+                        data-category="top-6 python iot" 
+                        data-rank-top-6="1"
+                        data-rank-python="1" 
+                        data-rank-iot="1" 
+                        data-rank-all="1">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Drone.png" alt="Autonomous Drone">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/rocket-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Autonomous Drone</h3>
+                            </div>
+                            <p class="project-description">Designed & Developed an Autonomous Drone using an Raspberry
+                                Pi Zero W with real-time Flight Control, Stabilization, and Intelligent Navigation.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">Raspberry Pi</span>
+                            </div>
+                            <div class="card-actions">
+                                <!-- <a href="#" class="btn">GitHub</a> -->
+                                <a href="" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Shinobi -->
+                    <article class="project-card" 
+                        data-category="top-6 python game-dev" 
+                        data-rank-top-6="2"
+                        data-rank-python="2" 
+                        data-rank-game-dev="1" 
+                        data-rank-all="2">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Shinobi Saga.png" alt="Shinobi Saga">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/game-controller-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Shinobi Saga</h3>
+                            </div>
+                            <p class="project-description"> A 2D Naruto vs Sasuke fighting game with animated
+                                characters, health bars, weapon attacks, and dynamic UI screens.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pygame</span>
+                                <span class="tag">UI Design</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Shinobi-Saga" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Swiggy -->
+                    <article class="project-card" 
+                        data-category="top-6 data-analysis python sql power-bi"
+                        data-rank-top-6="3" 
+                        data-rank-data-analysis="1" 
+                        data-rank-python="3" 
+                        data-rank-sql="3"
+                        data-rank-power-bi="1" 
+                        data-rank-all="3">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Swiggy.png" alt="Swiggy">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/bar-chart-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Swiggy Sales Analysis</h3>
+                            </div>
+                            <p class="project-description"> End-to-End sales analysis of a food delivery platform on
+                                600K+ orders across 10 Indian cities, solving 7 key business challenges.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Jupyter Notebook</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Swiggy-Sales-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Samsung -->
+                    <article class="project-card" 
+                        data-category="top-6 python sql" 
+                        data-rank-top-6="4"
+                        data-rank-python="4" 
+                        data-rank-sql="1" 
+                        data-rank-all="4">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Samsung.png" alt="Samsung">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/layers-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Samsung Data Engineering</h3>
+                            </div>
+                            <p class="project-description">Designed & Build a Complete Data Warehouse for Samsung using
+                                Medallion Architecture in PostgreSQL, processing 2M+ Records accross 14 Tables and 6
+                                Business Domains.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">SQLAlchemy</span>
+                                <span class="tag">Data Warehouse</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Samsung-Data-Engineering" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Protfolio -->
+                    <article class="project-card" 
+                        data-category="top-6 web-dev" 
+                        data-rank-top-6="5"
+                        data-rank-web-dev="1" 
+                        data-rank-all="5">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Portfolio.png" alt="Website">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/flame-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Harsh's Portfolio Website</h3>
+                            </div>
+                            <p class="project-description">A clean, responsive portfolio website built with HTML, CSS &
+                                JavaScript — designed to showcase my real-world data analytics, SQL, and Python projects
+                                in one place.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Html</span>
+                                <span class="tag">Css</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Harsh-Belekar.github.io" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Advance SQL -->
+                    <article class="project-card" 
+                        data-category="top-6 data-analysis sql" 
+                        data-rank-top-6="6" 
+                        data-rank-data-analysis="2" 
+                        data-rank-sql="2" 
+                        data-rank-all="6">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Advance SQL.png" alt="SQL">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/server-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Advance SQL Project</h3>
+                            </div>
+                            <p class="project-description"> An End-to-End Advanced SQL Project covering Data
+                                Warehousing, ETL Pipeline (Bronze → Silver → Gold), Star Schema Modeling, EDA, and
+                                Advanced SQL Analytics.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">ETL</span>
+                                <span class="tag">EDA</span>
+                                <span class="tag">Data Warehouse</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Advance-SQL-Project-Data-Warehousing-EDA-Advanced-Data-Analytics"  target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Data Analysis -->
+
+                    <!-- Power BI -->
+                        <!-- Credit Card -->
+                    <article class="project-card" 
+                        data-category="data-analysis sql power-bi" 
+                        data-rank-data-analysis="4"
+                        data-rank-sql="6" 
+                        data-rank-power-bi="2" 
+                        data-rank-all="7">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Credit Card.png" alt="Credit Card">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/card-outline.svg" class="project-img" width="22px" height="22px">
+                                <h3 class="project-title">Credit Card Transaction Analysis</h3>
+                            </div>
+                            <p class="project-description">An comprehensive Credit Card Transaction Analysis Dashboard
+                                built using Power BI and SQL, designed to uncover actionable insights into customer
+                                spending behavior, card performance, and revenue trends.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Power BI</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Credit-Card-Analysis-PowerBI" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Customer -->
+                    <article class="project-card" 
+                        data-category="data-analysis python power-bi"
+                        data-rank-data-analysis="7" 
+                        data-rank-python="10" 
+                        data-rank-power-bi="3" 
+                        data-rank-all="8">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Customer.png" alt="Customer">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/people-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Customer Segmentation Analysis</h3>
+                            </div>
+                            <p class="project-description">A telecom customer segmentation project focused on analyzing
+                                churn behavior. Uses data visualization and business intelligence to pinpoint at-risk
+                                customers and build proactive retention strategies.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Customer-Segmentation-Visualization-And-Advanced-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- IMDB Movie -->
+                    <article class="project-card" 
+                        data-category="data-analysis python power-bi"
+                        data-rank-data-analysis="9" 
+                        data-rank-python="11" 
+                        data-rank-power-bi="4" 
+                        data-rank-all="9">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/IMDB Movie.png" alt="IMDB Movie">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/videocam-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">IMDB Movie Analysis</h3>
+                            </div>
+                            <p class="project-description">A Data Analysis project that analyzes IMDB movie ratings to
+                                uncover insights about rating distribution, top-rated movies, genre performance, and
+                                year-wise trends.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/IMDB-Movie-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- HR -->
+                    <article class="project-card" 
+                        data-category="data-analysis power-bi" 
+                        data-rank-data-analysis="14"
+                        data-rank-power-bi="5" 
+                        data-rank-all="10">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/HR.png" alt="HR">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/id-card-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">HR Analytics Dashboard</h3>
+                            </div>
+                            <p class="project-description">A Power BI solution that transforms raw workforce data into
+                                interactive insights on demographics, performance, and attrition—empowering leadership
+                                to make data-driven decisions and mitigate employee turnover.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/HR_Analytics_PowerBI" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tableau -->
+                        <!-- Instagram -->
+                    <article class="project-card" 
+                        data-category="data-analysis python sql" 
+                        data-rank-data-analysis="6"
+                        data-rank-python="12"
+                        data-rank-sql="9" 
+                        data-rank-all="11">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Instagram.png" alt="Instagram">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/camera-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Top Instagram Influencers Analysis</h3>
+                            </div>
+                            <p class="project-description">End-to-End Influencer Performance Analysis using Tableau and
+                                PostgreSQL to uncover engagement trends and top creator insights.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Tableau</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Top-Instagram-Influencers-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Financial -->
+                    <article class="project-card" 
+                        data-category="data-analysis python" 
+                        data-rank-data-analysis="13"
+                        data-rank-python="13" 
+                        data-rank-all="12">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Financial.png" alt="Financial">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/cash-outline.svg" class="project-img" width="22px" height="22px">
+                                <h3 class="project-title">Financial Performance Dashboard</h3>
+                            </div>
+                            <p class="project-description">An Interactive Financial Performance Dashboard built using
+                                Tableau, designed to analyze business performance across countries, products, segments,
+                                and time periods.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Tableau</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Financial-Performance-Dashboard-Tableau" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Stock -->
+                    <article class="project-card" 
+                        data-category="data-analysis" 
+                        data-rank-data-analysis="16"
+                        data-rank-all="13">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Stock.png" alt="Stock">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/trending-up-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Stock Market Analysis</h3>
+                            </div>
+                            <p class="project-description">A comprehensive Tableau dashboard project that analyzes
+                                historical stock market data to uncover price trends, trading volume patterns,
+                                volatility, and daily returns.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Tableau</span>
+                                <span class="tag">Data Analysis</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Stock-Market-Analysis-Tableau" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Excel -->
+                        <!-- BlinkIT -->
+                    <article class="project-card" 
+                        data-category="data-analysis" 
+                        data-rank-data-analysis="5"
+                        data-rank-all="14">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Blinkit.png" alt="Blinkit">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/cart-outline.svg" class="project-img" width="22px" height="22px">
+                                <h3 class="project-title">Blinkit Grocery Sales Analysis</h3>
+                            </div>
+                            <p class="project-description">An interactive Excel dashboard analyzing Blinkit's grocery
+                                sales performance using KPIs, pivot charts, and slicers across outlet types and item
+                                categories.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Excel</span>
+                                <span class="tag">Power Query</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Blinkit-Grocery-Sales-Analysis-Excel" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Ferns & Petals-->
+                    <article class="project-card" 
+                        data-category="data-analysis" 
+                        data-rank-data-analysis="10"
+                        data-rank-all="15">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Ferns.png" alt="Ferns">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/flower-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Ferns & Petals Sales Analysis</h3>
+                            </div>
+                            <p class="project-description">A complete end-to-end sales analysis project following a real
+                                industry-level data analytics workflow — from data extraction and cleaning to data
+                                modeling, analysis, reporting, and dashboard creation using Microsoft Excel.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Excel</span>
+                                <span class="tag">Power Query</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/FNP-Sales-Analysis-Excel" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Superstore -->
+                    <article class="project-card" 
+                        data-category="data-analysis" 
+                        data-rank-data-analysis="20"
+                        data-rank-all="16">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Superstore.png" alt="Superstore">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/earth-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Global Superstore Sales Analysis</h3>
+                            </div>
+                            <p class="project-description">An interactive Excel dashboard analyzing global sales trends,
+                                product performance, and regional profitability to provide leadership with actionable,
+                                data-driven business insights.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Excel</span>
+                                <span class="tag">Power Query</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Global-Superstore-Sales-Analysis-Excel" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- E-Commerce -->
+                    <article class="project-card" 
+                        data-category="data-analysis" 
+                        data-rank-data-analysis="18"
+                        data-rank-all="17">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/E-Commerce.png" alt="E-Commerce">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/storefront-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">E-Commerce Sales Analysis</h3>
+                            </div>
+                            <p class="project-description">A complete end-to-end Excel Data Analysis Project designed
+                                for Global E-Commerce Inc. Business Understanding → Data Cleaning → KPI Analysis →
+                                Dashboard Development → Insights → Final Report.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Excel</span>
+                                <span class="tag">Power Query</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Global-Ecommerce-Sales-Analysis-Excel" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Python -->
+                        <!-- Inventory -->
+                    <article class="project-card" 
+                        data-category="data-analysis python" 
+                        data-rank-data-analysis="3"
+                        data-rank-python="6" 
+                        data-rank-all="18">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Inventory.png" alt="Inventory">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/business-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Inventory Data Analysis</h3>
+                            </div>
+                            <p class="project-description">A comprehensive end-to-end Inventory Data Analysis project
+                                focused on identifying inefficiencies, reducing inventory costs, and improving
+                                operational decision-making using data-driven inventory management techniques.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">EDA</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Inventory-Data-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Bank Loan -->
+                    <article class="project-card" 
+                        data-category="data-analysis python" 
+                        data-rank-data-analysis="8"
+                        data-rank-python="7" 
+                        data-rank-all="19">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Bank Loan.png" alt="Bank Loan">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/cash-outline.svg" class="project-img" width="22px" height="22px">
+                                <h3 class="project-title">Bank Loan Analysis</h3>
+                            </div>
+                            <p class="project-description">A complete End-to-end loan analysis designed to help the bank
+                                understand loan performance, borrower behavior, portfolio risk, and profitability.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">EDA</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Bank-Loan-Analysis-Python" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Diwali -->
+                    <article class="project-card" 
+                        data-category="data-analysis python" 
+                        data-rank-data-analysis="17"
+                        data-rank-python="9" 
+                        data-rank-all="20">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Diwali.png" alt="Diwali">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/bonfire-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Diwali Sales Analysis</h3>
+                            </div>
+                            <p class="project-description">A Python-based data analysis project that explores Diwali
+                                festival sales to uncover customer behavior, purchasing patterns, high-performing
+                                states, occupations, and product categories.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">EDA</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Diwali-Sales-Analysis-Python" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- COVID-19 -->
+                    <article class="project-card" 
+                        data-category="data-analysis python" 
+                        data-rank-data-analysis="12"
+                        data-rank-python="8" 
+                        data-rank-all="21">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/COVID-19.png" alt="COVID-19">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/medkit-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">COVID-19 in India Analysis</h3>
+                            </div>
+                            <p class="project-description">This project presents a comprehensive Exploratory Data
+                                Analysis (EDA) of COVID-19 cases and vaccination trends in India using Python.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">EDA</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/COVID-19-in-India-Data-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- VaultKey -->
+                    <article class="project-card" 
+                        data-category="python" 
+                        data-rank-python="5" 
+                        data-rank-all="22">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/VaultKey.png" alt="VaultKey">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/document-lock-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">VaultKey Password Manager</h3>
+                            </div>
+                            <p class="project-description">A sleek and secure open-source desktop password manager
+                                called VaultKey — with encryption, dark/light mode toggle, clipboard support, and more.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Tkinter</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/VaultKey-Password_Manager" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- SQL -->
+                        <!-- Election -->
+                    <article class="project-card" 
+                        data-category="data-analysis sql" 
+                        data-rank-data-analysis="11"
+                        data-rank-sql="4" 
+                        data-rank-all="23">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Election.png" alt="Election">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/ribbon-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Election Data Analysis</h3>
+                            </div>
+                            <p class="project-description">A comprehensive Election Data Analysis using SQL, designed to
+                                uncover deep insights into party performance, voter trends, and constituency-level
+                                outcomes across India.</p>
+                            <div class="tech-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">ETL</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Election-Data-Analysis-SQL" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Music -->
+                    <article class="project-card" 
+                        data-category="data-analysis sql" 
+                        data-rank-data-analysis="19"
+                        data-rank-sql="7" 
+                        data-rank-all="24">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Music.png" alt="Music">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/musical-notes-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Music Store SQL Analysis</h3>
+                            </div>
+                            <p class="project-description">A comprehensive SQL project that analyzing a digital music
+                                store database with queries on sales, customers, employees, and music tracks to extract
+                                business insights.</p>
+                            <div class="tech-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">ETL</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Music-Store-SQL-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Bank Transaction -->
+                    <article class="project-card" 
+                        data-category="data-analysis sql" 
+                        data-rank-data-analysis="15"
+                        data-rank-sql="5" 
+                        data-rank-all="25">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Bank Transactions.png" alt="Bank Transactions">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/cash-outline.svg" class="project-img" width="22px" height="22px">
+                                <h3 class="project-title">Bank Transactions SQL Analysis</h3>
+                            </div>
+                            <p class="project-description">A real-world inspired SQL case study showcasing my ability to
+                                analyze financial data, detect fraud, and generate business insights — directly relevant
+                                to Data Analyst roles.</p>
+                            <div class="tech-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">ETL</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Bank-Transactions-Fraud-Detection-SQL-Project" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-- Pizza -->
+                    <article class="project-card" 
+                        data-category="data-analysis sql" 
+                        data-rank-data-analysis="21"
+                        data-rank-sql="8" 
+                        data-rank-all="26">
+                        <div class="card-image-wrapper">
+                            <img src="./Assets/Project-Img/Pizza.png" alt="Pizza">
+                        </div>
+                        <div class="card-content">
+                            <div class="project-title-wrapper">
+                                <img src="./Assets/Images/SVG/pizza-outline.svg" class="project-img" width="22px"
+                                    height="22px">
+                                <h3 class="project-title">Pizza Sales SQL Analysis</h3>
+                            </div>
+                            <p class="project-description">An comprehensive PostgreSQL project using advanced queries
+                                and schema design to uncover critical revenue drivers and sales trends.</p>
+                            <div class="tech-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">ETL</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/Harsh-Belekar/Pizza-Sales-SQL-Analysis" target="_blank" class="btn">GitHub</a>
+                                <a href="#" class="btn" onclick="alert('More details will be available shortly.'); return false;">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </article>
+
+
+            <!-- Gallery Section -->
+            <article class="gallery-container" data-page="gallery">
+                <header class="section-header">
+                    <h2 class="section-title">Art Gallery</h2>
+                    <div class="title-underline"></div>
+                </header>
+
+                <section class="gallery-grid">
+
+                    <!-- Namrata -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Namrata.png" alt="Namrata">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Namrata</h3>
+                            <p class="anime-title">Reality to Anime</p>
+                        </div>
+                    </div>
+
+                    <!-- Goku -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Goku.png" alt="Goku">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Goku</h3>
+                            <p class="anime-title">Dragon Ball</p>
+                        </div>
+                    </div>
+
+                    <!-- Luffy & Roger -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Luffy-Roger.png" alt="Luffy & Roger">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Luffy & Roger</h3>
+                            <p class="anime-title">One Piece</p>
+                        </div>
+                    </div>
+
+                    <!-- Madara -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Madara.png" alt="Madara">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Madara Uchiha</h3>
+                            <p class="anime-title">Naruto</p>
+                        </div>
+                    </div>
+
+                    <!-- Dabi -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Dabi.png" alt="Dabi">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Dabi</h3>
+                            <p class="anime-title">My Hero Academia</p>
+                        </div>
+                    </div>
+
+                    <!-- Might Guy -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Might Guy.png" alt="Might Guy">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Might Guy</h3>
+                            <p class="anime-title">Naruto</p>
+                        </div>
+                    </div>
+
+                    <!-- Mihawk -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Mihawk.png" alt="Mihawk">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Dracule Mihawk</h3>
+                            <p class="anime-title">One Piece</p>
+                        </div>
+                    </div>
+
+                    <!-- Naruto & Hinata -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Naruto-Hinata.png" alt="Naruto & Hinata">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Naruto & Hinata</h3>
+                            <p class="anime-title">Naruto</p>
+                        </div>
+                    </div>
+
+                    <!-- Zoro -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Zoro.png" alt="Zoro">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Roronoa Zoro</h3>
+                            <p class="anime-title">One Piece</p>
+                        </div>
+                    </div>
+
+                    <!-- Naruto Minato Jiraya -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Naruto-Minato-Jiraya.png" alt="N-M-J">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Naruto, Minato & Jiraya</h3>
+                            <p class="anime-title">Naruto</p>
+                        </div>
+                    </div>
+
+                    <!-- Rengoku -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Rengoku.png" alt="Rengoku">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Kyojuro Rengoku</h3>
+                            <p class="anime-title">Demon Slayer</p>
+                        </div>
+                    </div>
+
+                    <!-- Tanjiro -->
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <img src="./Assets/Drawings/Tanjiro.png" alt="Tanjiro">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h3 class="character-name">Tanjiro Kamado</h3>
+                            <p class="anime-title">Demon Slayer</p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </article>
+
+
+            <!-- Contact Section -->
+            <article class="contact-container" data-page="contact">
+                <header class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="title-underline"></div>
+                </header>
+
+                <section class="contact-wrapper">
+                    <!-- Left Side -->
+                    <div class="contact-left">
+
+                        <!-- Social Cards -->
+                        <div class="contact-socials">
+
+                            <a href="https://www.linkedin.com/in/harshbelekar/" target="_blank" class="social-card">
+                                <img src="./Assets/Images/SVG/linkedin.svg" alt="linkedin" width="24" height="24">
+                                <div>
+                                    <h3>LinkedIn</h3>
+                                    <p>Connect Professionally</p>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Harsh-Belekar" target="_blank" class="social-card">
+                                <img src="./Assets/Images/SVG/github.svg" alt="github" width="24" height="24">
+                                <div>
+                                    <h3>GitHub</h3>
+                                    <p>Explore my Projects</p>
+                                </div>
+                            </a>
+
+                            <a href="https://www.instagram.com/harsh17.belekar" target="_blank" class="social-card">
+                                <img src="./Assets/Images/SVG/instagram.svg" alt="instagram" width="24" height="24">
+                                <div>
+                                    <h3>Instagram</h3>
+                                    <p>Creative & Personal side</p>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <!-- Resume Button -->
+                        <a href="./Assets/Docs/Harsh_Resume.pdf" class="resume-btn" download>
+                            <img src="./Assets/Images/SVG/download-outline.svg" alt="download" width="24" 
+                                height="24">
+                            <span>Download Resume</span>
+                        </a>
+
+                        <!-- Availability -->
+                        <div class="availability-box">
+                            <span class="status-dot"></span>
+                            Available for Work, Freelance & Collaboration
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="contact-right">
+
+                        <form 
+                            class="contact-form"
+                            action="https://formsubmit.co/harshbelekar74@gmail.com"
+                            method="POST"
+                            >
+
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!-- Email Subject -->
+                            <input type="hidden" name="_subject" value="New Portfolio Message!">
+
+                            <!-- Redirect After Submit -->
+                            <input type="hidden" name="_next" value="http://Harsh-Belekar.github.io/index.html">
+
+                            <!-- Name -->
+                            <div class="input-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="input-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="input-group">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="input-group">
+                                <textarea name="message" rows="6" placeholder="Write your message..." required>
+                                </textarea>
+                            </div>
+
+                            <!-- Button -->
+                            <button type="submit" class="send-btn">
+                                <img src="./Assets/Images/SVG/rocket-outline.svg" alt="rocket" width="24" height="24">
+                                <span>Send Message</span>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+                <!-- Bottom Quote -->
+                <section class="quote-section">
+                    <div class="quote-slider">
+
+                        <div class="quote active">
+                            “Transforming Raw data into Meaningful Insights.”
+                        </div>
+
+                        <div class="quote">
+                            “Building Intelligent Solutions with Code and Creativity.”
+                        </div>
+
+                        <div class="quote">
+                            “Where Analytics meets Innovation.”
+                        </div>
+
+                        <div class="quote">
+                            “Design. Analyze. Build. Innovate.”
+                        </div>
+
+                        <div class="quote">
+                            “Turning Ideas into Impactful Digital Experiences.”
+                        </div>
+
+                    </div>
+                </section>
+            
+            </article>
+
+
+        </main>
+
+    </div>
+
+    <!-- JS link -->
+    <script src="./JS/main.js"></script>
+    <script src="./JS/projects.js"></script>
+
+</body>
+
+</html>
