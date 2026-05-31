@@ -1,0 +1,536 @@
+/* Varialbes */
+:root {
+
+    /* Bg Color */
+    --main-bg-color: #2a2a2a;
+    --box-color: #2a2929;
+    --theme-color: #2ED3EA;
+    --border-color: #5c5959;
+    --btn-bg: linear-gradient(135deg, rgba(46, 211, 234, 0.15), transparent);
+
+    /* Navbar */
+    --nav-shadow: rgba(0, 0, 0, 0.25);
+
+
+    /* Filters */
+    --theme-filter: invert(74%) sepia(85%) saturate(1917%) hue-rotate(148deg) brightness(97%) contrast(93%);
+
+}
+
+
+/* ============================================= */
+/* RESPONSIVE MEDIA                              */
+/* ============================================= */
+
+@media (max-width: 1024px) {
+
+    /* ------------------------ */
+    /* Project                  */
+    /* ------------------------ */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        min-width: 254px;
+        max-width: 274px;
+        margin: 0 auto;
+    }
+
+    /* ------------------------ */
+    /* Gallery                  */
+    /* ------------------------ */
+    .gallery-grid {
+        column-count: 3; 
+        column-gap: 1.2rem;
+    }
+
+    /* ------------------------ */
+    /* Contact                  */
+    /* ------------------------ */
+    .contact-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .contact-right {
+        padding: 20px; 
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        letter-spacing: 0.2px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .main-content {
+        margin-bottom: 40px;
+    }
+
+    /* ------------------------ */
+    /* Sidebar                  */
+    /* ------------------------ */
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-height: 115px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .sidebar.active {
+        max-height: 500px;
+    }
+
+    .profile-info-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+
+    figure {
+        margin: 0;
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+    }
+
+    figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-meta h2 {
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .typing-wrapper {
+        justify-content: flex-start;
+        padding-top: 5px;
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .typing-wrapper .word {
+        font-size: 13px;
+    }
+
+    .info_more-btn {
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: var(--btn-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 0 15px 0 15px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .toggle-icon {
+        width: 16px;
+        height: 16px;
+        filter: var(--theme-filter);
+        display: block;
+    }
+
+    .info_more-btn .icon-down {
+        display: block;
+    }
+
+    .info_more-btn .icon-up {
+        display: none;
+    }
+
+    .sidebar.active .info_more-btn .icon-down {
+        display: none;
+    }
+
+    .sidebar.active .info_more-btn .icon-up {
+        display: block;
+    }
+
+    .sidebar-info-more {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .sidebar.active .sidebar-info-more {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .social-list {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+
+
+    /* ------------------------ */
+    /* Navbar                   */
+    /* ------------------------ */
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--main-bg-color);
+        border: none;
+        border-top: 1px solid var(--border-color);
+        border-radius: 20px 20px 0 0;
+        padding: 10px 15px;
+        margin: 0;
+        z-index: 999;
+        justify-content: center;
+        box-shadow: 0 -5px 25px var(--nav-shadow);
+    }
+
+    .navbar-list {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .navbar-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar-link {
+        font-size: 12px;
+        padding: 8px 5px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .navbar-link::after {
+        bottom: -2px;
+    }
+
+
+    /* ------------------------ */
+    /* About                    */
+    /* ------------------------ */
+    .about-container {
+        margin-top: 20px;
+    }
+
+    .about-text p {
+        text-align: none;
+    }
+
+    /* ------------------------ */
+    /* Skills                   */
+    /* ------------------------ */
+
+    .skill-container {
+        margin-top: 20px;
+    }
+
+    .main-skill-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .skill-content {
+        /* grid-template-columns: 1fr; */
+        column-gap: 12px;
+        row-gap: 20px;
+    }
+
+    .skill-box {
+        padding: 12px;
+    }
+
+    .skill-title {
+        font-size: 1.05rem;
+    }
+
+    .sub-text-list {
+        margin-left: 15px;
+    }
+
+    .sub-text-list li {
+        padding-left: 12px;
+        margin-top: 10px;
+    }
+
+    .sub-text-list li::before {
+        width: 12px;
+    }
+
+
+    /* ------------------------ */
+    /* Project                  */
+    /* ------------------------ */
+
+    .project-container {
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .filter-btn {
+        white-space: nowrap;
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+
+    .card-image-wrapper {
+        height: 160px;
+    }
+
+
+    /* ------------------------ */
+    /* Gallery                  */
+    /* ------------------------ */
+    .gallery-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 20px;
+    }
+
+    .gallery-grid {
+        column-count: 2;
+        column-gap: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .gallery-card {
+        margin-bottom: 1.2rem;
+        padding: 10px;
+    }
+
+    .gallery-card-info .character-name {
+        font-size: 1.1rem;
+    }
+
+    /* ------------------------ */
+    /* Contact                  */
+    /* ------------------------ */
+    .contact-container {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    } 
+
+    .quote {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* ============================================= */
+/* Small Mobile Device                           */
+/* ============================================= */
+@media (max-width: 450px) {
+
+    /* ------------------------ */
+    /* About                    */
+    /* ------------------------ */
+    .service-list,
+    .resume-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .sub-title,
+    .column-title {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .timeline {
+        margin-left: 5px;
+        padding-left: 15px;
+    }
+
+    .timeline-item {
+        padding: 15px;
+    }
+
+    .timeline-item::before {
+        left: -16px;
+        width: 15px;
+    }
+
+    .timeline-item::after {
+        left: -22.5px;
+    }
+
+    .item-title {
+        font-size: 1rem;
+    }
+
+
+    /* ------------------------ */
+    /* Skills                   */
+    /* ------------------------ */
+    .skill-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .skill-content {
+        column-gap: 8px;
+    }
+
+    .sub-text-list {
+        margin-left: 10px;
+    }
+
+    .sub-text,
+    .skill-text {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    /* ------------------------ */
+    /* Project                  */
+    /* ------------------------ */
+
+    .project-filter-menu {
+        display: none !important;
+    }
+
+    .project-filter-dropdown-wrapper {
+        display: block;
+    }
+
+    .filter-dropdown {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--title-text);
+        background-color: var(--box-color);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        background-image: url("../Assets/Images/SVG/chevron-down-outline-color.svg");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: 16px;
+        padding-right: 40px;
+
+        transition: border-color 0.3s ease;
+    }
+
+    .filter-dropdown:focus {
+        border-color: var(--theme-color);
+        box-shadow: 0 0 5px var(--theme-color);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ------------------------ */
+    /* Gallery                  */
+    /* ------------------------ */
+    .gallery-container{
+        margin-bottom: 0px;
+    }
+
+    .gallery-grid {
+        column-count: 1; 
+        margin-top: 1.2rem;
+    }
+
+    .gallery-card {
+        max-width: 400px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+    }
+    
+    .gallery-card-info {
+        padding: 10px 2px 2px 2px;
+    }
+
+
+    /* ------------------------ */
+    /* Contact                  */
+    /* ------------------------ */
+    .contact-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .resume-btn,
+    .availability-box {
+        grid-column: span 1;
+    }
+
+    .contact-right {
+        padding: 18px 15px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        padding: 12px 14px;
+    }
+
+    .send-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .quote-section {
+        padding-top : 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .quote {
+        font-size: 0.95rem;
+        letter-spacing: 0.2px;
+        padding-bottom: 10px;
+    }
+
+}
