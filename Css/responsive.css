@@ -493,6 +493,10 @@
         padding: 5px 8px;
     }
 
+    .sub-text-list::before {
+        bottom: 15px;
+    }
+
     /* ------------------------ */
     /* Project                  */
     /* ------------------------ */
