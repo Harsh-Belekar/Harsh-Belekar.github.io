@@ -28,6 +28,14 @@ navLinks.forEach(link => {
         navLinks.forEach(btn => btn.classList.remove('active'));
         this.classList.add('active');
 
+        const projectDetailsPage = document.getElementById('projectDetailsPage');
+        const projectMainContainer = document.querySelector('.project-container');
+
+        if (projectDetailsPage && projectMainContainer) {
+            projectDetailsPage.classList.remove('active');
+            projectMainContainer.style.display = '';
+        }
+
         pages.forEach(page => {
             if (page.dataset.page === targetPage) {
                 page.classList.add('active');

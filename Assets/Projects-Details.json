@@ -1,0 +1,2099 @@
+{
+    "autonomous-drone": {
+        "title": "Autonomous Drone",
+        "banner": "./Assets/Project-Img/Banners/Drone.png",
+        "github": "https://github.com/Harsh-Belekar",
+        "description": "Designed and developed an autonomous drone system capable of stabilizing flight, navigating to GPS-based destinations, avoiding obstacles, maintaining altitude, and performing intelligent object detection and tracking. The project integrates multiple sensors, sensor fusion algorithms, PID control systems, and computer vision techniques to enable semi-autonomous and autonomous flight operations. The drone uses real-time data from IMU, GPS, magnetometer, altitude sensors, and distance sensors to make flight decisions while maintaining stability and accuracy.",
+
+        "tags": [
+            "Python",
+            "C++",
+            "Microcontroller",
+            "Raspberry Pi",
+            "Sensors",
+            "Extended Kalman Filter (EKF)",
+            "PID Controller",
+            "OpenCV",
+            "Web Joystick Interface"
+        ],
+
+        "features": [
+            "Autonomous Flight Control System.",
+            "GPS-Based Navigation & Waypoint Tracking.",
+            "Sensor Fusion using Extended Kalman Filter (EKF).",
+            "PID-Based Flight Stabilization.",
+            "Return-To-Home (RTH) Functionality.",
+            "Automatic Altitude Hold.",
+            "Obstacle Detection & Avoidance.",
+            "Human Face Detection and Tracking.",
+            "Web-Based Joystick Controller.",
+            "Real-Time Telemetry Monitoring.",
+            "Automatic Orientation Estimation.",
+            "Wireless Communication via Raspberry Pi Zero W."
+        ],
+
+        "impact": [
+            "🎯 Improved Flight Stability: Successfully achieved stable flight control using PID controllers and sensor fusion techniques, resulting in smoother and more reliable drone operation.",
+            "🧭 Accurate Orientation Estimation: Implemented an Extended Kalman Filter (EKF) to combine IMU and magnetometer data, significantly improving roll, pitch, and yaw estimation accuracy.",
+            "📍 Autonomous Navigation Capability: Enabled the drone to navigate toward GPS-defined coordinates, demonstrating autonomous waypoint-based flight functionality.",
+            "🚧 Enhanced Flight Safety: Integrated obstacle detection and avoidance mechanisms using distance sensors, reducing collision risks during autonomous operations.",
+            "📡 Real-Time Monitoring & Control: Built a web-based joystick and telemetry system that enables wireless control and real-time monitoring through the Raspberry Pi Zero W."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Raw IMU and magnetometer data contained significant noise, causing unstable orientation estimates.",
+                "solution": "Implemented an Extended Kalman Filter (EKF) to fuse data from multiple sensors and generate accurate orientation estimates."
+            },
+            {
+                "challenge": "The drone experienced oscillations and unstable flight behavior.",
+                "solution": "Tuned PID controller parameters for roll, pitch, and yaw stabilization to achieve smoother and more responsive flight."
+            },
+            {
+                "challenge": "GPS readings were sometimes inaccurate, affecting autonomous navigation.",
+                "solution": "Applied filtering techniques and combined GPS data with onboard sensor measurements to improve navigation accuracy."
+            },
+            {
+                "challenge": "Detecting obstacles accurately during flight was difficult due to environmental conditions.",
+                "solution": "Integrated VL53L0X distance sensors and developed obstacle avoidance logic for real-time path correction."
+            },
+            {
+                "challenge": "Running sensor processing, navigation, and computer vision simultaneously on Raspberry Pi Zero W.",
+                "solution": "Optimized algorithms, reduced unnecessary computations, and used efficient C++ implementations for critical modules."
+            },
+            {
+                "challenge": "Maintaining smooth face detection and tracking while ensuring stable flight.",
+                "solution": "Utilized OpenCV-based detection with optimized processing pipelines and integrated tracking commands with flight control logic."
+            },
+            {
+                "challenge": "Maintaining low-latency communication between the drone and control interface.",
+                "solution": "Developed a lightweight web-based joystick system hosted on Raspberry Pi Zero W for real-time wireless control."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Drone_1.png",
+                "label": "Main Drone Image"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Drone_2.png",
+                "label": "Full Drone Image"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Drone_3.png",
+                "label": "Main Circuit"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Drone_4.png",
+                "label": "Wiring"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Drone_5.png",
+                "label": "Power Distribution Board [PDB]"
+            }
+        ]
+    },
+
+    "shinobi-saga": {
+        "title": "Shinobi Saga",
+        "banner": "./Assets/Project-Img/Banners/Shinobi Saga.png",
+        "github": "https://github.com/Harsh-Belekar/Shinobi-Saga",
+        "description": "Shinobi Saga is a 2D anime-inspired fighting game developed using Python and Pygame. The project recreates an intense battle between Naruto and Sasuke with smooth character animations, combat mechanics, projectile attacks, health systems, and interactive game screens. The game was built completely from scratch using object-oriented programming principles and modular architecture, providing an engaging desktop gaming experience while demonstrating strong game development fundamentals. The project includes a complete game loop, collision detection, combat system, sound effects, pause functionality, help screens, and game-over states.",
+
+        "tags": [
+            "Python",
+            "Pygame",
+            "UI Design",
+            "Game Physics",
+            "Sprite Animation",
+            "Event Handling",
+            "Game Development",
+            "Modular Programming",
+            "Git"
+        ],
+
+        "features": [
+            "Naruto vs Sasuke Action Combat",
+            "Smooth Keyboard-Based Controls",
+            "Character Animation System",
+            "Shuriken Projectile System",
+            "Dynamic Health Bar System",
+            "Collision Detection & Damage Logic",
+            "Pause Menu Functionality",
+            "Interactive Help Screen",
+            "Game Over & Restart System",
+            "Sound Effects Integration",
+            "Modular Multi-File Architecture",
+            "Custom Game Assets & UI Design",
+            "Standalone Desktop Gameplay Experience"
+        ],
+
+        "impact": [
+            "🎮 Fully Playable Fighting Game: Successfully developed a complete 2D fighting game with combat mechanics, animations, health management, and interactive user interfaces.",
+            "🏗️ Strong Object-Oriented Design: Implemented a modular architecture using Python classes, making the project scalable, maintainable, and easier to extend with future features.",
+            "⚔️ Real-Time Combat System: Built responsive attack, collision, and damage systems that provide engaging gameplay and smooth player interactions.",
+            "🚀 Improved Programming Skills: Strengthened expertise in Python programming, game loops, event handling, collision detection, animation systems, and object-oriented development.",
+            "🔧 Practical Software Engineering Experience: Applied modular coding practices, version control, debugging, testing, and project organization techniques commonly used in professional software development."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Managing multiple animation states such as idle, running, jumping, attacking, and taking damage.",
+                "solution": "Designed a structured animation system with state-based transitions to ensure smooth character movement and actions."
+            },
+            {
+                "challenge": "Ensuring attacks register accurately without causing unfair gameplay.",
+                "solution": "Implemented hitbox-based collision detection and damage calculations for precise combat interactions."
+            },
+            {
+                "challenge": "Creating a responsive shuriken attack system with proper movement and collision behavior.",
+                "solution": "Developed a dedicated projectile class to manage spawning, movement, collision checks, and damage handling."
+            },
+            {
+                "challenge": "Maintaining smooth gameplay while handling animations, collisions, projectiles, and sound effects simultaneously.",
+                "solution": "Optimized update loops, sprite rendering, and collision calculations to achieve consistent frame rates."
+            },
+            {
+                "challenge": "Displaying player health accurately while updating combat outcomes in real time.",
+                "solution": "Created a reusable health bar component that dynamically updates based on player damage and remaining health."
+            },
+            {
+                "challenge": "Preventing the project from becoming difficult to maintain as new features were added.",
+                "solution": "Organized the game into separate modules such as player, enemy, projectile, UI, and utility systems, resulting in a clean and scalable architecture."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Shinobi_1.png",
+                "label": "Main-Menu Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Shinobi_2.png",
+                "label": "Battle Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Shinobi_3.png",
+                "label": "Help Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Shinobi_4.png",
+                "label": "Paused Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Shinobi_5.png",
+                "label": "Naruto Wins"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Shinobi_6.png",
+                "label": "Sasuke Wins"
+            }
+        ]
+    },
+
+    "swiggy-sales-analysis": {
+        "title": "Swiggy Sales Analysis",
+        "banner": "./Assets/Project-Img/Banners/Swiggy.png",
+        "github": "https://github.com/Harsh-Belekar/Swiggy-Sales-Analysis",
+        "description": "Swiggy Sales Analysis is a comprehensive end-to-end data analytics project that simulates real-world business intelligence workflows for a food delivery platform. The project covers the complete analytics pipeline — from synthetic data generation and relational database design to Python-based exploratory analysis and an interactive multi-page Power BI dashboard. The project is built around a synthetic dataset of 600,000+ food delivery orders spanning 10 major Indian cities across 4 years (2022-2025), involving 10,000 customers, 1,000 restaurant partners, and ₹39.62 Crores in Gross Order Value. At its core, the project solves 7 critical business challenges that a real food delivery platform like Swiggy would face — customer churn, revenue stagnation, restaurant underperformance, menu optimization, operational inefficiency, market expansion, and customer experience gaps — using a 4-tier analytical methodology: Descriptive → Diagnostic → Predictive → Prescriptive.",
+
+        "tags": [
+            "Python",
+            "PostgreSQL",
+            "Power BI",
+            "Jupyter Notebook",
+            "SQLAlchemy",
+            "psycopg2",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "DAX",
+            "Power Query",
+            "Git"
+        ],
+
+        "features": [
+            "600,000+ Order Synthetic Data Generator",
+            "Normalized PostgreSQL Star Schema Database",
+            "2 Aggregated Master Tables (Pre-joined, Feature-Rich)",
+            "RFM Customer Segmentation (9 Segments)",
+            "Monthly Cohort Retention Analysis",
+            "Customer Lifetime Value (CLV) Projections",
+            "Basket Analysis (2.78 Avg Items/Order)",
+            "7-Page Interactive Power BI Dashboard",
+            "100+ DAX Measures (MTD / QTD / YTD / YoY)",
+            "Market Expansion Priority Scoring Model",
+            "Menu & Product Intelligence Analysis",
+            "Operational Efficiency & Cancellation Analysis",
+            "Revenue Trend & Seasonal Pattern Analysis",
+            "Restaurant Performance & Efficiency Scoring",
+            "Market Saturation & Cuisine Gap Analysis",
+            "2 Jupyter Notebooks with 30+ Python Charts",
+            "Full Project Documentation (6 Markdown Docs)"
+        ],
+
+        "impact": [
+            "💰 Revenue Insights: Identified ₹25 Crores in annual revenue loss due to a 4.95% order cancellation rate — reducing it by just 1% recovers ₹40 Lakhs. Revealed July and December as peak revenue months with February dipping 10–12% every year, enabling proactive seasonal campaign planning.",
+            "👥 Customer Insights: Discovered that the Top 20% of customers drive 84.1% of total revenue — confirming a Pareto-driven business requiring a loyalty-first strategy. Quantified that Loyal customers have a 22x higher CLV (₹88,972) vs Occasional users (₹3,998), making retention 22x more valuable than acquisition. Flagged 3,892 at-risk customers representing ₹2.87 Crores in recoverable revenue.",
+            "🏪 Restaurant Insights: Proved that top-performing restaurants generate ₹6 Lakhs vs ₹2.2 Lakhs for underperformers — driven entirely by menu engineering, not order volume. Showed Cloud Kitchens serve 2.4x more unique customers per partner than Traditional restaurants. Found 'Excellent' rated restaurants (4.5+) command a 22% higher Average Order Value (₹778 vs ₹638).",
+            "🌏 Market Expansion Insights: Discovered Swiggy reaches less than 0.1% of the population across all 10 cities — revealing 45 Million untapped potential users. Ranked Kolkata as the #1 expansion priority using a composite weighted scoring model. Identified critical cuisine supply gaps — Thai in Jaipur and Biryani in Lucknow — as immediate expansion opportunities.",
+            "🍽️ Menu & Operations Insights: Identified Paneer Burger as the #1 revenue-generating item at ₹1.45 Crores. Revealed that 85% of orders are multi-item with an average basket size of 2.78 items, confirming duo/group ordering behavior. Found a 761x surge from average (28 orders/hour) to peak capacity (21,245 orders/hour) — a critical infrastructure planning insight.",
+            "🚀 Improved Analytics Skills: Strengthened expertise in Python data analysis, SQL database design, DAX measure writing, Power BI dashboard development, and applying statistical techniques like RFM scoring, cohort analysis, and market expansion modeling to real business problems."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Creating 600,000 orders with realistic business-logic-driven patterns — ordering behavior, peak hours, city weights, payment distributions — while keeping generation time manageable.",
+                "solution": "Replaced Python loops with NumPy vectorized operations and batch processing (50,000 orders/batch), implemented dictionary-based lookups, and applied statistical distributions (Pareto for user ordering, weighted random for cities/cuisines). This reduced generation time by 12x compared to the initial loop-based approach."
+            },
+            {
+                "challenge": "Loading 600,000 orders and 1.6 Million order items into PostgreSQL while maintaining referential integrity, data types, and query performance.",
+                "solution": "Used SQLAlchemy batch inserts with transaction management and created 2 pre-aggregated master tables with all joins pre-computed and derived columns (time_slot, day_type, age_group, cohort, rating_bucket) pre-calculated — eliminating repeated heavy joins at query time."
+            },
+            {
+                "challenge": "Defining RFM segments using fixed thresholds would produce skewed results given the unequal distribution of customer ordering behavior across 10,000 users.",
+                "solution": "Implemented quintile-based scoring (1-5) for each R/F/M dimension, making segments relative to the actual data distribution rather than fixed values. This produced 9 well-balanced, meaningful customer segments that reflect true behavioral differences."
+            },
+            {
+                "challenge": "DAX time intelligence functions (MTD, QTD, YTD, YoY) require a properly marked, contiguous Date Table — which was absent in the raw data model.",
+                "solution": "Created a custom DateTable using the DAX CALENDAR() function covering the full 4-year range (2022-2025), added all required columns (Year, Quarter, Month, Week, Day Type), marked it as the official Date Table, and connected it to orders_master — enabling all time intelligence measures to work correctly."
+            },
+            {
+                "challenge": "Ranking cities for expansion using a single metric (revenue or orders) would produce biased results heavily favoring already-large saturated markets like Mumbai and Delhi.",
+                "solution": "Designed a composite Expansion Priority Score with three weighted dimensions — Revenue Potential (40%), Growth Rate (30%), and Market Saturation (30%) — normalizing each to a 0-100 scale before combining. This produced a fair, multi-factor ranking that surfaced Kolkata and Ahmedabad over already-saturated metros."
+            },
+            {
+                "challenge": "Solving 7 distinct business challenges in a single project without the analysis becoming disorganized, repetitive, or hard to follow for stakeholders.",
+                "solution": "Structured the entire project around a 4-tier methodology (Descriptive → Diagnostic → Predictive → Prescriptive) with each business problem as a dedicated analysis section, consistent chart styling, and a separate summary documentation file — keeping the project modular, readable, and professiona"
+            },
+            {
+                "challenge": "Preventing the project from becoming difficult to maintain as scripts, notebooks, SQL files, and documentation grew across multiple folders.",
+                "solution": "Organized the project into dedicated folders (Scripts, Notebooks, Database, Docs, Dashboard, Visuals, Logs) with clear naming conventions, modular Python scripts for each pipeline stage, and comprehensive markdown documentation for every component — resulting in a clean, professional, and recruiter-friendly repository structure."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_1.png",
+                "label": "Executive Overview"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_2.png",
+                "label": "Customer Intelligence"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_3.png",
+                "label": "Revenue Analytics"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_4.png",
+                "label": "Restaurant Performance"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_5.png",
+                "label": "Menu & Product Intelligence"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_6.png",
+                "label": "Operations & Efficiency"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Swiggy_7.png",
+                "label": "Market Expansion"
+            }
+        ]
+    },
+
+    "samsung-data-engineering": {
+        "title": "Samsung Data Engineering",
+        "banner": "./Assets/Project-Img/Banners/Samsung.png",
+        "github": "https://github.com/Harsh-Belekar/Samsung-Data-Engineering",
+        "description": "Samsung Data Engineering is a complete, production-grade Data Engineering project built entirely from scratch — covering every stage of a real-world data pipeline from synthetic data generation to a fully structured, analytics-ready Data Warehouse. The project simulates Samsung business operations across 6 domains — Sales & Distribution, Finance & Payments, Customer Relationship Management, After-Sales Service, Supply Chain & Inventory, and Human Resources & Marketing. A custom Python pipeline generates 2,000,000+ realistic, messy records across 14 tables, intentionally injecting real-world data quality issues to simulate genuine enterprise data challenges. The Data Warehouse is built on PostgreSQL using Medallion Architecture — a modern three-layer approach (Bronze → Silver → Gold) that progressively transforms raw, messy data into clean, structured, business-ready information. The entire pipeline is implemented twice — once using Python Scripts and once using SQL Stored Procedures — to demonstrate proficiency in both engineering approaches on the same problem. The Gold layer exposes a Star Schema with 8 Dimension Views and 6 Fact Views, structured for direct consumption by Power BI dashboards and SQL analysts.",
+        
+        "tags": [
+            "Python",
+            "SQL",
+            "PostgreSQL",
+            "ETL",
+            "psycopg2",
+            "SQLAlchemy",
+            "Pandas",
+            "NumPy",
+            "openpyxl",
+            "Data Warehouse",
+            "Data Cleaning",
+            "Standardisation"
+        ],
+
+        "features": [
+            "Medallion Architecture (Bronze → Silver → Gold)",
+            "Custom Python Synthetic Data Generation Pipeline",
+            "Dual Implementation — Python Scripts + SQL Stored Procedures",
+            "2,000,000+ Rows Across 14 Tables & 6 Business Domains",
+            "6 Shared Helper Functions for Data Cleaning & Standardisation",
+            "Star Schema Gold Layer — 8 Dimensions + 6 Fact Views",
+            "Full Load Strategy with Truncate & Insert Pattern",
+            "Structured Logging for Every Pipeline Stage",
+            "Domain-Organised Data Architecture (AS2, CRM, FIP, HRM, SCI, SND)",
+            "Referential Integrity Across All 14 Tables",
+            "Gold Layer Data Catalog with Column-Level Documentation",
+            "Consistent Naming Conventions Across All Layers",
+            "Configurable Data Generator via Single Config.py File",
+            "Production-Grade Modular Folder Structure"
+        ],
+
+        "impact": [ 
+            "🏗️ Complete End-to-End Data Warehouse: Successfully designed and built a fully functional three-layer Data Warehouse (Bronze → Silver → Gold) in PostgreSQL from scratch, covering data generation, ingestion, cleaning, transformation, and Gold layer view creation across 14 tables and 6 business domains.",
+            "📊 Large-Scale Data Processing: Generated and processed 2,000,000+ rows of realistic synthetic data spanning 4 years (2022-2025), 50+ Indian cities, 29 states, 8 sales channels, and 6 product categories — closely simulating Samsung real-world operational scale.",
+            "🧹 Significant Data Quality Improvement: Resolved 16 categories of real-world data quality issues during the Bronze → Silver transformation — including 6 mixed date formats, 7 boolean encodings, 3 salary formats, and 7 GST string variants — all standardised through reusable shared helper functions.",
+            "⚡ Dual Pipeline Engineering: Implemented the complete pipeline twice — in Python Scripts and in SQL Stored Procedures — demonstrating professional-grade proficiency in both approaches and making the project a comprehensive engineering portfolio showcase.",
+            "⭐ Business-Ready Star Schema: Designed and deployed a Gold layer Star Schema with 8 Dimension Views and 6 Fact Views directly consumable by Power BI, Tableau, QuickBI, and Python-based data analysis — eliminating the need for any additional transformation at the reporting layer.",
+            "📄 Production-Ready Documentation: Authored a complete documentation suite — Gold Layer Data Catalog, Data Generation Guide, Naming Conventions Standard, Business Problem Statement, and a professional README — making the project handoff-ready for Data Analysts, Power BI Developers, and other Data Engineers."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Creating 2M+ rows of synthetic data that feels authentic — using real Indian names, Samsung product SKUs, and valid city-state-pincode combinations — while simultaneously injecting controlled data quality issues in realistic proportions without making the data unclenable.",
+                "solution": "Designed a Config.py file with dedicated quality control knobs (null_pct, bad_value_pct, dup_pct, category_mess_pct) that precisely control messiness per table. Master_data.py was populated with India-specific lookup pools — real city names, Samsung SKUs, Indian phone number prefixes — ensuring authentic-feeling data. Each generator class exposes its generated ID pool for downstream generators to use as valid foreign keys, maintaining full referential integrity across all 14 tables."
+            },
+            {
+                "challenge":" Date columns in the Bronze layer contained up to 6 different formats in the same column — YYYY-MM-DD, DD/MM/YYYY, DD-MM-YYYY, MM/DD/YYYY, YYYY/MM/DD, and DD Mon YYYY. Additionally, some inventory snapshot dates were stored as Unix epoch integer strings instead of date strings entirely, requiring a completely different parsing strategy.",
+                "solution": "Built fn_parse_date() as a shared helper function that attempts each date format sequentially and returns NULL only if all formats fail. A separate fn_parse_epoch_or_date() function first checks for an epoch integer pattern and converts via TO_TIMESTAMP() before falling back to fn_parse_date(). Both functions were implemented in Python and SQL to satisfy the dual-pipeline requirement."
+            },
+            {
+                "challenge":"The employees table stored salary in three completely different formats within the same column — '18 LPA' (annual Lakhs Per Annum), '150000' (monthly gross as a plain integer), and '18L' (shorthand Lakhs) — with no indicator flag to identify which format each row used, making direct casting impossible.",
+                "solution": "Built fn_salary_to_annual() using sequential string pattern matching — checking for the 'LPA' substring, 'L' suffix, and plain numeric format in order. A heuristic was applied for plain integers: values above 200,000 were treated as already annual, values below were treated as monthly and multiplied by 12. This correctly resolved ~95% of cases, with the remainder set to NULL for manual review."
+            },
+            {
+                "challenge":"Building the entire pipeline — schema creation, Bronze loading, Silver cleaning, and Gold view creation — in both Python and SQL without duplicating business logic or producing different results between the two implementations, especially for complex transformations like salary conversion and GST parsing.",
+                "solution": "Defined all cleaning logic in documentation first (Helper_func spec and Naming Conventions) and used it as the single source of truth for both implementations. Python's Helper_func.py and SQL's Helper_function.sql implement the same 6 functions with identical input handling and edge case behaviour. Verification queries comparing row counts and NULL rates between both implementations confirmed identical output."
+            },
+            {
+                "challenge":"Downstream fact tables (sales_transactions, complaints, returns) require valid foreign keys referencing upstream dimension tables (customers, products, dealers). Generating all tables independently would produce orphaned foreign key values that break Silver layer constraints and corrupt JOIN relationships.",
+                "solution": "Each generator class exposes its generated ID pool (cust_ids, pid_pool, dealer_ids) as a public attribute after generate() completes. Main.py passes these pools as constructor arguments to downstream generators in strict dependency order — ensuring every foreign key value in every fact table references a genuine, existing ID from its parent dimension table."
+            },
+            {
+                "challenge":"The Bronze layer for financial_transactions and returns intentionally contained ~2% and ~3% fully duplicated rows respectively — simulating real-world ETL double-loading issues. These duplicates needed to be identified and removed without accidentally deleting legitimate rows that share the same data.",
+                "solution": "Applied ROW_NUMBER() window functions partitioned by the primary key column and ordered by ingestion timestamp. Only rows with row_num = 1 were promoted to the Silver layer, cleanly removing duplicates while preserving the first occurrence of every genuine record. The actual rows removed were logged and verified against expected duplicate rates."
+            },
+            {
+                "challenge":"The Gold layer needed to serve two very different consumer types simultaneously — Power BI developers who need pre-joined, flat, denormalised data for fast dashboard performance, and SQL analysts who need normalised, properly related tables for flexible ad-hoc querying — without building two separate Gold schemas.",
+                "solution": "Implemented the Gold layer as PostgreSQL Views built on a Star Schema design — 8 Dimension Views and 6 Fact Views with clean foreign key relationships. This gives SQL analysts the ability to write flexible JOINs while giving Power BI the ability to use the pre-defined relationships in the Star Schema directly, satisfying both consumers from the same 14-view structure without duplication."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Samsung_1.png",
+                "label": "Data Warehouse Architecture"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Samsung_2.png",
+                "label": "Database Schema"
+            }
+        ]
+    },
+
+    "harshs-portfolio-website": {
+        "title": "Harsh's Portfolio Website",
+        "banner": "./Assets/Project-Img/Banners/Portfolio.png",
+        "github": "https://github.com/Harsh-Belekar/Harsh-Belekar.github.io",
+        "description": "Designed and developed a fully responsive personal portfolio website from scratch using pure HTML, CSS, and JavaScript — with zero frameworks or libraries. The site serves as a central hub to showcase my Skills, Real-World Projects, Internship Experience, and Personal Artwork to recruiters and the tech community. Deployed live on GitHub Pages with automatic updates on every push to main.",
+
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "GitHub Pages",
+            "UI Design",
+            "Responsive Design"
+        ],
+
+        "features": [
+            "Fully responsive layout — optimized for desktop, tablet, and mobile",
+            "Interactive project filter — filter 20+ projects by category (Data Analysis, SQL, Power BI, Python, Game Dev, Web Dev, IoT)",
+            "Animated role switcher in sidebar — cycles through Python Developer, Data Analyst, etc.",
+            "Smooth single-page navigation — no page reloads across all sections",
+            "Personal Art Gallery section showcasing hand-drawn anime artwork",
+            "Social media & contact integration — LinkedIn, GitHub, Instagram, Email"
+        ],
+
+        "impact": [
+            "🌐 Live Presence: Professionally deployed and publicly accessible portfolio at harsh-belekar.github.io, establishing a strong online presence beyond just a GitHub or LinkedIn profile.",
+            "📁 Projects Centralized: 20+ real-world projects across Data Analysis, SQL, Power BI, Tableau, Excel, Python, IoT, and Game Dev — all organized and filterable in one place.",
+            "📄 Recruiter Ready: Instant resume download, direct contact options, and a clean layout designed to make a strong first impression with recruiters and hiring managers.",
+            "🎨 Personal Branding: Art Gallery section adds a unique personal identity, making the profile memorable and human beyond just technical skills.",
+            "⚡ Performance: Zero dependencies, no frameworks — results in a lightweight, fast-loading site with clean, maintainable code."
+        ],
+
+        "challenges": [
+            {
+                "challenge":"Responsive Layout Without a Framework Building a fully responsive layout using only CSS Flexbox and Grid without Bootstrap or Tailwind required careful planning of breakpoints and fluid layouts for every section.",
+                "solution": "Used CSS custom properties (variables) and media queries systematically, designing mobile-first and scaling up — keeping the codebase clean and consistent."
+            },
+            {
+                "challenge":"Dynamic Project Filtering Implementing a category-based filter for 20+ projects with smooth show/hide behavior using only Vanilla JS.",
+                "solution":"Used data attributes on project cards and a JavaScript event listener system to toggle visibility by category — no libraries needed."
+            },
+            {
+                "challenge":"Sidebar Role Animation Creating a smooth animated text switcher in the sidebar that cycles through multiple roles (Data Analyst, Python Developer, etc.).",
+                "solution":"Built a custom JS interval-based animation with CSS transitions for a typewriter-style effect."
+            },
+            {
+                "challenge":"Asset & Image Management Managing a large number of project thumbnails, artwork images, icons, and documents without a build tool or bundler.",
+                "solution":"Organised assets into a structured folder hierarchy (Assets/Images, Assets/Project-Img, Assets/Drawings, Assets/Docs) for clean referencing and easy maintenance."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Portfolio_1.png",
+                "label": "About Me"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Portfolio_2.png",
+                "label": "Skills"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Portfolio_3.png",
+                "label": "Projects"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Portfolio_4.png",
+                "label": "Project Details"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Portfolio_5.png",
+                "label": "Art Gallery"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Portfolio_6.png",
+                "label": "Contact"
+            }
+        ]
+    },
+
+    "advance-sql-project": {
+        "title": "Advance SQL Project: Data Warehousing, EDA & Advanced Data Analytics",
+        "banner": "./Assets/Project-Img/Banners/Advance SQL.png",
+        "github": "https://github.com/Harsh-Belekar/Advance-SQL-Project-Data-Warehousing-EDA-Advanced-Data-Analytics",
+        "description": "Designed and developed an End-to-End SQL Data Warehousing and Analytics solution using PostgreSQL to transform raw ERP and CRM datasets into a structured, analytics-ready environment. The project follows a Bronze → Silver → Gold architecture, implementing ETL Pipelines, Data Cleaning, Standardization, Dimensional Modeling, and Advanced SQL Analytics. The solution simulates a real-world Data Engineering + Data Analytics workflow, enabling the generation of customer and product performance reports, KPI dashboards, and Actionable Business Insights. Advanced SQL techniques such as Window Functions, CTEs, Ranking, Segmentation, Cumulative Analysis, and Trend Analysis were used to uncover valuable patterns and support Data-Driven Decision-Making.",
+
+        "tags": [
+            "PostgreSQL",
+            "SQL",
+            "Data Warehousing",
+            "ETL Pipelines",
+            "Star Schema Modeling",
+            "Dimensional Modeling",
+            "Data Quality Testing",
+            "Advanced SQL Analytics",
+            "Data Architecture Design"
+        ],
+
+        "features": [
+            "End-to-End Data Warehouse Development (Bronze → Silver → Gold)",
+            "Automated ETL Pipelines using SQL Stored Procedures",
+            "Data Cleaning, Validation & Standardization",
+            "Star Schema Design with Fact & Dimension Tables",
+            "Exploratory Data Analysis (EDA)",
+            "Advanced SQL Analytics & KPI Reporting",
+            "Customer Segmentation & Performance Analysis",
+            "Product Performance & Revenue Analysis",
+            "Comprehensive Architecture & Data Flow Documentation",
+            "Data Quality Validation & Testing Framework"
+        ],
+
+        "impact": [
+            "🏗️ Built a Scalable Data Warehouse: Designed a multi-layer data warehouse architecture that transformed raw ERP and CRM data into a structured, reliable, and analytics-ready data environment.",
+            "📊 Delivered Actionable Business Insights: Generated customer and product performance reports that help identify purchasing patterns, high-value customers, and top-performing products.",
+            "⚡ Improved Analytical Efficiency: Automated ETL workflows and optimized SQL queries, reducing manual data processing efforts and enabling faster reporting.",
+            "🎯 Demonstrated Real-World Data Engineering Skills: Applied industry-standard practices including ETL development, dimensional modeling, data quality checks, and analytical reporting in a production-style workflow.",
+            "📚 Enhanced Data-Driven Decision Making: Provided KPI-driven insights through advanced analytics techniques such as ranking, segmentation, trend analysis, and cumulative metrics."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "ERP and CRM datasets were stored separately with no centralized reporting structure.",
+                "solution": "Built a centralized Data Warehouse using a Bronze → Silver → Gold architecture to consolidate and organize data efficiently."
+            },
+            {
+                "challenge": "Source data contained inconsistent formats, naming conventions, and data quality issues.",
+                "solution": "Implemented data cleaning, transformation, and standardization processes in the Silver layer to ensure consistency and reliability."
+            },
+            {
+                "challenge": "Raw operational data was not suitable for analytical reporting or KPI generation.",
+                "solution": "Designed Gold-layer fact and dimension tables using a Star Schema model optimized for business analytics and reporting."
+            },
+            {
+                "challenge": "Business stakeholders required insights such as customer segmentation, product performance, and trend analysis.",
+                "solution": "Developed advanced SQL analytics using CTEs, Window Functions, Ranking, Segmentation, and Time-Series Analysis techniques."
+            },
+            {
+                "challenge": "Data inconsistencies could impact reporting accuracy and decision-making.",
+                "solution": "Created validation and quality-check scripts to verify data integrity before publishing analytics outputs."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/SQL_1.png",
+                "label": "Data Architecture"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/SQL_2.png",
+                "label": "Mesh Architecture Layers"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/SQL_3.png",
+                "label": "Data Integration Workflow"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/SQL_4.png",
+                "label": "Data Flow Diagram"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/SQL_5.png",
+                "label": "Star Schema Data Model"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/SQL_6.png",
+                "label": "Data Analysis"
+            }
+        ]
+    },
+
+    "credit-card-transaction-analysis": {
+        "title": "Credit Card Transaction Analysis",
+        "banner": "./Assets/Project-Img/Banners/Credit Card.png",
+        "github": "https://github.com/Harsh-Belekar/Credit-Card-Analysis-PowerBI",
+        "description": "Developed an An comprehensive Credit Card Transaction Analysis Dashboard using Power BI, SQL, and Power Query to analyze customer spending behavior, transaction trends, card performance, and revenue generation. The project involved cleaning and transforming raw transaction and customer datasets, storing the processed data in SQL tables, and building an interactive Power BI reporting solution. To simulate a real-world business intelligence environment, additional weekly transaction and customer records were integrated into the SQL database, enabling real-time dashboard updates through Power BI refreshes. The solution consists of two interactive dashboards: 1] Credit Card Transaction Report - Focused on transaction trends, revenue analysis, expenditure categories, payment methods, and card performance. 2] Credit Card Customer Report - Focused on customer demographics, income groups, customer segments, geographic performance, and spending behavior. The project demonstrates a complete Data Analytics & Business Intelligence workflow, from raw data preparation to actionable business insights.",
+
+        "tags": [
+            "Power BI",
+            "SQL",
+            "PostgreSQL",
+            "Power Query",
+            "DAX",
+            "ETL"
+        ],
+
+        "features": [
+            "Interactive Credit Card Transaction Dashboard",
+            "Interactive Customer Analysis Dashboard",
+            "Data Cleaning & Transformation using Power Query",
+            "SQL Database Integration for Structured Data Storage",
+            "Real-Time Dashboard Refresh using Incremental Weekly Data",
+            "Advanced KPI Tracking with DAX Measures",
+            "Customer Segmentation Analysis",
+            "Card Type Performance Analysis",
+            "Revenue & Interest Trend Analysis",
+            "Geographic Revenue Analysis",
+            "Dynamic Filters & Slicers for Interactive Exploration",
+            "PDF Dashboard Reporting"
+        ],
+
+        "impact": [
+            "📈 Revenue Performance Analysis: Identified major revenue-driving customer segments and card categories. Enabled tracking of revenue, transaction volume, and interest generation across different business dimensions.",
+            "👥 Customer Behavior Insights: Revealed spending patterns based on age groups, gender, income levels, education, and occupation. Helped identify high-value customer segments for targeted marketing strategies.",
+            "💳 Card Performance Evaluation: Compared performance across Blue, Silver, Gold, and Platinum card categories. Highlighted the most profitable card segments and customer acquisition effectiveness.",
+            "🌎 Geographic Business Insights: Identified top-performing states contributing the highest revenue. Supported location-based business strategy and customer targeting.",
+            "🔄 Real-Time Business Intelligence: Successfully integrated SQL with Power BI to support dashboard updates when new weekly data is added. Demonstrated a scalable BI reporting workflow used in real-world organizations."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Raw transaction and customer datasets contained inconsistent formats and required preprocessing.",
+                "solution": "Utilized Power Query to clean, transform, standardize, and validate data before analysis."
+            },
+            {
+                "challenge": "Transaction and customer data needed proper integration for accurate reporting.",
+                "solution": "Designed SQL tables and established relationships within Power BI's data model to ensure accurate calculations and filtering."
+            },
+            {
+                "challenge": "Dashboards needed to reflect newly added weekly transaction and customer records.",
+                "solution": "Implemented SQL-based storage and connected Power BI directly to the database, enabling seamless refresh and real-time reporting."
+            },
+            {
+                "challenge": "Raw data alone did not provide actionable business insights.",
+                "solution": "Developed DAX measures and calculated metrics such as Revenue, Interest, Transaction Count, Customer Satisfaction Score (CSS), and Income Analysis."
+            },
+            {
+                "challenge": "Large datasets made it difficult to communicate insights clearly.",
+                "solution": "Designed interactive dashboards with KPI cards, slicers, charts, and drill-down capabilities to improve user experience and data storytelling."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Credit_1.png",
+                "label": "Credit Card Transaction Report"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Credit_2.png",
+                "label": "Credit Card Customer Report"
+            }
+        ]
+    },
+
+    "customer-segmentation-analysis":{
+        "title": "Customer Segmentation Analysis",
+        "banner": "./Assets/Project-Img/Banners/Customer.png",
+        "github": "https://github.com/Harsh-Belekar/Customer-Segmentation-Visualization-And-Advanced-Analysis",
+        "description": "Developed a comprehensive customer churn analysis solution for a telecommunications company to identify customer behavior patterns, segment customers based on tenure and service usage, and uncover key factors influencing customer retention. The project involved data cleaning, exploratory data analysis, customer segmentation, and interactive dashboard development to transform raw customer data into actionable business insights. The analysis helps organizations better understand churn drivers and implement targeted retention strategies to improve customer loyalty and long-term business growth.",
+
+        "tags": [
+            "Python",
+            "Power BI",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook"
+        ],
+
+        "features": [
+            "Data cleaning and preprocessing for accurate analysis",
+            "Exploratory Data Analysis (EDA) to identify customer churn trends",
+            "Customer segmentation based on tenure groups and lifecycle stages",
+            "Churn analysis by demographics, contract types, and payment methods",
+            "Monthly charges and customer value analysis",
+            "Customer retention and churn risk assessment",
+            "Interactive Power BI dashboard with KPIs and dynamic filters",
+            "Business-focused insights and strategic recommendations",
+            "Data-driven decision-making support through visual analytic"
+        ],
+
+        "impact": [
+            "📉 Churn Pattern Discovery: Identified key churn drivers, including contract types, payment methods, and customer tenure, enabling a deeper understanding of customer attrition behavior.",
+            "👥 Customer Lifecycle Segmentation: Segmented customers into tenure-based groups to reveal behavioral differences between new, mid-term, and long-term customers, helping prioritize retention efforts.",
+            "💰 Revenue & Customer Value Insights: Analyzed monthly charges across customer segments to identify high-value customers and understand pricing-related churn trends.",
+            "📊 Interactive Business Dashboard: Created an interactive Power BI dashboard that provides stakeholders with real-time insights into customer distribution, churn metrics, and retention opportunities.",
+            "🎯 Strategic Retention Recommendations: Delivered actionable recommendations focused on improving customer loyalty, reducing churn risk, and enhancing long-term customer value through targeted business strategies."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Missing values and inconsistent data formats affected the reliability of the analysis.",
+                "solution": "Performed thorough data cleaning, standardized column formats, and handled missing values using appropriate statistical techniques"
+            },
+            {
+                "challenge": "Raw customer data did not clearly reveal behavioral patterns or churn-prone groups.",
+                "solution": "Created tenure-based customer segments and analyzed churn behavior across lifecycle stages to uncover actionable insights."
+            },
+            {
+                "challenge": "Statistical findings alone were not sufficient for business decision-making.",
+                "solution": "Connected analytical results with real-world business implications and developed practical retention strategies supported by data."
+            },
+            {
+                "challenge": "Presenting large amounts of customer data in a simple and stakeholder-friendly format.",
+                "solution": "Developed an interactive Power BI dashboard with KPIs, segmentation visuals, churn breakdowns, and dynamic slicers for easy exploration and interpretation."
+            },
+            {
+                "challenge": "Multiple customer attributes influenced churn simultaneously, making it difficult to identify the primary drivers.",
+                "solution": "Conducted comparative analysis across demographics, contract types, payment methods, and service categories to isolate the most influential churn factors and prioritize retention actions."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Customer_1.png",
+                "label": "Customer Segmentation Churn Dashboard"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Customer_2.png",
+                "label": "Tenure Distribution"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Customer_3.png",
+                "label": "Customer Distribution by Tenure Group"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Customer_4.png",
+                "label": "Churn by Senior Citizen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Customer_5.png",
+                "label": "Churn by Contract Type"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Customer_6.png",
+                "label": "Churn by Payment Method"
+            }
+        ]
+    },
+
+    "imdb-movie-analysis":{
+        "title": "IMDB Movie Analysis",
+        "banner": "./Assets/Project-Img/Banners/IMDB Movie.png",
+        "github": "https://github.com/Harsh-Belekar/IMDB-Movie-Analysis",
+        "description": "This project focuses on analyzing IMDB movie data to uncover trends in movie ratings, genre performance, and audience preferences. Using Python for data cleaning, preprocessing, statistical analysis, and visualization, the project explores rating distributions, identifies top-rated movies and genres, and generates actionable insights from the dataset. The findings are further presented through an interactive Power BI dashboard that enables dynamic exploration of movie trends and performance metrics.",
+
+        "tags": [
+            "Python",
+            "Power BI",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook"
+        ],
+
+        "features": [
+            "Cleaned and preprocessed raw IMDB movie data.",
+            "Handled missing values using statistical imputation techniques.",
+            "Performed exploratory data analysis (EDA) to understand rating patterns.",
+            "Calculated key statistical metrics including mean, median, and mode.",
+            "Visualized rating distributions using histograms and box plots.",
+            "Identified top-rated movies based on IMDB ratings.",
+            "Analyzed genre-wise performance and average ratings.",
+            "Created an interactive Power BI dashboard with KPI cards, filters, and trend analysis."
+        ],
+
+        "impact": [
+            "📊 Rating Distribution Insights: Analyzed the overall distribution of movie ratings and found that most movies receive ratings between 6 and 8, indicating generally positive audience reception.",
+            "🎭 Genre Performance Analysis: Identified the highest-rated genres and uncovered patterns in audience preferences across different movie categories.",
+            "⭐ Top Movie Identification: Highlighted top-performing movies based on ratings, helping understand characteristics of highly-rated films.",
+            "📈 Interactive Business Intelligence Dashboard: Developed a Power BI dashboard that transforms raw movie data into actionable visual insights through interactive charts, tables, and KPI metrics.",
+            "🧠 Data-Driven Decision Making: Demonstrated how data analysis and visualization can be used to extract meaningful insights from entertainment industry datasets."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Missing Data in Revenue and Metascore Columns",
+                "solution": "Applied statistical imputation techniques by replacing missing revenue values with the median and missing metascore values with the mean to preserve data quality."
+            },
+            {
+                "challenge": "Multiple Genres in a Single Column",
+                "solution": "Split and transformed genre data into individual categories to perform accurate genre-level analysis and comparisons."
+            },
+            {
+                "challenge": "Understanding Rating Distribution",
+                "solution": "Used histograms and box plots to identify trends, variability, and potential outliers within movie ratings."
+            },
+            {
+                "challenge": "Presenting Insights Effectively",
+                "solution": "Designed an interactive Power BI dashboard with KPIs, visualizations, and filters to make insights easily accessible and understandable."
+            },
+            {
+                "challenge": "Converting Raw Data into Actionable Insights",
+                "solution": "Combined statistical analysis, data visualization, and dashboard reporting to create a comprehensive view of movie performance and audience preferences."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/IMDB_1.png",
+                "label": "IMDB Movie Analysis Report"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/IMDB_2.png",
+                "label": "Top Rated Genres on IMDB"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/IMDB_3.png",
+                "label": "Box Plot of IMDB Ratings"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/IMDB_4.png",
+                "label": "Distribution of IMDB Ratings"
+            }
+        ]
+    },
+
+    "hr-analytics-dashboard":{
+        "title": "HR Analytics Dashboard",
+        "banner": "./Assets/Project-Img/Banners/HR.png",
+        "github": "https://github.com/Harsh-Belekar/HR_Analytics_PowerBI",
+        "description": "Developed an interactive HR Analytics Dashboard in Power BI to analyze employee demographics, attrition patterns, job satisfaction, and workforce performance. The dashboard transforms raw HR data into actionable business insights through dynamic visualizations, KPI tracking, and interactive filtering. The project helps identify key factors influencing employee turnover, evaluate workforce trends, and support data-driven HR decision-making. The solution consists of three analytical dashboards covering Employee Overview, Attrition Analysis, and Performance & Work-Life Balance, enabling stakeholders to monitor workforce health and retention metrics effectively.",
+
+        "tags": [
+            "Power BI",
+            "Power Query",
+            "DAX",
+            "Data Modeling",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Interactive multi-page HR analytics dashboard",
+            "Employee demographic analysis by age, gender, department, and education",
+            "Employee attrition tracking with department-wise and salary-wise breakdowns",
+            "Monthly income and compensation analysis",
+            "Performance rating and job satisfaction analysis",
+            "Work-life balance impact assessment on employee retention",
+            "Custom KPI cards for workforce monitoring",
+            "Dynamic slicers and cross-filtering for interactive exploration",
+            "DAX-powered calculations for HR metrics and business insights",
+            "Data-driven storytelling for HR decision support"
+        ],
+
+        "impact": [
+            "📉 Employee Attrition Insights: Identified an overall attrition rate of approximately 16%. Discovered that employees aged 26-35 years contributed the highest share of employee turnover. Highlighted Sales and R&D as the departments with the highest attrition counts.",
+            "💰 Compensation & Retention Analysis: Revealed a strong relationship between lower salary levels and higher attrition rates. Identified income-based employee segments that require retention-focused initiatives.",
+            "📈 Workforce Performance Insights: Evaluated performance ratings across departments and job roles. Analyzed the relationship between employee income and performance using interactive scatter plots.",
+            "⚖️ Employee Satisfaction & Work-Life Balance: Found that employees with better work-life balance generally reported higher job satisfaction. Demonstrated how satisfaction and work-life balance can influence employee retention.",
+            "🚀 Business Impact: Converted complex HR data into an easy-to-understand decision-support dashboard. Improved visibility into workforce trends through interactive reporting and KPI tracking. Enabled HR stakeholders to make informed decisions regarding employee engagement and retention strategies."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Understanding Attrition DriversUnderstanding Attrition Drivers",
+                "solution": "Built dedicated attrition dashboards and KPIs to analyze employee turnover across departments, age groups, salary ranges, and experience levels."
+            },
+            {
+                "challenge": "Transforming Raw HR Data into Actionable Insights",
+                "solution": "Performed data cleaning and transformation using Power Query, ensuring accurate and reliable analysis."
+            },
+            {
+                "challenge": "Measuring Employee Performance Effectively",
+                "solution": "Created performance-focused visualizations and DAX measures to evaluate employee ratings, satisfaction, and work-life balance metrics."
+            },
+            {
+                "challenge": "Creating an Intuitive User Experience",
+                "solution": "Designed an interactive dashboard with slicers, cross-filtering, KPI cards, and visual storytelling to improve usability and insight discovery."
+            },
+            {
+                "challenge": "Presenting Business-Focused Insights",
+                "solution": "Focused on actionable HR recommendations by highlighting retention risks, satisfaction trends, and workforce performance indicators that support strategic decision-making."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/HR_1.png",
+                "label": "Employee Overview Dashboard"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/HR_2.png",
+                "label": "Performance Dashboard"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/HR_3.png",
+                "label": "Attrition Dashboard"
+            }
+        ]
+    },
+
+    "top-instagram-influencers-analysis":{
+        "title": "Top Instagram Influencers Analysis",
+        "banner": "./Assets/Project-Img/Banners/Instagram.png",
+        "github": "https://github.com/Harsh-Belekar/Top-Instagram-Influencers-Analysis",
+        "description": "The Top Instagram Influencers Analysis project is an end-to-end data analytics solution designed to evaluate the performance, engagement, reach, and growth patterns of leading Instagram influencers worldwide. Using a combination of PostgreSQL for data analysis, Python for data cleaning, and Tableau for interactive dashboard development, the project transforms raw influencer data into meaningful business insights. The analysis explores key metrics such as follower count, influence score, engagement rate, average likes, and audience interaction efficiency. Through SQL-based exploratory and advanced analysis, combined with interactive Tableau dashboards, the project uncovers influencer trends, identifies high-performing creators, and highlights regional differences in influencer impact. The findings can support influencer marketing strategies, brand partnership decisions, and social media performance benchmarking.",
+
+        "tags": [
+            "Tableau",
+            "Python",
+            "SQL",
+            "Pandas",
+            "Jupyter Notebook"
+        ],
+
+        "features": [
+            "Cleaned and transformed raw influencer data using Python and Pandas.",
+            "Built a PostgreSQL database for structured data storage and analysis.",
+            "Performed Exploratory Data Analysis (EDA) using SQL queries.",
+            "Identified top influencers based on influence score and engagement metrics.",
+            "Analyzed follower distribution and audience engagement patterns.",
+            "Discovered influencers with high engagement despite relatively smaller audiences.",
+            "Evaluated growth potential using recent post performance metrics.",
+            "Conducted country-wise influencer and influence score analysis.",
+            "Designed two interactive Tableau dashboards:",
+            "📈 Influencer Performance & Reach Overview",
+            "🔥 Engagement, Growth & Influence Analysis",
+            "Generated actionable insights for influencer marketing and audience targeting."
+        ],
+
+        "impact": [
+            "📊 Comprehensive Influencer Performance Analysis: Analyzed influencer reach, engagement, and audience interaction across multiple performance indicators, providing a holistic view of influencer effectiveness.",
+            "🌍 Geographic Influence Insights: Identified leading countries in influencer presence and engagement, helping understand regional trends within the global creator economy.",
+            "📈 Engagement vs Reach Discovery: Demonstrated that high follower counts do not always translate into strong engagement, highlighting the importance of engagement-focused metrics.",
+            "🚀 Growth Opportunity Identification: Detected influencers with increasing engagement on recent posts, indicating potential rising creators and future growth opportunities.",
+            "🎯 Data-Driven Marketing Insights: Provided valuable insights that can assist brands and marketers in selecting influencers based on engagement efficiency rather than follower count alone.",
+            "📉 Influence Score Distribution Analysis: Visualized how influence scores are distributed across the influencer ecosystem, helping identify elite and emerging influencers."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Several numerical columns contained abbreviated values such as 3.3K, 475.8M, and 57.4B, while engagement rates included percentage symbols.",
+                "solution": "Developed a Python-based data cleaning workflow to convert abbreviated values into standardized numerical formats and remove non-numeric characters, ensuring compatibility with SQL and Tableau."
+            },
+            {
+                "challenge": "Importing cleaned data into PostgreSQL resulted in data type mismatches due to decimal values being stored in integer-based columns.",
+                "solution": "Optimized the database schema by using appropriate numeric data types (NUMERIC, BIGINT, and INTEGER) to support accurate storage and querying of large-scale influencer metrics."
+            },
+            {
+                "challenge": "Influencer performance depends on multiple interconnected metrics, making it difficult to communicate insights through simple charts.",
+                "solution": "Designed interactive Tableau dashboards incorporating scatter plots, treemaps, histograms, bubble charts, maps, and KPI cards to effectively communicate complex relationships and trends."
+            },
+            {
+                "challenge": "Follower count alone was insufficient to evaluate influencer effectiveness.",
+                "solution": "Created custom analytical metrics and comparative visualizations to highlight engagement efficiency, growth potential, and influence score patterns, enabling deeper business insights."
+            },
+            {
+                "challenge": "Raw influencer data lacked direct business value without structured analysis.",
+                "solution": "Combined SQL analytics and Tableau storytelling techniques to transform raw metrics into actionable recommendations for influencer marketing and brand strategy decisions."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Instagram_1.png",
+                "label": "Influencer Performance & Reach Overview"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Instagram_2.png",
+                "label": "Engagement Growth & Influence Analysis"
+            }
+        ]
+    },
+
+    "financial-performance-dashboard":{
+        "title": "Financial Performance Dashboard",
+        "banner": "./Assets/Project-Img/Banners/Financial.png",
+        "github": "https://github.com/Harsh-Belekar/Financial-Performance-Dashboard-Tableau",
+        "description": "Developed an interactive Financial Performance Dashboard using Tableau to analyze business performance across multiple countries, products, segments, and time periods. The project involved cleaning and preprocessing raw financial data using Python and transforming it into actionable business insights through dynamic visualizations and KPI tracking. The dashboard enables stakeholders to monitor key financial metrics, evaluate discount effectiveness, identify profitable markets, analyze sales trends, and support data-driven decision-making. Interactive filters allow users to explore performance by country, segment, year, month, and discount band.",
+
+        "tags": [
+            "Tableau",
+            "Python",
+            "Pandas",
+            "Jupyter Notebook",
+            "Visualization"
+        ],
+
+        "features": [
+            "Interactive Financial Performance Dashboard",
+            "Executive KPI Cards (Revenue, Sales, Profit, Discounts, Profit Margin)",
+            "Country-wise Sales & Profit Analysis",
+            "Monthly Sales & Profit Trend Tracking",
+            "Discount Impact Analysis using Scatter Plot",
+            "Product Discount Performance Heatmap",
+            "Dynamic Filters for Segment, Country, Year, Month, and Discount Band",
+            "Python-Based Data Cleaning & Transformation",
+            "Business-Oriented Data Storytelling",
+            "Profitability and Discount Optimization Insights"
+        ],
+
+        "impact": [
+            "📊 Financial Performance Monitoring: Provided a centralized view of key financial metrics, enabling quick assessment of overall business health and profitability.",
+            "💰 Revenue & Profitability Insights: Analyzed $127.93M in Revenue, $118.73M in Sales, and $18.45M in Profit, helping identify high-performing markets and products.",
+            "🎯 Discount Strategy Evaluation: Discovered that higher discounts do not always result in higher profitability, highlighting opportunities for discount optimization.",
+            "📈 Trend Identification: Identified seasonal sales and profit patterns, with stronger financial performance observed during later months of the year.",
+            "⚡ Enhanced Decision-Making: Enabled stakeholders to perform interactive analysis and make data-driven decisions based on country, product, and segment-level performance."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Raw Financial Data Required Extensive Cleaning",
+                "solution": "Used Python, Pandas, and NumPy to clean, transform, and validate financial data before importing it into Tableau."
+            },
+            {
+                "challenge": "Managing Multiple Financial Metrics",
+                "solution": "Designed KPI cards and calculated fields to provide a clear and concise overview of business performance."
+            },
+            {
+                "challenge": "Understanding Discount Impact on Profitability",
+                "solution": "Implemented a scatter plot and heatmap analysis to visualize relationships between discounts, sales, and product performance."
+            },
+            {
+                "challenge": "Presenting Large Volumes of Data Effectively",
+                "solution": "Built an interactive Tableau dashboard with filters and visual storytelling techniques to simplify complex financial information."
+            },
+            {
+                "challenge": "Delivering Actionable Business Insights",
+                "solution": "Combined KPI tracking, trend analysis, and comparative visualizations to highlight revenue opportunities and profitability drivers."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Financial_1.png",
+                "label": "Financial Performance Dashboard"
+            }
+        ]
+    },
+
+    "stock-market-analysis":{
+        "title": "Stock Market Analysis",
+        "banner": "./Assets/Project-Img/Banners/Stock.png",
+        "github": "https://github.com/Harsh-Belekar/Stock-Market-Analysis-Tableau",
+        "description": "Developed an interactive Stock Market Analysis Dashboard using Tableau to analyze historical stock market data and uncover meaningful insights into stock performance. The dashboard enables users to explore stock price movements, trading volume patterns, daily returns, and market volatility through dynamic visualizations and interactive filters. The project transforms raw stock market data into actionable insights by combining key performance indicators (KPIs), trend analysis, and comparative visualizations. Users can filter data by stock name and date range to perform detailed analysis of individual stocks and market behavior over time.",
+
+        "tags": [
+            "Tableau",
+            "Interactive Dashboard",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Interactive Stock Market Dashboard",
+            "Stock Price Trend Analysis",
+            "Daily Return Percentage Analysis",
+            "Volatility Analysis using Price Range",
+            "Trading Volume Trend Monitoring",
+            "Dynamic KPI Cards",
+            "Interactive Filters for Stock Name and Date",
+            "Comparative Analysis Across Multiple Stocks",
+            "Clean and User-Friendly Dashboard Design",
+            "Real-Time Dashboard Interaction through Tableau Filters"
+        ],
+
+        "impact": [
+            "📈 Enhanced Stock Performance Visibility: Provided a centralized view of stock performance, enabling users to quickly understand price movements, market activity, and overall trends.",
+            "📊 Data-Driven Decision Support: Helped identify high-performing stocks, trading patterns, and market fluctuations through visual analytics and KPI tracking.",
+            "🌊 Improved Risk Assessment: Volatility analysis highlighted periods of significant price fluctuations, allowing users to better understand potential investment risks.",
+            "📦 Trading Activity Insights: Trading volume trends revealed periods of increased investor participation and market interest.",
+            "🔍 Interactive Exploration: Enabled users to dynamically filter and analyze stock data by company and date range, improving the overall analytical experience."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Comparing multiple stocks simultaneously made trend analysis difficult due to overlapping data.",
+                "solution": "Implemented color-coded visualizations and interactive stock filters to improve readability and comparison."
+            },
+            {
+                "challenge": "Raw stock prices alone did not provide clear visibility into risk and price fluctuations.",
+                "solution": "Created a calculated volatility metric using the daily price range (High - Low) and visualized it through an area chart."
+            },
+            {
+                "challenge": "Stock market data contains multiple metrics that can overwhelm users.",
+                "solution": "Designed a structured dashboard layout with KPI cards, trend charts, and comparative visualizations to improve usability and storytelling."
+            },
+            {
+                "challenge": "Raw data lacked actionable insights for users.",
+                "solution": "Applied KPI calculations, return analysis, and volume trend analysis to transform data into meaningful business intelligence."
+            },
+            {
+                "challenge": "Static reports limit user exploration and analysis.",
+                "solution": "Added dynamic filters for stock selection and date range, enabling users to customize their analysis and gain deeper insights."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Stock_1.png",
+                "label": "Stock Market Analysis Dashboard"
+            }
+        ]
+    },
+
+    "blinkit-grocery-sales-analysis":{
+        "title": "Blinkit Grocery Sales Analysis",
+        "banner": "./Assets/Project-Img/Banners/Blinkit.png",
+        "github": "https://github.com/Harsh-Belekar/Blinkit-Grocery-Sales-Analysis-Excel",
+        "description": "The Blinkit Grocery Sales Analysis Dashboard is an end-to-end Excel data analytics project designed to analyze sales performance, customer preferences, and outlet efficiency across Blinkit's grocery network. The project involved data cleaning and transformation using Power Query, followed by in-depth analysis with Pivot Tables, Pivot Charts, and Excel formulas. An interactive dashboard was developed to provide stakeholders with actionable insights into product performance, outlet operations, and customer ratings. The dashboard enables users to explore sales trends across different outlet sizes, locations, item categories, and fat content types through dynamic filters and visualizations. It helps identify high-performing products, profitable outlet segments, and opportunities for business growth through data-driven decision-making.",
+
+        "tags": [
+            "Excel",
+            "Power Query",
+            "ETL",
+            "Data Cleaning",
+            "Pivot Tables",
+            "Pivot Charts",
+            "Business Analysis",
+            "Interactive Dashboard",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Interactive KPI Tracking",
+            "Sales Performance Analysis",
+            "Outlet Performance Analysis",
+            "Customer Preference Analysis",
+            "Advanced Insights",
+            "Clean and User-Friendly Dashboard Design",
+            "Business-focused Visual Storytelling"
+        ],
+
+        "impact": [
+            "💰 Revenue Insights: Identified the highest-performing product categories and outlet segments contributing to overall sales revenue, helping understand key revenue drivers.",
+            "🏪 Outlet Performance Optimization: Discovered that medium-sized outlets generated the highest revenue, providing valuable insights for future expansion and resource allocation strategies.",
+            "🥗 Customer Preference Analysis: Found that Low Fat products accounted for the majority of sales, highlighting changing customer preferences toward healthier options.",
+            "📦 Product Category Insights: Identified Fruits & Vegetables and Snack Foods as the top-selling categories, helping prioritize inventory management and promotional campaigns.",
+            "⭐ Customer Satisfaction Monitoring: Analyzed customer ratings across outlet types, enabling better understanding of service quality and customer experience.",
+            "📊 Data-Driven Decision Making: Transformed raw sales data into actionable business intelligence through an interactive dashboard that supports strategic planning and operational improvements."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The dataset contained multiple representations of the same category (e.g., 'Low Fat', 'low fat', and 'LF'), leading to inaccurate analysis.",
+                "solution": "Used Power Query to standardize categorical values and ensure consistency across the dataset before analysis."
+            },
+            {
+                "challenge": "Several records contained missing values, particularly in fields such as Item Weight.",
+                "solution": "Applied data cleaning techniques in Power Query to handle missing values and improve data quality."
+            },
+            {
+                "challenge": "Raw transactional data was difficult to interpret directly and lacked business context.",
+                "solution": "Created Pivot Tables, calculated KPIs, and designed visualizations that transformed complex data into easy-to-understand insights."
+            },
+            {
+                "challenge": "Static reports limited the ability to explore data from different perspectives.",
+                "solution": "Implemented slicers and dynamic Pivot Charts, allowing users to interactively filter and analyze data based on outlet size, location, and item type."
+            },
+            {
+                "challenge": "Large datasets can overwhelm stakeholders when presented in tabular format.",
+                "solution": "Designed a visually appealing dashboard with KPIs, charts, and business-focused insights to improve readability and decision-making efficiency."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Blinkit_1.png",
+                "label": "Blinkit Analysis Dashboard"
+            }
+        ]
+    },
+
+    "ferns-petals-sales-analysis":{
+        "title": "Ferns & Petals Sales Analysis",
+        "banner": "./Assets/Project-Img/Banners/Ferns.png",
+        "github": "https://github.com/Harsh-Belekar/FNP-Sales-Analysis-Excel",
+        "description": "Developed an interactive sales analytics solution for Ferns & Petals, a gifting and e-commerce brand specializing in occasion-based products such as cakes, plants, sweets, soft toys, and personalized gifts. The project involved extracting, cleaning, transforming, and analyzing sales data from multiple datasets using Microsoft Excel, Power Query, and Power Pivot. Built an interactive dashboard to evaluate key business metrics, including revenue performance, customer purchasing behavior, product popularity, delivery efficiency, and occasion-wise sales trends. The analysis helped identify top-performing products, high-revenue cities, seasonal demand patterns, and customer segments, enabling data-driven business decisions and operational improvements.",
+
+        "tags": [
+            "Excel",
+            "Power Query",
+            "ETL",
+            "Data Cleaning",
+            "Data Modeling",
+            "Pivot Tables",
+            "Pivot Charts",
+            "Business Analysis",
+            "Interactive Dashboard",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Interactive Sales Dashboard with KPI Cards",
+            "End-to-End ETL Process using Power Query",
+            "Data Modeling with Power Pivot (Fact-Dimension Relationships)",
+            "Revenue Analysis by Category, Occasion, and Month",
+            "Product Performance & Top Revenue-Generating Products",
+            "City-wise Sales and Order Distribution Analysis",
+            "Customer Behavior Analysis by Gender",
+            "Average Delivery Time & Order Fulfillment Analysis",
+            "Dynamic Filtering using Slicers",
+            "Business Insights & Reporting for Decision-Making"
+        ],
+
+        "impact": [
+            "📈 Revenue Performance Analysis: Identified the highest revenue-generating product categories and occasions.Analyzed monthly sales trends to uncover seasonal demand fluctuations.",
+            "🎉 Occasion-Based Sales Insights: Revealed that occasions such as Diwali, Anniversary, and Raksha Bandhan significantly contributed to revenue generation.Helped understand customer purchasing behavior during festive periods.",
+            "🏙️ Location Intelligence: Identified top-performing cities contributing the highest order volumes and revenue.Enabled location-based sales strategy recommendations.",
+            "👥 Customer Behavior Insights: Analyzed gender-wise purchasing patterns and spending behavior. Supported targeted marketing and customer segmentation initiatives.",
+            "🚚 Operational Efficiency: Measured average delivery time and evaluated fulfillment performance.Highlighted opportunities to improve delivery operations and customer satisfaction.",
+            "📊 Business Decision Support: Transformed raw transactional data into actionable insights through an interactive dashboard.Provided stakeholders with a centralized view of sales performance and key KPIs."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Sales data was distributed across multiple CSV files containing customer, product, and order information.",
+                "solution": "Used Power Query to extract, clean, standardize, and merge datasets into a structured format suitable for analysis."
+            },
+            {
+                "challenge": "Customer, product, and order data needed to be connected for accurate reporting.",
+                "solution": "Created a star schema data model in Power Pivot using Customer_ID and Product_ID relationships."
+            },
+            {
+                "challenge": "Raw data did not directly provide KPIs such as revenue, average order value, and delivery time.",
+                "solution": "Developed calculated columns and DAX measures to generate business-focused performance metrics."
+            },
+            {
+                "challenge": "Large volumes of sales data were difficult to interpret through raw tables.",
+                "solution": "Designed an interactive dashboard with KPI cards, charts, and slicers to make insights easily accessible and actionable."
+            },
+            {
+                "challenge": "Stakeholders needed recommendations rather than just data summaries.",
+                "solution": "Performed trend analysis and comparative analysis to uncover revenue drivers, customer behavior patterns, and operational improvement opportunities."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Ferns_1.png",
+                "label": "Ferns & Petals Analysis Dashboard"
+            }
+        ]
+    },
+
+    "global-superstore-sales-analysis":{
+        "title": "Global Superstore Sales Analysis",
+        "banner": "./Assets/Project-Img/Banners/Superstore.png",
+        "github": "https://github.com/Harsh-Belekar/Global-Superstore-Sales-Analysis-Excel",
+        "description": "Developed an interactive Sales Analysis Dashboard in Microsoft Excel to analyze and monitor the performance of a retail superstore business. The project focuses on evaluating key business metrics such as sales, profit, customer segments, product categories, regional performance, and delivery efficiency. Using Pivot Tables, Pivot Charts, and Slicers, the dashboard enables users to explore data dynamically and uncover actionable insights that support strategic decision-making. The solution helps identify top-performing products, profitable regions, seasonal sales patterns, and customer behavior trends.",
+
+        "tags": [
+            "Excel",
+            "Power Query",
+            "Data Cleaning",
+            "Pivot Tables",
+            "Business Analysis",
+            "Pivot Charts",
+            "Interactive Dashboard",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Interactive Sales Trend Analysis by Month and Year",
+            "Regional Sales Performance Analysis",
+            "State-wise Sales Distribution",
+            "Product Category & Sub-Category Performance Analysis",
+            "Clean and User-Friendly Dashboard Design",
+            "Customer Segment Analysis (Consumer, Corporate, Home Office)",
+            "Dynamic KPI Cards",
+            "Dynamic Filtering using Slicers",
+            "Business Problem Documentation & Detailed Project Report"
+        ],
+
+        "impact": [
+            "📈 Sales Performance Insights: Analyzed $22.97M+ in total sales across multiple years and regions.Identified seasonal sales peaks during key business periods, enabling better demand forecasting.",
+            "🌎 Regional Performance Analysis: Discovered that the West Region contributed the highest share of sales (32%). Highlighted lower-performing regions that may require targeted marketing and operational improvements.",
+            "🛒 Product & Category Optimization: Identified top-performing products driving significant revenue. Revealed category-level performance differences, helping prioritize profitable product lines.",
+            "👥 Customer Segmentation Insights: Found that the Consumer Segment accounted for 50% of total sales, making it the most valuable customer group. Enabled better customer targeting and segmentation strategies.",
+            "📊 Business Decision Support: Transformed raw transactional data into a centralized decision-making dashboard. Improved visibility into sales, profit, discounts, and delivery performance through interactive reporting."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Analyzing thousands of transaction records manually was time-consuming and inefficient.",
+                "solution": "Used Pivot Tables and Pivot Charts to summarize and aggregate data efficiently for faster analysis."
+            },
+            {
+                "challenge": "Important KPIs were scattered across multiple data fields.",
+                "solution": "Designed KPI Cards to provide a quick overview of Sales, Profit, Orders, Customers, Discounts, and Delivery Performance."
+            },
+            {
+                "challenge": "Raw data did not clearly reveal trends or performance patterns.",
+                "solution": "Created interactive visualizations and filters to uncover regional, category, product, and customer segment insights."
+            },
+            {
+                "challenge": "Creating a user-friendly dashboard with dynamic analysis capabilities.",
+                "solution": "Implemented Slicers and interconnected Pivot Tables to enable real-time filtering and interactive exploration of data."
+            },
+            {
+                "challenge": "Stakeholders needed a concise way to understand business performance.",
+                "solution": "Developed a professional dashboard along with a Business Problem document and Project Report to communicate insights clearly and support decision-making."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Superstore_1.png",
+                "label": "Global Superstore Analysis Dashboard"
+            }
+        ]
+    },
+
+    "e-commerce-sales-analysis":{
+        "title": "E-Commerce Sales Analysis",
+        "banner": "./Assets/Project-Img/Banners/E-Commerce.png",
+        "github": "https://github.com/Harsh-Belekar/Global-Ecommerce-Sales-Analysis-Excel",
+        "description": "Developed an interactive Excel-based Sales Analysis Dashboard for Global E-Commerce Inc. to analyze business performance across regions, product categories, customer segments, and payment methods. The project involved transforming raw transactional data into actionable business insights through data cleaning, KPI tracking, pivot table analysis, and dynamic visualizations. The dashboard was designed to help stakeholders monitor key business metrics, evaluate profitability trends, assess the impact of discounts on profits, identify top-performing products, and understand customer purchasing behavior. Along with the dashboard, a comprehensive Business Problem Analysis and Project Report were created to simulate a real-world business intelligence solution.",
+
+        "tags": [
+            "Excel",
+            "Power Query",
+            "Data Cleaning",
+            "Pivot Tables",
+            "Pivot Charts",
+            "Business Analysis",
+            "Interactive Dashboard",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Interactive Excel Dashboard with dynamic filtering",
+            "Dynamic KPI Cards",
+            "Regional Profit Analysis",
+            "Category-wise Sales & Profit Performance",
+            "Customer Segment Analysis",
+            "Payment Method Distribution Analysis",
+            "Profit vs Discount Impact Analysis",
+            "Clean and User-Friendly Dashboard Design",
+            "Monthly Sales Trend Analysis",
+            "Interactive Slicers",
+            "Business Problem Document & Detailed Project Report"
+        ],
+
+        "impact": [
+            "📊 Business Performance Overview: Analyzed 500 orders generating ₹666K+ in sales and ₹134K+ in profit. Measured operational efficiency with an average delivery time of 4.13 days.",
+            "🌍 Regional Insights: Identified the South Region as the highest-profit market.Highlighted regional performance gaps to support strategic resource allocation.",
+            "💰 Profitability Optimization: Discovered that moderate discounts (5-10%) deliver the best balance between sales growth and profitability.Revealed that excessive discounts significantly reduce profit margins.",
+            "👥 Customer Behavior Analysis: Found that the Home Office segment contributes the largest share of sales.Identified customer payment preferences, with Cash and PayPal being the most frequently used methods.",
+            "🛒 Product Performance Insights: Highlighted top-selling products such as Laptops, Chairs, and Pens. Enabled data-driven inventory and marketing decisions."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Transforming Raw Data into Actionable Insights",
+                "solution": "Cleaned and structured the dataset using Excel functions, ensuring accurate analysis and reliable dashboard outputs."
+            },
+            {
+                "challenge": "Identifying Profit Drivers Across Multiple Dimensions",
+                "solution": "Created pivot-table-based analyses to evaluate performance by region, category, customer segment, and product."
+            },
+            {
+                "challenge": "Measuring the Impact of Discounts on Profitability",
+                "solution": "Developed a dedicated Profit vs Discount analysis to uncover how discount levels affect profit margins."
+            },
+            {
+                "challenge": "Presenting Complex Data in a User-Friendly Format",
+                "solution": "Designed an interactive dashboard with KPI cards, charts, and slicers to enable quick exploration and decision-making."
+            },
+            {
+                "challenge": "Simulating a Real Business Scenario",
+                "solution": "Created a detailed Business Problem statement and Project Report to demonstrate how data analytics can solve real-world business challenges."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/E-Commerce_1.png",
+                "label": "E-Commerce Sales Analysis Dashboard"
+            }
+        ]
+    },
+
+    "inventory-data-analysis":{
+        "title": "Inventory Data Analysis",
+        "banner": "./Assets/Project-Img/Banners/Inventory.png",
+        "github": "https://github.com/Harsh-Belekar/Inventory-Data-Analysis",
+        "description": "The Inventory Data Analysis & Optimization project is an end-to-end supply chain and inventory analytics solution designed to improve inventory management, reduce operational costs, and optimize procurement decisions through data-driven insights. Using historical data from inventory records, sales transactions, purchase orders, supplier invoices, and product pricing, the project analyzes inventory performance across multiple dimensions including demand forecasting, inventory turnover, ABC classification, EOQ modeling, reorder point calculation, supplier lead time evaluation, carrying cost assessment, and procurement efficiency. The analysis identifies high-value products, slow-moving inventory, stockout risks, supplier bottlenecks, and excess inventory carrying costs. Based on these findings, a comprehensive inventory management strategy is proposed to improve working capital utilization, enhance product availability, and support scalable business growth.",
+
+        "tags": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook",
+            "Inventory Analytics",
+            "Demand Forecasting",
+            "Supply Chain Analysis",
+            "Business Intelligence",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Demand Forecasting",
+            "ABC Inventory Analysis",
+            "Inventory Turnover Analysis",
+            "EOQ (Economic Order Quantity) Modeling",
+            "Reorder Point Analysis",
+            "Lead Time & Procurement Analysis",
+            "Carrying Cost Analysis",
+            "Process Improvement Assessment",
+            "Interactive Visual Analytics"
+        ],
+
+        "impact": [
+            "📈 Improved Demand Planning: Forecasting analysis revealed demand patterns and seasonality trends.Enabled proactive inventory replenishment planning.",
+            "📦 Better Inventory Prioritization: ABC Analysis identified a small group of products generating the majority of inventory value.Allowed management to focus resources on critical inventory items.",
+            "💵 Reduced Inventory Costs: EOQ and carrying cost analysis uncovered opportunities to lower ordering and holding expenses.Recommended optimal stock levels for cost-efficient operations.",
+            "🔄 Enhanced Inventory Efficiency: Inventory turnover analysis identified slow-moving products occupying valuable warehouse space.Improved working capital utilization through inventory optimization.",
+            "🚚 Supplier Performance Optimization: Lead time analysis highlighted vendors causing procurement delays.Supported supplier evaluation and negotiation strategies.",
+            "🚨 Reduced Stockout Risk: Reorder point calculations provided clear replenishment triggers.Improved inventory availability and customer service levels.",
+            "📊 Data-Driven Decision Making: Transformed raw inventory and procurement data into actionable business insights.Enabled strategic inventory planning supported by quantitative analysis."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The project involved multiple large datasets containing inventory, purchases, invoices, sales, and pricing information.",
+                "solution": "Performed extensive data cleaning, standardization, feature engineering, and integration to create a unified analytical dataset."
+            },
+            {
+                "challenge": "Inventory records contained multiple size formats such as: 750mL, 1.75L, 3/100mL, 750mL + 2/, 5/2 Oz, Unknown values",
+                "solution": "Developed custom parsing and conversion logic to standardize all product sizes into a common milliliter-based format."
+            },
+            {
+                "challenge": "Raw data alone could not accurately identify inventory inefficiencies.",
+                "solution": "Created inventory KPIs including: Inventory Turnover Ratio, EOQ, Reorder Point, Carrying Cost, Supplier Lead Time Metrics"
+            },
+            {
+                "challenge": "Vendor performance varied significantly across suppliers.",
+                "solution": "Calculated procurement lead times and payment delays to identify bottlenecks and vendor-related risks."
+            },
+            {
+                "challenge": "The case study required translating inventory management objectives into measurable analytical models.",
+                "solution": "Implemented industry-standard inventory optimization techniques including: Demand Forecasting, ABC Analysis, EOQ Modeling, Reorder Point Analysis, Inventory Turnover Analysis, Carrying Cost Evaluation"
+            },
+            {
+                "challenge": "Analytical findings needed to be translated into practical business strategies.",
+                "solution": "Developed a comprehensive inventory management framework focused on: Demand-driven replenishment, Inventory prioritization, Supplier optimization, Cost reduction, Working capital improvement"
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Inventory_1.png",
+                "label": "Overall daily demand"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Inventory_2.png",
+                "label": "Demand Forecast"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Inventory_3.png",
+                "label": "ABC Analysis-Pareto Chart"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Inventory_4.png",
+                "label": "Top 20% High-Value Products"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Inventory_5.png",
+                "label": "Sales Value Contribution by ABC Category"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Inventory_6.png",
+                "label": "Top 10 Products by EOQ"
+            }
+        ]
+    },
+
+    "bank-loan-analysis":{
+        "title": "Bank Loan Analysis",
+        "banner": "./Assets/Project-Img/Banners/Bank Loan.png",
+        "github": "https://github.com/Harsh-Belekar/Bank-Loan-Analysis-Python",
+        "description": "The Bank Loan Analysis Project is an end-to-end data analytics solution designed to evaluate loan portfolio performance, borrower behavior, repayment trends, and lending risk. Using Python and data visualization techniques, the project analyzes over 38,000 loan applications to identify profitable customer segments, high-risk borrowers, regional lending patterns, and key drivers of loan defaults. The analysis focuses on critical banking KPIs such as total loan applications, funded amount, repayments received, interest rates, debt-to-income ratios, and loan status performance. By segmenting borrowers based on employment length, home ownership, loan purpose, state, and loan term, the project provides actionable insights that support better underwriting decisions, risk mitigation, and portfolio optimization. This project demonstrates how data-driven decision-making can help financial institutions improve profitability, reduce losses, and build a more sustainable lending strategy.",
+
+        "tags": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook",
+            "Data Cleaning",
+            "Data Visualization"
+        ],
+
+        "features": [
+            "Loan Portfolio Performance Analysis",
+            "KPI Dashboard Development",
+            "Good Loan vs Bad Loan Segmentation",
+            "State-wise Lending & Repayment Analysis",
+            "Monthly Trend Analysis",
+            "Home Ownership Risk Assessment",
+            "Employment Length Analysis",
+            "Loan Purpose Breakdown",
+            "Risk Identification & Loss Analysis",
+            "Business Recommendations & Strategic Insights"
+        ],
+
+        "impact": [
+            "📈 Portfolio Performance: Analyzed 38,576 loan applications, Total Funded Amount: $435.76 Million, Total Amount Received: $473.07 Million, Generated a Net Portfolio Return of $37.31 Million.",
+            "✅ Loan Quality Assessment: Good Loans accounted for 86.18% of all applications, Good Loans generated approximately $65.56 Million in profit, Identified Bad Loans contributing to $28.25 Million in losses.",
+            "🎯 Customer Segmentation Insights: Borrowers with 10+ years of employment were identified as the most reliable customers, Mortgage holders demonstrated the strongest repayment behavior, Renters and borrowers with less than 1 year of employment were identified as higher-risk segments.",
+            "🌍 Geographic Insights: California emerged as the highest-performing state in terms of loan funding and repayments, Identified regional concentration risk due to excessive dependence on a single market.",
+            "💼 Business Impact: Enabled data-driven lending decisions, Identified opportunities to reduce charge-offs and portfolio losses, Provided actionable recommendations for risk-based lending strategies, Improved visibility into borrower behavior and portfolio health."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The dataset contained thousands of loan records with multiple borrower, financial, and repayment attributes.",
+                "solution": "Applied data cleaning, preprocessing, and feature engineering techniques using Pandas to prepare the data for analysis."
+            },
+            {
+                "challenge": "The bank lacked visibility into which customer segments were contributing most to loan defaults.",
+                "solution": "Segmented borrowers based on employment length, home ownership, loan purpose, and loan status to identify risk-prone customer groups."
+            },
+            {
+                "challenge": "Determining whether the overall loan portfolio was generating sustainable returns.",
+                "solution": "Developed KPI metrics comparing funded amounts against repayments and analyzed Good Loans versus Bad Loans to evaluate profitability."
+            },
+            {
+                "challenge": "Loan activity was heavily concentrated in specific states, increasing geographic risk exposure.",
+                "solution": "Conducted state-level lending analysis to identify concentration risks and recommend geographic diversification strategies."
+            },
+            {
+                "challenge": "Raw financial data alone could not support strategic decision-making.",
+                "solution": "Created visualizations and business-focused insights that transformed complex data into actionable recommendations for stakeholders."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Loan_1.png",
+                "label": "Total Funded Amount by Month"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Loan_2.png",
+                "label": "Total Funded Amount by State"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Loan_3.png",
+                "label": "Total Funded Amount by Term"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Loan_4.png",
+                "label": "Total Funded Amount by Employee Length"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Loan_5.png",
+                "label": "Total Funded Amount by Loan Purpose"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Loan_6.png",
+                "label": "Total Amount Received by Home Ownership"
+            }
+        ]
+    },
+
+    "diwali-sales-analysis":{
+        "title": "Diwali Sales Analysis",
+        "banner": "./Assets/Project-Img/Banners/Diwali.png",
+        "github": "https://github.com/Harsh-Belekar/Diwali-Sales-Analysis-Python",
+        "description": "The Diwali Sales Analysis project is an end-to-end Exploratory Data Analysis (EDA) project developed using Python to uncover customer purchasing behavior during the Diwali festive season. The project focuses on analyzing sales transactions across different customer demographics, states, occupations, marital statuses, and product categories to identify key revenue-driving factors. The analysis involves data cleaning, preprocessing, visualization, and business insight generation using real-world sales data. By examining customer trends and purchase patterns, the project helps businesses understand their most valuable customer segments and optimize marketing, inventory planning, and sales strategies for future festive campaigns. The project concludes with actionable business recommendations supported by data-driven insights and visualizations.",
+
+        "tags": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Data Cleaning",
+            "Data Preprocessing",
+            "Exploratory Data Analysis (EDA)",
+            "Data Visualization",
+            "Business Intelligence",
+            "Insight Generation",
+            "Report Writing",
+            "Jupyter Notebook"
+        ],
+
+        "features": [
+            "Data Cleaning & Preparation",
+            "Customer Demographics Analysis",
+            "Geographic Analysis",
+            "Occupation-Based Analysis",
+            "Product Performance Analysis",
+            "Business Insight Generation",
+            "Professional Documentation"
+        ],
+
+        "impact": [
+            "🎯 Customer Segmentation Insights: Identified Married Women aged 26-35 years as the most valuable customer segment, contributing the highest share of sales.",
+            "💰 Revenue Optimization Opportunities: Discovered that customers working in IT, Healthcare, and Aviation professions generate the highest revenue, helping businesses focus their marketing efforts.",
+            "🏙️ Regional Sales Insights: Identified Uttar Pradesh, Maharashtra, and Karnataka as the top-performing states, enabling region-specific promotional planning.",
+            "🛍️ Product Strategy Recommendations: Found that Clothing, Electronics, and Food categories are the most popular during the Diwali season, supporting better inventory and stock management.",
+            "📢 Marketing Strategy Enhancement: Provided actionable recommendations that can help businesses:- Improve customer targeting, Design personalized festive campaigns, Optimize promotional offers, Increase customer engagement and revenue.",
+            "📊 Data-Driven Decision Making: Transformed raw sales data into meaningful business insights that support strategic planning and informed decision-making."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The dataset contained missing values and unnecessary columns that could affect analysis accuracy.",
+                "solution": "Performed data cleaning by removing irrelevant columns and handling missing records before conducting analysis."
+            },
+            {
+                "challenge": "Raw sales data alone did not clearly reveal which customer groups were driving revenue.",
+                "solution": "Conducted demographic analysis based on gender, age group, and marital status to identify high-value customer segments."
+            },
+            {
+                "challenge": "Large datasets can be difficult to interpret without proper visualization.",
+                "solution": "Created multiple visualizations using Matplotlib and Seaborn to highlight trends, patterns, and revenue drivers."
+            },
+            {
+                "challenge": "Technical analysis alone provides limited value without actionable outcomes.",
+                "solution": "Translated analytical findings into business recommendations for marketing, customer targeting, inventory planning, and sales optimization."
+            },
+            {
+                "challenge": "Stakeholders require clear and understandable reports rather than raw code outputs.",
+                "solution": "Developed a comprehensive Project Report and Business Problem Statement supported by charts, insights, and conclusions for effective communication."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Diwali_1.png",
+                "label": "Male Female by Age"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Diwali_2.png",
+                "label": "Marital Status distribution"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Diwali_3.png",
+                "label": "Total sales by Occupation"
+            }
+        ]
+    },
+
+    "covid-19-in-india-analysis":{
+        "title": "COVID-19 in India Analysis",
+        "banner": "./Assets/Project-Img/Banners/COVID-19.png",
+        "github": "https://github.com/Harsh-Belekar/COVID-19-in-India-Data-Analysis",
+        "description": "The COVID-19 in India Data Analysis project is an end-to-end data analytics project that explores the spread of COVID-19 and the progress of vaccination campaigns across India. Using Python-based data analysis and visualization techniques, the project transforms raw pandemic datasets into meaningful insights that help understand infection trends, recovery patterns, mortality rates, vaccination coverage, and demographic distribution. The project includes comprehensive data cleaning, preprocessing, feature engineering, exploratory data analysis (EDA), and reporting. Various visualizations were created to identify temporal trends, state-wise disparities, seasonal patterns, vaccination progress, and population-level impacts. The findings demonstrate how data-driven analysis can support public health planning, resource allocation, and policy decision-making during large-scale health crises.",
+
+        "tags": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Data Cleaning",
+            "Data Preprocessing",
+            "Exploratory Data Analysis (EDA)",
+            "Data Visualization",
+            "Insight Generation",
+            "Report Writing",
+            "Jupyter Notebook"
+        ],
+
+        "features": [
+            "Cleaned and standardized raw COVID-19 case and vaccination datasets.",
+            "Performed feature engineering using date-based attributes such as Year, Month, and Day.",
+            "Analyzed confirmed, recovered, and death cases across India.",
+            "Conducted year-wise and month-wise trend analysis.",
+            "Identified seasonal patterns in COVID-19 case growth.",
+            "Compared state-wise confirmed cases, recoveries, and fatalities.",
+            "Evaluated vaccination progress across different states.",
+            "Analyzed gender-wise vaccination distribution.",
+            "Studied age-group-wise vaccination coverage.",
+            "Examined vaccine dose distribution and vaccination rollout trends.",
+            "Generated actionable insights and recommendations from the analysis.",
+            "Produced a professional project report with visualizations and findings."
+        ],
+
+        "impact": [
+            "📈 Pandemic Trend Analysis: Identified multiple COVID-19 waves in India, with 2021 recording the highest number of confirmed cases, highlighting the impact of large-scale outbreaks.",
+            "🏥 Recovery & Mortality Insights: Observed consistently high recovery rates compared to confirmed cases, reflecting improvements in healthcare response and treatment effectiveness.",
+            "🗺️ State-wise Impact Assessment: Found that highly populated and urbanized states accounted for the majority of infections, recoveries, and fatalities, emphasizing the role of population density in disease spread.",
+            "💉 Vaccination Progress Evaluation: Analyzed vaccination rollout trends and observed rapid growth in vaccine administration following nationwide immunization campaigns.",
+            "👥 Demographic Vaccination Analysis: Identified differences in vaccination coverage across gender and age groups, providing insights into population-level vaccination behavior and outreach effectiveness.",
+            "📊 Data-Driven Decision Support: Demonstrated how analytical insights can support healthcare planning, resource allocation, and future pandemic preparedness strategies."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The raw COVID-19 dataset contained multiple naming inconsistencies, spelling variations, and duplicate representations of states and union territories.",
+                "solution": "Standardized state names and merged duplicate entries to ensure accurate aggregation and state-wise analysis."
+            },
+            {
+                "challenge": "The datasets contained missing values, invalid records, and special-case entries that could affect analysis accuracy.",
+                "solution": "Performed thorough data cleaning, handled missing values appropriately, and removed non-relevant records before analysis."
+            },
+            {
+                "challenge": "Analyzing COVID-19 trends across multiple years and states required efficient handling of large time-series datasets.",
+                "solution": "Used Pandas for efficient data manipulation, grouping, aggregation, and trend analysis."
+            },
+            {
+                "challenge": "Raw numerical data alone did not clearly reveal patterns and trends.",
+                "solution": "Created multiple visualizations and performed exploratory data analysis to uncover hidden trends, seasonal effects, and vaccination progress patterns."
+            },
+            {
+                "challenge": "The project involved separate datasets for COVID-19 cases and vaccination records.",
+                "solution": "Cleaned and analyzed both datasets systematically to provide a comprehensive view of India's pandemic and vaccination journey."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/COVID_1.png",
+                "label": "COVID-19 Case Distribution in India"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/COVID_2.png",
+                "label": "Year-wise COVID-19 Cases in India"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/COVID_3.png",
+                "label": "Day-wise Vaccination by Month"
+            }
+        ]
+    },
+
+    "vaultkey-password-manager":{
+        "title": "VaultKey Password Manager",
+        "banner": "./Assets/Project-Img/Banners/VaultKey.png",
+        "github": "https://github.com/Harsh-Belekar/VaultKey-Password_Manager",
+        "description": "VaultKey is a secure and modern desktop password manager developed in Python using Tkinter. The application helps users safely store, manage, and retrieve their website credentials through encrypted local storage. It features a clean graphical interface with dark/light mode support, password generation capabilities, clipboard integration, and strong encryption using the Cryptography library. Designed with security and usability in mind, VaultKey stores sensitive user data outside the project directory in a protected system location, ensuring compatibility with both Python execution and standalone executable (.exe) deployments created with PyInstaller.",
+
+        "tags": [
+            "Python",
+            "Tkinter",
+            "Cryptography",
+            "Pyperclip",
+            "JSON",
+            "OS",
+            "Sys",
+            "PyInstaller",
+            "Git"
+        ],
+
+        "features": [
+            "Secure Password Encryption",
+            "Strong Password Generator",
+            "Credential Search System",
+            "Dark & Light Mode",
+            "Clipboard Integration",
+            "Secure Local Data Storage",
+            "Standalone Executable Support",
+            "Git Security Practices"
+        ],
+
+        "impact": [
+            "📈 Enhanced Password Security: Implemented encryption-based storage to protect user credentials from unauthorized access and accidental exposure.",
+            "🚀 Improved User Productivity: Reduced the effort required to create and manage strong passwords through automated generation and quick search functionality.",
+            "🔒 Secure Data Management: Designed a secure storage mechanism that separates sensitive user data from application resources and source code.",
+            "💻 Real-World Application Development Experience: Gained practical experience in:- GUI Development, Encryption & Cybersecurity Concepts, File Handling, Application Packaging, Version Control with Git & GitHub.",
+            "📦 Production-Ready Desktop Application: Successfully developed a complete desktop software project with executable deployment support and professional documentation."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Storing passwords in plain text would expose sensitive user information.",
+                "solution": "Implemented Fernet encryption using the Cryptography library to encrypt passwords before storage and decrypt them only when needed."
+            },
+            {
+                "challenge": "PyInstaller bundles application assets into a temporary read-only location, preventing JSON files from being updated.",
+                "solution": "Created a dedicated writable application directory inside: `C:/Users/<Username>/AppData/Roaming/VaultKey/` and stored user data and encryption keys there."
+            },
+            {
+                "challenge": "Previously encrypted passwords became inaccessible when encryption keys changed.",
+                "solution": "Implemented a persistent key management system that generates and stores a single encryption key for long-term use."
+            },
+            {
+                "challenge": "Windows Defender occasionally flagged the generated executable due to encryption and executable packing.",
+                "solution": "Documented the issue in the project README and provided instructions for creating Windows Defender exclusions during development."
+            },
+            {
+                "challenge": "Creating a secure application that remained simple and intuitive for users.",
+                "solution": "Designed a clean Tkinter-based interface with theme switching, password generation, search functionality, and clear user feedback through message boxes."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/VaultKey_1.png",
+                "label": "Dark Mode"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/VaultKey_2.png",
+                "label": "Light Mode"
+            }
+        ]
+    },
+
+    "election-data-analysis":{
+        "title": "Election Data Analysis",
+        "banner": "./Assets/Project-Img/Banners/Election.png",
+        "github": "https://github.com/Harsh-Belekar/Election-Data-Analysis-SQL",
+        "description": "The Indian Election Data Analysis using SQL project is an end-to-end data analytics solution designed to analyze and extract insights from India's parliamentary election data. The project involves designing a relational database, creating table relationships, importing and managing election datasets, and performing advanced SQL analysis to uncover voting patterns, alliance performance, constituency-level results, and state-wise election trends. Using PostgreSQL, multiple election datasets were transformed into a structured database schema consisting of interconnected tables for constituencies, states, parties, and election results. Advanced SQL techniques such as joins, aggregations, Common Table Expressions (CTEs), subqueries, window functions, and conditional logic were used to answer real-world business questions and generate actionable insights from election data. This project demonstrates strong skills in database design, SQL querying, data modeling, and analytical problem-solving, making it a practical example of how raw data can be transformed into meaningful information for decision-making and reporting.",
+
+        "tags": [
+            "SQL",
+            "PostgreSQL",
+            "Database Design",
+            "ER Diagram Modeling",
+            "Joins",
+            "CTEs (Common Table Expressions)",
+            "Window Functions",
+            "Subqueries",
+            "Aggregation Functions",
+            "Query Optimization",
+            "Database Normalization"
+        ],
+
+        "features": [
+            "Designed and implemented a relational database with 5 interconnected election datasets.",
+            "Created an Entity Relationship Diagram (ERD) to model table relationships.",
+            "Established primary key and foreign key constraints for data integrity.",
+            "Classified political parties into NDA, I.N.D.I.A, and OTHER alliances using SQL.",
+            "Performed state-wise, constituency-wise, and alliance-wise election analysis.",
+            "Analyzed EVM votes versus postal votes across constituencies.",
+            "Calculated winning margins and party performance metrics.",
+            "Identified top-performing candidates using ranking and window functions.",
+            "Generated analytical reports through complex SQL queries.",
+            "Solved 15 real-world election analysis business questions."
+        ],
+
+        "impact": [
+            "📊 Election Performance Insights: Analyzed parliamentary election results to identify winning candidates, party performance, and alliance dominance across multiple states.",
+            "🏛️ Alliance-Wise Analysis: Successfully categorized political parties into NDA, I.N.D.I.A, and OTHER alliances and measured their overall seat distribution and electoral performance.",
+            "📈 Advanced SQL Analytics: Applied advanced SQL concepts including CTEs, window functions, subqueries, and multi-table joins to generate meaningful election insights.",
+            "🗺️ State & Constituency Intelligence: Provided detailed constituency-level and state-level election summaries, helping reveal voting patterns and regional political trends.",
+            "🧠 Real-World Data Analytics Experience: Strengthened practical experience in database design, data transformation, analytical querying, and business problem-solving using SQL."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Designing Relationships Between Multiple Election Datasets",
+                "solution": "Created a normalized relational database schema and established primary key-foreign key relationships between constituency, state, and party tables to ensure data consistency and efficient querying."
+            },
+            {
+                "challenge": "Alliance Classification of Political Parties",
+                "solution": "Added a custom party_alliance column and used SQL update logic to classify parties into NDA, I.N.D.I.A, and OTHER categories, enabling alliance-level analysis."
+            },
+            {
+                "challenge": "Performing Complex Multi-Table Analysis",
+                "solution": "Utilized SQL joins, aggregations, CTEs, and subqueries to combine data from multiple tables and answer advanced analytical questions."
+            },
+            {
+                "challenge": "Identifying Winners and Runner-Ups Efficiently",
+                "solution": "Implemented Window Functions (ROW_NUMBER()) to rank candidates within constituencies and accurately determine winners and runner-up candidates."
+            },
+            {
+                "challenge": "Extracting Meaningful Insights from Raw Election Data",
+                "solution": "Developed analytical SQL queries that transformed raw election records into actionable insights, including vote distributions, seat counts, alliance performance, and constituency-level summaries."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Election_1.png",
+                "label": "Database Schema"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Election_2.png",
+                "label": "SQL Query"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Election_3.png",
+                "label": "Query Output"
+            }
+        ]
+    },
+
+    "bank-transactions-sql-analysis":{
+        "title": "Bank Transactions SQL Analysis",
+        "banner": "./Assets/Project-Img/Banners/Bank Transactions.png",
+        "github": "https://github.com/Harsh-Belekar/Bank-Transactions-Fraud-Detection-SQL-Project",
+        "description": "Developed an comprehensive SQL data analysis project based on a real-world banking environment. Designed a normalized relational database with 8 interconnected tables, imported and managed 80,000+ transaction records, and solved 25+ advanced business problems using PostgreSQL. The project focused on customer behavior analysis, fraud detection, transaction trends, branch performance evaluation, and business reporting. Advanced SQL techniques such as Joins, Aggregations, Common Table Expressions (CTEs), Window Functions, and Query Optimization were used to generate actionable business insights from raw financial data.",
+
+        "tags": [
+            "SQL",
+            "PostgreSQL",
+            "Database Design",
+            "ER Diagram Modeling",
+            "Joins",
+            "CTEs (Common Table Expressions)",
+            "Window Functions",
+            "Subqueries",
+            "Aggregation Functions"
+        ],
+
+        "features": [
+            "Designed a normalized banking database with 8 interrelated tables.",
+            "Imported and managed 80,000+ records from multiple CSV files.",
+            "Performed fraud detection analysis using transaction patterns.",
+            "Analyzed monthly transaction trends and customer activity.",
+            "Identified high-value customers and customer segments.",
+            "Evaluated branch and employee performance using SQL analytics.",
+            "Compared transaction channels such as ATM, Online, and Cash.",
+            "Applied advanced SQL concepts including CTEs and Window Functions.",
+            "Generated business-focused reports for decision-making.",
+            "Solved 25+ real-world business questions using SQL."
+        ],
+
+        "impact": [
+            "📈 Fraud Detection & Risk Analysis: Identified suspicious transactions and calculated branch-wise fraud percentages. Demonstrated how SQL can support risk management and anomaly detection in financial institutions.",
+            "👥 Customer Insights: Discovered high-value customers based on account balances and transaction behavior. Segmented customers for potential business and marketing strategies.",
+            "📊 Transaction Trend Analysis: Analyzed transaction volumes and values over time to identify growth patterns and seasonal trends. Generated insights into customer transaction preferences.",
+            "🔍 Branch & Employee Performance: Evaluated branch-level performance using transaction activity and account balances. Assessed employee contribution through customer and account analysis.",
+            "📝 Business Intelligence Reporting: Built analytical SQL reports that transform raw banking data into actionable business insights. Simulated real-world reporting scenarios commonly performed by Data Analysts in the banking sector."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Designing a Realistic Banking Database",
+                "solution": "Created a normalized relational schema with 8 interconnected tables to accurately represent banking operations while maintaining data integrity and scalability."
+            },
+            {
+                "challenge": "Managing Large Transaction Data",
+                "solution": "Imported and structured 80,000+ records efficiently using PostgreSQL and optimized queries to ensure smooth analysis performance."
+            },
+            {
+                "challenge": "Solving Complex Business Questions",
+                "solution": "Used advanced SQL techniques such as CTEs, Window Functions, Subqueries, and Aggregations to answer real-world banking business problems."
+            },
+            {
+                "challenge": "Fraud Detection Analysis",
+                "solution": "Developed SQL queries to identify suspicious transactions, calculate fraud percentages, and highlight high-risk branches."
+            },
+            {
+                "challenge": "Converting Raw Data into Insights",
+                "solution": "Created analytical reports focused on customer behavior, transaction trends, and performance metrics, enabling data-driven decision-making."
+            },
+            {
+                "challenge": "Query Performance Optimization",
+                "solution": "Applied indexing strategies and optimized SQL query structures to improve execution speed and handle large datasets effectively."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Transactions_1.png",
+                "label": "Database Schema"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Transactions_2.png",
+                "label": "SQL Query"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Bank_Transactions_3.png",
+                "label": "Query Output"
+            }
+        ]
+    },
+
+    "music-store-sql-analysis":{
+        "title": "Music Store SQL Analysis",
+        "banner": "./Assets/Project-Img/Banners/Music.png",
+        "github": "https://github.com/Harsh-Belekar/Music-Store-SQL-Analysis",
+        "description": "The Music Store SQL Analysis project is a data analytics project built using PostgreSQL to analyze a digital music store database. The database consists of 11 interconnected tables containing information about customers, employees, invoices, tracks, playlists, artists, albums, genres, and media types. The project focuses on solving real-world business questions using SQL queries. Through data exploration and analysis, it uncovers valuable insights related to customer purchasing behavior, sales performance, popular music genres, top-selling artists, and revenue distribution across different countries. The project demonstrates strong SQL skills, including complex joins, aggregations, subqueries, Common Table Expressions (CTEs), and business-oriented data analysis.",
+
+        "tags": [
+            "SQL",
+            "PostgreSQL",
+            "Database Design",
+            "ER Diagram Modeling",
+            "Joins",
+            "CTEs (Common Table Expressions)",
+            "Window Functions",
+            "Subqueries",
+            "Aggregation Functions"
+        ],
+
+        "features": [
+            "Designed and managed a relational database containing 11 connected tables.",
+            "Created database schema and relationships using primary and foreign keys.",
+            "Imported and analyzed real-world music store data from CSV files.",
+            "Performed complex SQL operations including: Joins, Aggregate Functions, Group By & Having Clauses, Subqueries, Common Table Expressions (CTEs), Ordering & Ranking",
+            "Analyzed customer spending patterns and purchasing behavior.",
+            "Identified top customers, artists, genres, and revenue-generating countries.",
+            "Generated business insights from transactional sales data.",
+            "Visualized database relationships using an Entity Relationship (ER) Diagram."
+        ],
+
+        "impact": [
+            "📈 Revenue Analysis: Identified the countries contributing the highest revenue to the music store. Analyzed sales trends and revenue distribution across customers and regions.",
+            "👥 Customer Insights: Discovered the highest-spending customers. Evaluated customer purchasing behavior and loyalty patterns.",
+            "🎶 Music Preferences Analysis: Determined the most popular music genres based on sales. Identified best-selling artists and albums.",
+            "🏢 Business Decision Support: Generated actionable insights that could help optimize marketing strategies, customer targeting, and inventory planning. Demonstrated how SQL can transform raw transactional data into meaningful business intelligence.",
+            "💻 SQL Skill Development: Strengthened expertise in relational databases, data querying, and analytical problem-solving using PostgreSQL."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The database contained 11 interconnected tables with multiple foreign key relationships.",
+                "solution": "Studied the ER Diagram thoroughly and mapped relationships between tables before writing queries, ensuring accurate joins and data retrieval."
+            },
+            {
+                "challenge": "Many business questions required combining data from several tables simultaneously.",
+                "solution": "Utilized INNER JOINs, LEFT JOINs, and nested queries to efficiently connect related datasets and extract meaningful insights."
+            },
+            {
+                "challenge": "Raw query outputs did not directly answer business questions.",
+                "solution": "Applied aggregate functions, grouping, ranking, and filtering techniques to convert raw data into actionable business insights."
+            },
+            {
+                "challenge": "Importing multiple CSV files while maintaining data integrity and relationships.",
+                "solution": "Created structured PostgreSQL tables with appropriate primary and foreign key constraints before importing data, ensuring consistency across the database."
+            },
+            {
+                "challenge": "Some analytical queries became lengthy and difficult to manage.",
+                "solution": "Used CTEs, aliases, and modular query structures to improve readability, maintainability, and performance."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Music_1.png",
+                "label": "Database Schema"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Music_2.png",
+                "label": "SQL Query"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Music_3.png",
+                "label": "Query Output"
+            }
+        ]
+    },
+
+    "pizza-sales-sql-analysis":{
+        "title": "Pizza Sales SQL Analysis",
+        "banner": "./Assets/Project-Img/Banners/Pizza.png",
+        "github": "https://github.com/Harsh-Belekar/Pizza-Sales-SQL-Analysis",
+        "description": "Pizza Sales SQL Analysis is an end-to-end data analysis project focused on extracting meaningful business insights from a pizza restaurant's sales data using PostgreSQL. The project involves designing a relational database schema, importing and managing raw CSV datasets, and writing SQL queries ranging from basic data retrieval to advanced analytical reporting. The analysis explores customer ordering patterns, revenue generation, product performance, sales trends, and operational insights. Advanced SQL concepts such as Common Table Expressions (CTEs), Window Functions, Subqueries, Aggregations, and Joins were used to answer real-world business questions and support data-driven decision-making.",
+
+        "tags": [
+            "SQL",
+            "PostgreSQL",
+            "Database Design",
+            "ER Diagram Modeling",
+            "Joins",
+            "CTEs (Common Table Expressions)",
+            "Window Functions",
+            "Subqueries",
+            "Aggregation Functions"
+        ],
+
+        "features": [
+            "Designed and implemented a normalized relational database schema.",
+            "Imported and managed multiple CSV datasets.",
+            "Performed complex table joins across orders, pizzas, and pizza categories.",
+            "Analyzed sales performance using aggregation functions.",
+            "Identified peak ordering hours and customer purchasing patterns.",
+            "Calculated revenue contribution by pizza type, size, and category.",
+            "Ranked top-performing pizzas using Window Functions.",
+            "Analyzed daily sales trends and business performance metrics.",
+            "Solved 30+ business-oriented SQL problems from basic to advanced difficulty.",
+            "Documented the complete project workflow with schema diagrams and query outputs."
+        ],
+
+        "impact": [
+            "🍕 Product Performance Analysis: Identified the highest-selling pizza types and categories, helping understand customer preferences and menu popularity.",
+            "💰 Revenue Optimization Insights: Determined which pizza sizes and categories generated the highest revenue, providing valuable information for pricing and promotional strategies.",
+            "⏰ Peak Sales Hour Analysis: Discovered peak ordering periods during lunch hours, enabling better workforce planning and inventory management.",
+            "📊 Business Trend Analysis: Analyzed sales patterns across different dates and time periods to understand demand fluctuations and operational performance.",
+            "🏆 Advanced SQL Analytics: Applied Window Functions, CTEs, and Subqueries to generate ranked reports and uncover deeper business insights similar to real-world data analyst workflows."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Sales information was distributed across four different tables, making analysis complex.",
+                "solution": "Designed a relational schema and utilized JOIN operations to combine datasets efficiently and accurately."
+            },
+            {
+                "challenge": "Revenue was not directly available and needed to be calculated dynamically.",
+                "solution": "Combined order quantities with pizza prices using aggregate functions and grouping techniques to generate accurate revenue metrics."
+            },
+            {
+                "challenge": "Identifying top-performing products within each category required advanced analytical techniques.",
+                "solution": "Implemented Window Functions (ROW_NUMBER, RANK) and CTEs to create category-wise rankings and performance reports."
+            },
+            {
+                "challenge": "Determining peak business hours from raw order timestamps.",
+                "solution": "Used PostgreSQL date and time functions to extract hourly sales patterns and identify peak ordering periods."
+            },
+            {
+                "challenge": "Raw transactional data alone provided limited business value.",
+                "solution": "Developed analytical SQL queries that transformed data into meaningful KPIs, trends, and performance indicators for decision-making."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Pizza_1.png",
+                "label": "Database Schema"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Pizza_2.png",
+                "label": "SQL Query"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Pizza_3.png",
+                "label": "Query Output"
+            }
+        ]
+    }
+
+}

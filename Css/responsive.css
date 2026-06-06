@@ -37,6 +37,30 @@
         margin: 0 auto;
     }
 
+
+    /* ------------------------ */
+    /* Project Details          */
+    /* ------------------------ */
+    .project-details-view {
+        margin-top: 10px;
+    }
+
+    .details-banner-wrapper {
+        height: 340px;
+    }
+
+    .project-gallery-item img {
+        min-width: 254px;
+        max-width: 274px;
+        margin: 0 auto;
+    }
+
+    .project-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
     /* ------------------------ */
     /* Gallery                  */
     /* ------------------------ */
@@ -298,6 +322,51 @@
         height: 160px;
     }
 
+    /* ------------------------ */
+    /* Project Details          */
+    /* ------------------------ */
+    .project-details-view {
+        margin-top: 20px;
+    }
+
+    .back-btn,
+    .github-link-top {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .details-content-wrapper {
+        padding: 20px;
+    }
+
+    .details-banner-wrapper {
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+    .details-title {
+        font-size: 1.65rem;
+    }
+
+    .details-split-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .details-left-col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .impact-box {
+        margin-top: 10px;
+    }
+
+    .cs-block {
+        flex-direction: column;
+        gap: 4px;
+    }
+
 
     /* ------------------------ */
     /* Gallery                  */
@@ -424,6 +493,10 @@
         padding: 5px 8px;
     }
 
+    .sub-text-list::before {
+        bottom: 15px;
+    }
+
     /* ------------------------ */
     /* Project                  */
     /* ------------------------ */
@@ -467,6 +540,53 @@
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+
+    /* ------------------------ */
+    /* Project Details          */
+    /* ------------------------ */
+    .project-details-view {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .back-btn,
+    .github-link-top {
+        font-size: 0.8rem;
+    }
+
+    .details-banner-wrapper {
+        min-width: 194px;
+        max-width: 274px;
+        margin: 0 auto;
+        min-height: 130px;
+        max-height: 160px;
+        padding: 5px;
+    }
+
+    .details-title {
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+
+    .details-main-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .project-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-gallery-item img {
+        min-width: 194px;
+        max-width: 274px;
+        margin: 0 auto;
+        min-height: 130px;
+        max-height: 160px;
     }
 
 
