@@ -838,6 +838,10 @@ figure:hover {
     min-height: 45px;
 }
 
+.project-card:hover .project-description {
+    color: var(--title-text);
+}
+
 .tech-tags {
     display: flex;
     gap: 8px;

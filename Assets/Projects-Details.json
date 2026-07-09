@@ -2094,6 +2094,643 @@
                 "label": "Query Output"
             }
         ]
+    },
+
+    "vendor-performance-analysis":{
+        "title": "Vendor Performance Analysis",
+        "banner": "./Assets/Project-Img/Banners/Vendor.png",
+        "github": "https://github.com/Harsh-Belekar/Vender-Performance-Analysis-Python-SQL-PowerBI",
+        "description": "Developed an end-to-end company-level data analytics solution to evaluate vendor performance, optimize inventory management, and improve purchasing efficiency using real-world retail and wholesale datasets. The project involved building a complete data pipeline—from ingesting over 15 million records into a SQLite database, transforming and aggregating data with SQL, performing exploratory data analysis (EDA) using Python, and designing interactive Power BI dashboards for executive decision-making. A consolidated analytical dataset, vendor_sales_summary, was created by integrating six different business datasets through SQL joins and feature engineering. Key business metrics such as Gross Profit, Profit Margin, Stock Turnover, and Sales-to-Purchase Ratio were calculated to evaluate vendor profitability, cost efficiency, and inventory performance. The final solution enables stakeholders to identify top-performing vendors, detect underperforming brands, assess freight cost impact, analyze bulk purchasing benefits, and support strategic business decisions through interactive visual dashboards.",
+
+        "tags": [
+            "Python",
+            "SQL",
+            "SQLite",
+            "Pandas",
+            "Power BI",
+            "Jupyter Notebook",
+            "Matplotlib",
+            "Seaborn",
+            "ETL Pipeline Development",
+            "Data Visualization",
+            "Business Intelligence"
+        ],
+
+        "features": [
+            "Automated ETL Pipelines.",
+            "SQL Data Modeling.",
+            "Data Cleaning & Feature Engineering.",
+            "Exploratory Data Analysis (EDA).",
+            "Interactive Power BI Dashboards.",
+            "Business Decision Support."
+        ],
+
+        "impact": [
+            "📊 Business Performance Insights : Identified the top vendors contributing the highest sales and gross profit. Highlighted underperforming vendors requiring pricing or promotional improvements. Discovered profitability differences across vendors using data-driven analysis.",
+            "💰 Cost Optimization : Analyzed the relationship between bulk purchasing and unit purchase costs. Evaluated freight expenses as a percentage of sales to measure cost efficiency. Identified opportunities to reduce procurement and logistics costs.",
+            "📦 Inventory Optimization : Measured stock turnover to assess inventory movement. Detected products with inefficient inventory utilization. Supported inventory planning to reduce holding costs.",
+            "📈 Executive Reporting : Built interactive Power BI dashboards for management-level reporting. Delivered real-time business insights through KPI-driven visualizations. Simplified complex analytical results into actionable business intelligence.",
+            "⚡ Technical Achievement : Successfully processed and analyzed 15+ million transactional records. Designed a scalable ETL pipeline using Python and SQLite. Created reusable data transformation scripts for future data updates."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The project involved more than 15 million rows of transactional data, making direct loading inefficient.",
+                "solution": "Implemented a chunk-based ETL pipeline using Pandas and SQLAlchemy to efficiently ingest data into SQLite while minimizing memory consumption."
+            },
+            {
+                "challenge": "Business information was distributed across six separate datasets.",
+                "solution": "Designed SQL queries with CTEs and joins to build a centralized analytical table (vendor_sales_summary) for downstream analysis."
+            },
+            {
+                "challenge": "Missing values, inconsistent formatting, and duplicate information affected analysis accuracy.",
+                "solution": "Performed comprehensive data cleaning, standardized categorical fields, handled missing values, and engineered new business metrics for reliable reporting."
+            },
+            {
+                "challenge": "Large volumes of transactional data were difficult for business users to interpret.",
+                "solution": "Developed interactive Power BI dashboards featuring KPIs, charts, slicers, and drill-down capabilities, enabling stakeholders to quickly understand vendor performance and operational trends."
+            },
+            {
+                "challenge": "The project required answering real business questions related to vendor profitability, purchasing efficiency, and inventory optimization.",
+                "solution": "Applied exploratory data analysis, SQL aggregation, and business intelligence techniques to produce actionable insights that support strategic decision-making and vendor management."
+            }
+            
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Vendor_1.png",
+                "label": "Executive Summary"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Vendor_2.png",
+                "label": "Cost Efficiency & Inventory"
+            }
+        ]
+    },
+
+    "robotic-arm-vechile":{
+        "title": "Robotic Arm Vechile",
+        "banner": "./Assets/Project-Img/Banners/RAV.png",
+        "github": "https://github.com/Harsh-Belekar/Robotic-Arm-Vehicle",
+        "description": "Robotic Arm Vechile is an end-to-end embedded systems and robotics project that combines a 4-wheel drive mobile rover with a 4-DOF servo-controlled robotic arm, built using Arduino Uno. The project features a custom Android application developed with MIT App Inventor that enables real-time Bluetooth communication for controlling both vehicle navigation and robotic arm movements. The system supports manual controls, voice-command navigation, variable speed control, and precise manipulation of the robotic arm through independent control of the base, shoulder, elbow, and gripper servos. The project also includes a custom-designed power distribution system using an XL4015 DC-DC Buck Converter, ensuring stable operation of the Arduino, servo motors, and Bluetooth module. This project demonstrates the complete robotics development lifecycle—from hardware integration and circuit design to embedded programming, mobile application development, Bluetooth communication, and system testing.",
+
+        "tags": [
+            "Arduino Uno R3",
+            "L298N Motor Driver",
+            "HC-05 Bluetooth Module",
+            "4WD Gear Motor Chassis",
+            "4-DOF Servo Robotic Arm",
+            "Arduino IDE",
+            "C++",
+            "Buck Converter",
+            "Li-ion Battery",
+            "MIT App Inventor",
+            "Robotics"
+        ],
+
+        "features": [
+            "4WD Vehicle Navigation.",
+            "4-DOF Robotic Arm Control.",
+            "Android Mobile Application.",
+            "Voice Command Navigation.",
+            "Intelligent Power Distribution.",
+            "Embedded Software Architecture."
+        ],
+
+        "impact": [
+            "🚗 Successfully Designed & Built: Developed a fully functional Bluetooth-controlled robotic rover integrated with a 4-DOF robotic arm.",
+            "🦾 Mobile Robotics Integration : Successfully combined mobile navigation and robotic arm manipulation into a single embedded system.",
+            "🤖 Wireless Human–Robot Interaction : Enabled real-time remote operation through a custom Android application and Bluetooth communication.",
+            "⚙️ Practical Embedded Systems Experience : Applied concepts of embedded programming, motor control, PWM, serial communication, and hardware interfacing in a real-world robotics project.",
+            "📱 Mobile App Development : Designed and implemented an Android control application using MIT App Inventor with both manual and voice-based control modes.",
+            "🚀 Scalable Robotics Platform : Built a modular architecture that can be extended with future technologies such as ESP32, Wi-Fi, camera modules, object detection, autonomous navigation, and AI-based vision systems."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Supplying stable power to motors, servos, Arduino, and Bluetooth module",
+                "solution": "Designed a dedicated power distribution system using an XL4015 Buck Converter with separate regulated and motor power lines."
+            },
+            {
+                "challenge": "Protecting the HC-05 Bluetooth module from Arduino's 5V TX signal",
+                "solution": "Implemented a resistor-based voltage divider to safely reduce the logic voltage to approximately 3.3V."
+            },
+            {
+                "challenge": "Preventing servo jitter and unstable movement",
+                "solution": "Used incremental servo position updates, proper initialization, and stable regulated power."
+            },
+            {
+                "challenge": "Integrating simultaneous vehicle and robotic arm control",
+                "solution": "Developed a modular Arduino architecture with separate movement and arm-control functions."
+            },
+            {
+                "challenge": "Implementing responsive wireless control",
+                "solution": "Built a Bluetooth communication protocol between the Android application and Arduino for reliable command processing."
+            },
+            {
+                "challenge": "Providing intuitive robot operation",
+                "solution": "Developed a user-friendly Android interface with manual controls, speed adjustment, and voice-command functionality."
+            },
+            {
+                "challenge": "Managing multiple hardware components within limited Arduino resources",
+                "solution": "Carefully planned GPIO assignments, optimized memory usage, and adopted modular code organization for maintainability and scalability."
+            }
+
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/RAV_1.png",
+                "label": "Robotic Arm Vechile"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/RAV_2.png",
+                "label": "Circuit Diagram"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/RAV_3.png",
+                "label": "Robotic Arm"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/RAV_4.png",
+                "label": "Arm Vehicle"
+            }
+        ]
+    },
+
+    "python-projects":{
+        "title": "Python Projects Collection",
+        "banner": "./Assets/Project-Img/Banners/Python Projects.png",
+        "github": "https://github.com/Harsh-Belekar/Python-Projects",
+        "description": "Developed a comprehensive collection of 25+ Python projects covering automation, desktop GUI applications, games, API integrations, data handling, and object-oriented programming. These projects were built to strengthen core Python concepts while gaining practical experience with real-world applications. The repository includes interactive games, productivity tools, automation scripts, API-based applications, and GUI software developed using Python libraries such as Tkinter, Turtle, Pandas, Requests, and more. Each project is organized with a clean folder structure, detailed documentation, screenshots, and reusable code, making the repository both a learning resource and a showcase of Python development skills.",
+
+        "tags": [
+            "Python",
+            "Tkinter",
+            "Turtle Graphics",
+            "Pandas",
+            "Requests",
+            "SMTP",
+            "APIs",
+            "JSON",
+            "VS Code",
+            "Git",
+            "GitHub"
+        ],
+
+        "features": [
+            "Built 25+ standalone Python projects covering multiple domains.",
+            "Interactive desktop applications using Tkinter.",
+            "Classic games developed using Turtle Graphics.",
+            "Real-world automation projects for emails, alerts, and notifications.",
+            "API integration with multiple public services.",
+            "File handling using CSV, TXT, and JSON.",
+            "Object-Oriented Programming (OOP) implementation.",
+            "GUI-based productivity applications.",
+            "Real-time stock, weather, and ISS tracking.",
+            "Clean project architecture with modular code.",
+            "Well-documented repositories including README files and screenshots.",
+            "Beginner-friendly and reusable source code."
+        ],
+
+        "impact": [
+            "📚 Comprehensive Learning Portfolio: Created a collection of 25+ diverse Python applications demonstrating proficiency across multiple Python domains.",
+            "🧠 Strong Python Fundamentals: Strengthened knowledge of:- Object-Oriented Programming, Functions & Modules, Exception Handling, File Handling, API Integration, GUI Development, Automation",
+            "🌐 Real-World Application Development: Built practical projects including:- Weather Alerts, Stock News Notifications, Birthday Email Automation, ISS Tracker, Flash Card Learning App, Pomodoro Timer, Mail Merge System",
+            "🎮 Interactive Desktop Games: Developed multiple playable games such as:- Snake Game, Ping Pong Game, Turtle Crossing Game, Quiz Game, Higher Lower Game, Number Guessing Game",
+            "📈 Professional GitHub Portfolio: Created well-structured repositories with documentation, screenshots, badges, and organized source code to showcase development skills professionally."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Working with Multiple APIs",
+                "solution": "Integrated several REST APIs using the Requests library and learned JSON parsing, authentication, and error handling."
+            },
+            {
+                "challenge": "GUI Application Development",
+                "solution": "Designed responsive desktop applications using Tkinter by managing widgets, events, timers, and layouts effectively."
+            },
+            {
+                "challenge": "Game Logic Implementation",
+                "solution": "Implemented collision detection, score tracking, animations, and keyboard controls using Turtle Graphics and object-oriented programming."
+            },
+            {
+                "challenge": "Code Organization",
+                "solution": "Structured projects into reusable classes and modules to improve readability, maintainability, and scalability."
+            },
+            {
+                "challenge": "Automation Workflows",
+                "solution": "Built automation scripts for sending emails, SMS alerts, monitoring APIs, and scheduling repetitive tasks using Python's standard libraries and external services."
+            },
+            {
+                "challenge": "Documentation & Project Presentation",
+                "solution": "Prepared detailed README files with project descriptions, setup guides, screenshots, and technology badges, making each project easy to understand and use."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_1.png",
+                "label": "Turtle Race"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_2.png",
+                "label": "Snake Game"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_3.png",
+                "label": "Turtle Road Crossing Game"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_4.png",
+                "label": "Indian State Game"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_5.png",
+                "label": "Ping Pong Game"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_6.png",
+                "label": "Pomodoro Timer"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_7.png",
+                "label": "Flash Card App"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Python_8.png",
+                "label": "Kanye Quotes"
+            }
+        ]
+    },
+
+    "turtle-race":{
+        "title": "Turtle Race Game",
+        "banner": "./Assets/Project-Img/Banners/Turtle Race.png",
+        "github": "https://github.com/Harsh-Belekar/Python-Projects/tree/main/12_Turtle_Race",
+        "description": "Developed an interactive Turtle Race Game using Python's Turtle Graphics module, where players place a bet on the turtle they believe will win before the race begins. Six colorful turtles race across the screen with randomly generated movement speeds, making each race unique and unpredictable. The project demonstrates event-driven programming, randomization, user interaction, graphical animation, and object-oriented concepts while providing an engaging desktop gaming experience.",
+
+        "tags": [
+            "Python",
+            "Random",
+            "Turtle Graphics",
+            "VS Code"
+        ],
+
+        "features": [
+            "Six colorful racing turtles with unique colors.",
+            "User betting system before the race starts.",
+            "Random movement for each turtle, ensuring unpredictable outcomes.",
+            "Animated race using Turtle Graphics.",
+            "Automatic winner detection.",
+            "Displays whether the player's prediction was correct.",
+            "Interactive graphical interface with race finish line.",
+            "Beginner-friendly implementation demonstrating event-driven programming."
+        ],
+
+        "impact": [
+            "🐢 Interactive Racing Experience : Created an engaging racing game where users actively participate by predicting the winning turtle before the race begins.",
+            "🎲 Randomized Gameplay : Implemented random turtle movements so that every race is different, increasing replayability and excitement.",
+            "🎨 Graphics Programming Skills : Gained practical experience in creating graphical applications and animations using Python's Turtle Graphics library.",
+            "🧠 Improved Programming Fundamentals : Strengthened understanding of loops, conditional statements, lists, functions, user input handling, and object-oriented programming concepts.",
+            "📚 Foundation for Future Game Development : Established a solid understanding of game loops, animation, collision boundaries, and graphical object management, providing a strong base for developing more advanced Python games."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Animating Multiple Turtles Simultaneously",
+                "solution": "Created a list of turtle objects and updated each turtle's position within the main game loop to produce smooth race animations."
+            },
+            {
+                "challenge": "Creating Unpredictable Race Results",
+                "solution": "Used Python's random.randint() function to generate random movement distances for each turtle, ensuring every race produces a unique outcome."
+            },
+            {
+                "challenge": "Managing User Bets",
+                "solution": "Utilized Turtle's textinput() dialog to collect the player's selected turtle color before the race and compared it with the winning turtle after the race finished."
+            },
+            {
+                "challenge": "Detecting the Race Winner",
+                "solution": "Continuously monitored each turtle's X-coordinate and declared the winner as soon as one crossed the finish line."
+            },
+            {
+                "challenge": "Organizing Multiple Turtle Objects",
+                "solution": "Stored all turtle objects in a list, allowing efficient creation, movement, and winner detection through iteration instead of writing repetitive code."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Turtle_Race_1.png",
+                "label": "Place Your Bet"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Turtle_Race_2.png",
+                "label": "Race Start"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Turtle_Race_3.png",
+                "label": "Race Finish"
+            }
+        ]
+    },
+
+    "snake-game":{
+        "title": "Snake Game",
+        "banner": "./Assets/Project-Img/Banners/Snake Game.png",
+        "github": "https://github.com/Harsh-Belekar/Python-Projects/tree/main/13_Snake_Game",
+        "description": "Developed a classic Snake Game using Python Turtle Graphics with an object-oriented architecture. Players control the snake using keyboard inputs to collect food, increase their score, and grow the snake while avoiding collisions with the walls and its own body. The game also features a persistent high-score system that stores the best score in a local text file, providing an engaging and replayable gaming experience while demonstrating animation, collision detection, file handling, and event-driven programming.",
+
+        "tags": [
+            "Python",
+            "Turtle Graphics",
+            "Random",
+            "Time",
+            "TXT",
+            "OOP",
+            "VS Code"
+        ],
+
+        "features": [
+            "Smooth snake movement controlled using keyboard arrow keys.",
+            "Dynamic snake growth after consuming food.",
+            "Randomly generated food positions.",
+            "Real-time score tracking.",
+            "Persistent high-score system using local file storage.",
+            "Collision detection with walls and snake body.",
+            "Game Over screen upon collision.",
+            "Modular object-oriented code with separate classes for Snake, Food, and Scoreboard.",
+            "Smooth animation using Turtle's tracer() and update() methods.",
+            "Clean and beginner-friendly project architecture."
+        ],
+
+        "impact": [
+            "🎮 Interactive Classic Arcade Game : Successfully recreated the classic Snake Game with smooth gameplay, responsive controls, and engaging animations.",
+            "🐍 Object-Oriented Game Development : Applied object-oriented programming principles by separating game logic into independent classes, making the project modular, maintainable, and scalable.",
+            "📈 Persistent High Score System : Implemented local file storage to maintain the highest score across multiple game sessions, enhancing replay value.",
+            "🎨 Real-Time Graphics & Animation : Utilized Turtle Graphics to create fluid movement, dynamic object rendering, and interactive gameplay.",
+            "🧠 Strengthened Core Python Skills : Improved understanding of:- Object-Oriented Programming, Event Handling, Collision Detection, File Handling, Loops & Game Logic, Animation, Keyboard Input Handling",
+            "🚀 Foundation for Advanced Game Development : Built a strong foundation for developing more advanced 2D games by implementing core mechanics such as movement, object interaction, scoring systems, and persistent game data."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Smooth Snake Movement",
+                "solution": "Created an add_tail() method that appends a new body segment at the snake's last position whenever food is consumed."
+            },
+            {
+                "challenge": "Growing the Snake Dynamically",
+                "solution": "Created an add_tail() method that appends a new body segment at the snake's last position whenever food is consumed."
+            },
+            {
+                "challenge": "Collision Detection",
+                "solution": "Used Turtle's distance() method to detect collisions with food, walls, and the snake's own body, ensuring accurate gameplay mechanics."
+            },
+            {
+                "challenge": "Persistent High Score",
+                "solution": "Stored the highest score in a local text file and automatically loaded and updated it during gameplay, allowing scores to persist even after closing the application."
+            },
+            {
+                "challenge": "Organizing Game Logic",
+                "solution": "Separated responsibilities into dedicated classes (Snake, Food, and ScoreBoard) to improve code readability, maintainability, and scalability."
+            },
+            {
+                "challenge": "Optimizing Animation Performance",
+                "solution": "Used Turtle's screen.tracer(0) and screen.update() methods to disable automatic drawing and manually refresh the screen, resulting in smoother animations and better game performance."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Snake_1.png",
+                "label": "Snake Game"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Snake_2.png",
+                "label": "Game Over"
+            }
+        ]
+    },
+
+    "turtle-road-crossing-game":{
+        "title": "Turtle Road Crossing Game",
+        "banner": "./Assets/Project-Img/Banners/Turtle Road.png",
+        "github": "https://github.com/Harsh-Belekar/Python-Projects/tree/main/15_Turtle_Road_Crossing_Game",
+
+        "description": "Developed an interactive Turtle Road Crossing Game using Python Turtle Graphics, inspired by the classic Frogger arcade game. Players control a turtle that must safely cross a busy road filled with continuously moving cars while avoiding collisions. Each successful crossing advances the player to the next level, where vehicle speed gradually increases, making the game progressively more challenging. The project demonstrates object-oriented programming, animation, collision detection, level progression, and event-driven programming through a fun and engaging desktop game.",
+
+        "tags": [
+            "Python",
+            "Turtle Graphics",
+            "Random",
+            "Time",
+            "OOP",
+            "VS Code"
+        ],
+
+        "features": [
+            "Player-controlled turtle with keyboard navigation.",
+            "Randomly generated moving cars.",
+            "Dynamic vehicle colors and positions.",
+            "Collision detection between the turtle and cars.",
+            "Progressive difficulty with increasing car speed after each level.",
+            "Multi-level gameplay with level tracking.",
+            "Winning condition after completing all levels.",
+            "Game Over screen upon collision.",
+            "Finish line indicator for each level.",
+            "Modular object-oriented architecture with separate Player, Car, and ScoreBoard classes."
+        ],
+
+        "impact": [
+            "🐢 Interactive Arcade-Style Gameplay : Successfully recreated a road-crossing arcade game that provides engaging gameplay with progressively increasing difficulty.",
+            "🚗 Dynamic Traffic Simulation : Implemented continuously spawning vehicles with random positions and colors, creating a unique and unpredictable experience in every playthrough.",
+            "📈 Progressive Level System : Designed a level-based progression system where each successful crossing increases vehicle speed, enhancing the challenge and replayability.",
+            "🎨 Real-Time Graphics & Animation : Utilized Python Turtle Graphics to create smooth animations, moving vehicles, player controls, and interactive gameplay.",
+            "🧠 Strengthened Python Programming Skills : Improved practical knowledge of:- Object-Oriented Programming, Event Handling, Collision Detection, Game Loops, Animation, Randomization, Keyboard Input Handling",
+            "🚀 Foundation for Advanced 2D Games : Developed reusable game mechanics such as moving obstacles, level progression, collision detection, and player movement, providing a solid foundation for more complex game development projects."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Simulating Continuous Traffic",
+                "solution": "Created a car manager that randomly generates new vehicles while maintaining a list of active cars, allowing continuous traffic flow without manual object management."
+            },
+            {
+                "challenge": "Collision Detection",
+                "solution": "Used Turtle Graphics' distance() method to accurately detect collisions between the player and moving cars, ensuring reliable game-over conditions."
+            },
+            {
+                "challenge": "Increasing Game Difficulty",
+                "solution": "Implemented a level progression system where the speed of all moving cars increases each time the player successfully crosses the road."
+            },
+            {
+                "challenge": "Managing Multiple Moving Objects",
+                "solution": "Stored all vehicle objects in a list and updated their positions within the game loop, enabling efficient animation and simplified object management."
+            },
+            {
+                "challenge": "Smooth Game Animation",
+                "solution": "Optimized rendering using Turtle's tracer(0) and update() methods along with timed delays, resulting in smooth animations and responsive gameplay."
+            },
+            {
+                "challenge": "Modular Code Organization",
+                "solution": "Separated the application into dedicated classes (Player, Car, and ScoreBoard) to improve readability, maintainability, and scalability while following object-oriented programming best practices."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Turtle_Road_1.png",
+                "label": "Turtle Road Crossing"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Turtle_Road_2.png",
+                "label": "Game Over"
+            }
+        ]
+    },
+
+    "indian-states-game":{
+        "title": "Indian States Game",
+        "banner": "./Assets/Project-Img/Banners/Indian States.png",
+        "github": "https://github.com/Harsh-Belekar/Python-Projects/tree/main/17_Indian_States_Game",
+        "description": "Developed an interactive Indian States Guessing Game using Python Turtle Graphics and Pandas, where players identify and guess all 36 Indian States and Union Territories on a blank map of India. As each correct answer is entered, the state's name is displayed at its corresponding geographical location on the map. If the player exits before completing the game, the application automatically generates a CSV file containing the list of unguessed states for future practice. The project combines graphical programming, data processing, file handling, and educational learning into an engaging desktop application.",
+
+        "tags": [
+            "Python",
+            "Turtle Graphics",
+            "Pandas",
+            "CSV",
+            "OOp",
+            "VS Code"
+        ],
+
+        "features": [
+            "Interactive map of India using Turtle Graphics.",
+            "Guess all 36 Indian States and Union Territories.",
+            "Displays correctly guessed states at their actual map coordinates.",
+            "Real-time score tracking during gameplay.",
+            "Input validation using dialog boxes.",
+            "Automatically generates a Missing States CSV for unanswered states.",
+            "Educational geography learning tool.",
+            "Uses CSV datasets for state names and coordinates.",
+            "Beginner-friendly code structure with clean logic.",
+            "Supports exiting the game at any time while saving progress."
+        ],
+
+        "impact": [
+            "🗺️ Interactive Educational Learning Tool : Developed a geography-based quiz application that helps users learn and memorize the locations of Indian States and Union Territories through an interactive map.",
+            "📊 Practical Data Handling Experience : Utilized the Pandas library to efficiently read, filter, process, and export CSV datasets, strengthening real-world data manipulation skills.",
+            "🎮 Enhanced User Engagement : Combined graphical visualization with quiz-based interaction, making the learning process more engaging and enjoyable than traditional memorization methods.",
+            "📁 Automated Progress Tracking : Implemented automatic generation of a Missing States CSV file, allowing users to review unanswered states and continue improving their knowledge.",
+            "🧠 Strengthened Python Programming Skills : Improved understanding of:- File Handling, CSV Data Processing, Pandas DataFrames, Turtle Graphics, User Input Handling, Conditional Logic, Data Filtering, GUI Programming",
+            "🚀 Foundation for Educational Applications : Built a scalable project architecture that can be extended to support quizzes for countries, capitals, flags, landmarks, or other geography-based learning applications."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Displaying State Names on the Correct Map Location",
+                "solution": "Stored each state's X and Y coordinates in a CSV file and used Pandas to retrieve the coordinates, allowing Turtle Graphics to accurately display state names on the map."
+            },
+            {
+                "challenge": "Managing User Input",
+                "solution": "Used Turtle's textinput() dialog to collect user guesses, normalized the input using .title(), and validated it against the list of available states."
+            },
+            {
+                "challenge": "Tracking Guessed and Missing States",
+                "solution": "Maintained a list of correctly guessed states and generated a separate CSV file containing all remaining states whenever the player exited the game."
+            },
+            {
+                "challenge": "Integrating Graphics with Data Processing",
+                "solution": "Combined Turtle Graphics for visualization with Pandas for efficient data management, enabling smooth interaction between the map interface and CSV datasets."
+            },
+            {
+                "challenge": "Organizing Geographic Data",
+                "solution": "Separated map coordinates and state information into external CSV files, making the project easier to maintain, update, and extend with additional educational datasets."
+            },
+            {
+                "challenge": "Building an Educational Yet Interactive Application",
+                "solution": "Designed the project as both a quiz game and a learning tool by providing real-time feedback, score tracking, and a downloadable list of missed states to encourage continuous learning."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Indian_States_1.png",
+                "label": "Indian States Game"
+            }
+        ]
+    },
+
+    "ping-pong-game":{
+        "title": "Ping Pong Game",
+        "banner": "./Assets/Project-Img/Banners/Ping Pong.png",
+        "github": "https://github.com/Harsh-Belekar/Python-Projects/tree/main/14_Ping_Pong_Game",
+        "description": "Developed a classic 2-Player Ping Pong Game using Python Turtle Graphics, featuring real-time paddle controls, dynamic ball movement, collision detection, score tracking, and progressive gameplay. Two players compete by controlling paddles from opposite sides of the screen to prevent the ball from passing their side. The game automatically updates scores, increases the ball speed after every successful paddle hit, and declares the winner when a player reaches the winning score. The project demonstrates object-oriented programming, game loops, collision detection, animation, and event-driven programming.",
+
+        "tags": [
+            "Python",
+            "Turtle Graphics",
+            "Time",
+            "OOP",
+            "VS Code"
+        ],
+
+        "features": [
+            "Two-player local multiplayer gameplay.",
+            "Independent keyboard controls for both paddles.",
+            "Smooth real-time ball animation.",
+            "Ball collision detection with paddles and walls.",
+            "Progressive ball speed increase after paddle collisions.",
+            "Automatic score tracking for both players.",
+            "Winner announcement after reaching the target score.",
+            "Paddle movement boundaries to prevent leaving the screen.",
+            "Ball reset after each point.",
+            "Modular architecture using separate Ball, Paddle, and ScoreBoard classes."
+        ],
+
+        "impact": [
+            "🏓 Interactive Multiplayer Experience : Successfully developed a two-player desktop game that allows competitive gameplay with responsive controls and smooth animations.",
+            "⚡ Dynamic Gameplay Mechanics : Implemented realistic ball movement and increasing ball speed after every successful paddle hit, making matches progressively more challenging and engaging.",
+            "🎮 Real-Time Collision Detection : Built reliable collision detection between the ball, paddles, and screen boundaries to ensure accurate gameplay mechanics.",
+            "📊 Score Management System : Designed a live scoreboard that automatically updates player scores and determines the winner once the target score is achieved.",
+            "🧠 Strengthened Python Programming Skills : Improved practical knowledge of:- Object-Oriented Programming, Event-Driven Programming, Collision Detection, Game Loops, Animation, Keyboard Event Handling, Real-Time Graphics, Class Design",
+            "🚀 Foundation for 2D Game Development : Developed reusable game components such as moving objects, collision systems, scoreboards, and game state management, creating a strong foundation for more advanced game development projects."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Implementing Smooth Ball Movement",
+                "solution": "Created a continuous game loop with timed updates using the time module, enabling fluid ball animation and consistent gameplay."
+            },
+            {
+                "challenge": "Detecting Paddle and Wall Collisions",
+                "solution": "Used Turtle Graphics' distance() method along with coordinate-based boundary checks to accurately detect collisions and reverse the ball's direction when necessary."
+            },
+            {
+                "challenge": "Increasing Game Difficulty",
+                "solution": "Gradually reduced the ball's movement delay after every paddle collision, increasing its speed and making rallies more challenging as the game progressed."
+            },
+            {
+                "challenge": "Managing Two Independent Players",
+                "solution": "Assigned separate keyboard controls for each paddle, allowing both players to control their paddles independently without input conflicts."
+            },
+            {
+                "challenge": "Implementing Real-Time Score Tracking",
+                "solution": "Created a dedicated ScoreBoard class to update scores dynamically, display the current score, and determine the winner when the predefined score limit was reached."
+            },
+            {
+                "challenge": "Writing Maintainable Game Code",
+                "solution": "Separated the application into dedicated classes (Ball, Paddle, and ScoreBoard) to improve code readability, modularity, and scalability while following object-oriented programming best practices."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Ping_Pong_1.png",
+                "label": "Ping Pong Game"
+            }
+        ]
     }
 
 }
