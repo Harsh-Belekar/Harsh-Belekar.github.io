@@ -59,7 +59,9 @@ Harsh-Belekar.github.io/
 ├── Assets/
 │   ├── Images/             # Icons, avatar, SVGs, UI elements
 │   │   └── SVG/            # Ionicons SVG icon set
-│   ├── Project-Img/        # Project thumbnail images
+│   ├── Project-Img/        # Project images
+│   │   ├── Banners/           # Project thumbnail images
+│   │   └── Project-Gallery/   # Project Gallery images
 │   ├── Drawings/           # Anime art gallery images
 │   └── Docs/
 │       └── Harsh_Resume.pdf  # Downloadable resume
