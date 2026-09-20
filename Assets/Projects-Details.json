@@ -2731,6 +2731,348 @@
                 "label": "Ping Pong Game"
             }
         ]
+    },
+
+    "github-analytics-database": {
+        "title": "GitHub Analytics Database",
+        "banner": "./Assets/Project-Img/Banners/GitHub.png",
+        "github": "https://github.com/Harsh-Belekar/GitHub-Analytics-Database",
+        "description": "An End-to-End Data Engineering and Analytics project that transforms synthetic GitHub software-development data into a structured, business-ready analytical database using Python, PostgreSQL, Advanced SQL, and Medallion Architecture. The project simulates a real-world GitHub data environment containing users, organizations, repositories, programming languages, commits, branches, pull requests, reviews, issues, releases, stars, forks, and contributors. A complete Bronze → Silver → Gold pipeline was implemented to ingest, clean, validate, transform, and model the data for analytical querying. The Gold layer provides dimensional and fact-based analytical tables along with reporting views that support repository performance, developer productivity, pull-request efficiency, issue resolution, release activity, organization performance, programming-language adoption, community engagement, data quality, and executive-level analysis.",
+
+        "tags": [
+            "Python",
+            "PostgreSQL",
+            "SQL",
+            "Data Warehousing",
+            "Medallion Architecture",
+            "ETL Pipelines",
+            "Dimensional Modeling",
+            "Data Quality Testing",
+            "Advanced SQL Analytics",
+            "Data Architecture Design",
+            "Git & GitHub"
+        ],
+
+        "features": [
+            "Designed a 15-entity GitHub analytical data model covering users, organizations, repositories, commits, pull requests, issues, releases, stars, forks, and more.",
+            "Generated realistic synthetic GitHub datasets with Python while simulating real-world data-quality issues.",
+            "Implemented a complete Bronze → Silver → Gold Medallion Architecture.",
+            "Developed automated ETL pipelines using both Python and PostgreSQL SQL scripts.",
+            "Implemented data cleaning and validation for missing values, duplicates, invalid formats, negative values, and referential integrity issues.",
+            "Built Gold-layer dimension and fact tables for analytical workloads.",
+            "Created business-ready PostgreSQL reporting views for repository, developer, organization, release, issue, pull-request, language, and data-quality analysis.",
+            "Developed Advanced SQL analysis to answer business questions across software development activities.",
+            "Implemented dedicated data-quality and business-logic testing scripts.",
+            "Added structured logging and error handling throughout the ETL workflow.",
+            "Maintained comprehensive documentation covering business requirements, database design, relationships, data catalog, ETL workflow, and data generation."
+        ],
+
+        "impact": [
+            "🌐 Centralized GitHub Analytics: Transformed complex, interconnected GitHub activity into a centralized analytical database, making software-development data easier to query and analyze.",
+            "📊 Business-Ready Analytics: Created Gold-layer fact, dimension, and reporting structures that support analysis of repository performance, developer productivity, pull requests, issues, releases, and community engagement.",
+            "📈 Improved Data Quality: Implemented systematic validation and transformation processes across the ETL pipeline to produce cleaner and more reliable analytical datasets.",
+            "🚀 Advanced SQL Capability: Demonstrated practical use of advanced SQL techniques to answer business-oriented questions and derive meaningful software-engineering metrics.",
+            "🏗️ End-to-End Data Engineering Experience: Built the complete workflow from synthetic data generation → database modeling → ETL → data quality → Gold-layer analytics → SQL analysis, providing a production-inspired data engineering project."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "GitHub data contains complex relationships between users, repositories, organizations, commits, branches, pull requests, issues, and other entities.",
+                "solution": "Designed a structured relational data model with primary keys, foreign keys, and clearly defined entity relationships to maintain referential integrity."
+            },
+            {
+                "challenge": "Raw datasets can contain duplicates, missing values, invalid formats, and inconsistent records.",
+                "solution": "Intentionally introduced controlled data-quality issues during synthetic data generation and implemented cleaning and validation logic in the Silver layer."
+            },
+            {
+                "challenge": "Processing multiple interconnected datasets through a single workflow can become difficult to maintain.",
+                "solution": "Implemented a Medallion Architecture that separates raw ingestion, transformation, and business-ready analytical processing into independent Bronze, Silver, and Gold layers."
+            },
+            {
+                "challenge": "Normalized operational tables are not always convenient for analytical queries.",
+                "solution": "Created Gold-layer fact tables, dimension tables, and reporting views that simplify analytical queries and provide meaningful business metrics."
+            },
+            {
+                "challenge": "Database and ETL operations can fail because of connection issues, constraint violations, or transformation errors.",
+                "solution": "Added structured logging, execution-time tracking, exception handling, and validation/testing scripts across the ETL workflow."
+            },
+            {
+                "challenge": "Metrics such as repository performance, developer productivity, PR efficiency, and issue-resolution rates require multiple related datasets.",
+                "solution": "Developed advanced SQL analysis using CTEs, joins, aggregations, filtering, window functions, subqueries, and analytical views to answer the defined business questions."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/GitHub_1.png",
+                "label": "Data Warehouse Architecture"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/GitHub_2.png",
+                "label": "Database_Schema"
+            }
+        ]
+    },
+
+    "smart-door-lock-system":{
+        "title": "Smart Door Lock System",
+        "banner": "./Assets/Project-Img/Banners/Smart Lock.png",
+        "github": "https://github.com/Harsh-Belekar/Smart-Door-Lock-System",
+        "description": "The Smart Door Lock System is an embedded security project that combines RFID authentication, keypad-based PIN verification, and servo motor control to create a secure and automated door-locking mechanism. The system allows authorized users to unlock the door using a registered RFID card/tag or secure PIN, while unauthorized access attempts are rejected. An Arduino-based controller manages the authentication process, controls the electronic locking mechanism, and provides real-time feedback through the connected components. The project demonstrates practical implementation of embedded systems, hardware interfacing, authentication logic, and automation in a real-world security application.",
+
+        "tags": [
+            "C++",
+            "Arduino",
+            "RFID RC522",
+            "4×4 Keypad",
+            "Servo Motor",
+            "MFRC522",
+            "Keypad",
+            "Servo",
+            "SPI"
+        ],
+
+        "features": [
+            "RFID Authentication — Verifies registered RFID cards/tags before granting access.",
+            "PIN-Based Authentication — Provides an additional keypad-based authentication method.",
+            "Servo-Controlled Locking — Automatically locks and unlocks the door using a servo motor.",
+            "Unauthorized Access Prevention — Rejects invalid RFID cards and incorrect PINs.",
+            "Real-Time User Feedback — Provides system status and authentication feedback.",
+            "Dual Authentication Methods — Supports both RFID and keypad-based access.",
+            "Automated Door Security — Reduces the need for manual locking and unlocking.",
+            "Modular Hardware Design — Individual components can be tested and extended independently."
+        ],
+
+        "impact": [
+            "🔐 Automated Door Security : Developed a functional smart door-lock prototype that automates the locking and unlocking process using an Arduino-controlled servo motor.",
+            "✅ Multi-Method Authentication : Implemented both RFID-based authentication and keypad PIN verification, providing flexible and secure methods for authorized users to access the system.",
+            "🛡️ Improved Access Control : Added credential validation to prevent unauthorized RFID cards and incorrect PINs from activating the door-lock mechanism.",
+            "⚙️ Practical Embedded Systems Experience : Strengthened practical skills in Arduino programming, hardware interfacing, RFID communication, keypad input handling, and servo motor control.",
+            "🚀 Real-World Automation Application : Demonstrated how embedded systems can be used to solve a practical security problem, while creating a foundation for future enhancements such as IoT monitoring, access logs, mobile notifications, and biometric authentication."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Ensuring that only registered RFID cards could unlock the system.",
+                "solution": "Implemented RFID UID-based authentication using the MFRC522 library and compared scanned card identifiers against authorized credentials."
+            },
+            {
+                "challenge": "Correctly capturing and validating multi-digit PIN input from the keypad.",
+                "solution": "Implemented keypad scanning and input-buffer logic to collect, validate, and clear PIN entries appropriately."
+            },
+            {
+                "challenge": "Coordinating the servo position with authentication results.",
+                "solution": "Configured the servo to move to the unlock position only after successful authentication and return to the locked position after the access cycle."
+            },
+            {
+                "challenge": "Managing RFID, keypad, servo, and Arduino components together without conflicts.",
+                "solution": "Structured the program into separate authentication and control operations and configured the required hardware interfaces and libraries systematically."
+            },
+            {
+                "challenge": "Preventing invalid credentials from activating the lock.",
+                "solution": "Added authentication validation before allowing any servo movement, ensuring that only successful authentication triggers the unlocking mechanism."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Smart_Lock_1.png",
+                "label": "Circuit Diagram"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Smart_Lock_2.png",
+                "label": "Scan Card"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Smart_Lock_3.png",
+                "label": "Door Open by Card"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Smart_Lock_4.png",
+                "label": "Enter Password"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Smart_Lock_5.png",
+                "label": "Door Open by Password"
+            }
+        ]
+    },
+
+    "sudoku-solver-backtracking": {
+        "title": "Sudoku Solver Backtracking",
+        "banner": "./Assets/Project-Img/Banners/Sudoku.png",
+        "github": "https://github.com/Harsh-Belekar/Sudoku-Solver-Backtracking",
+        "description": "An interactive Sudoku game and algorithm visualizer built with Python and Pygame, designed to demonstrate how the Backtracking Algorithm solves a 9×9 Sudoku puzzle. The application supports manual gameplay, pencil-marking, dynamically loaded Sudoku puzzles, and an automated solver. The project provides two solving modes: Instant Solve, which displays the completed solution immediately, and Step-by-Step Visualization, which allows users to observe the solver recursively test valid values, identify dead ends, and backtrack to previous decisions in real time. This makes the project both a functional Sudoku application and an educational visualization of recursive problem-solving.",
+
+        "tags": [
+            "Python",
+            "Pygame",
+            "Backtracking Algorithm",
+            "Recursion",
+            "JSON",
+            "Data Structures & Algorithms",
+            "Object-Oriented Programming",
+            "Git & GitHub"
+        ],
+
+        "features": [
+            "🎮 Interactive Sudoku Gameplay — Select cells, enter numbers, confirm values, and remove entries through keyboard controls.",
+            "✏️ Pencil-Marking System — Allows users to sketch candidate numbers while solving puzzles manually.",
+            "🧠 Backtracking Solver — Uses recursive backtracking to find valid solutions by testing candidates against Sudoku constraints.",
+            "🔍 Step-by-Step Algorithm Visualization — Visually demonstrates candidate selection, successful placements, dead ends, and backtracking.",
+            "⚡ Instant Solve Mode — Solves the puzzle immediately without the visualization animation.",
+            "🎯 Smart Cell Highlighting — Differentiates original puzzle values from cells solved by the algorithm.",
+            "📚 Dynamic Puzzle Loading — Loads Sudoku puzzles dynamically from a JSON-based puzzle collection.",
+            "⏱️ Game Timer & HUD — Tracks gameplay time and provides status information through an integrated interface.",
+            "🖥️ Graphical User Interface — Provides an interactive Pygame-based environment for both gameplay and algorithm visualization."
+        ],
+
+        "impact": [
+            "🧠 Practical Algorithm Implementation : Applied recursion and backtracking to solve constraint-based Sudoku puzzles, demonstrating practical understanding of Data Structures & Algorithms beyond theoretical implementation.",
+            "🔍 Improved Algorithm Understanding : The visualization mode makes the recursive decision-making process easier to understand by showing how the solver explores possible values and reverses incorrect decisions through backtracking.",
+            "🎮 Interactive Learning Experience : Combined algorithmic problem-solving with an interactive graphical interface, transforming a conventional Sudoku solver into an educational and engaging application.",
+            "⚡ Dual Solving Experience : Implemented both instant solving and step-by-step visualization, allowing users to either obtain a solution quickly or study the algorithm's execution process.",
+            "🧩 Modular Project Design : Separated the Pygame application logic from the Sudoku solving and validation logic, creating a cleaner and more maintainable project structure."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "The solver needed to explore multiple possible values while correctly reverting previous choices when a solution path failed.",
+                "solution": "Implemented recursive backtracking that places a valid candidate, recursively continues solving, and resets the cell when the selected path reaches a dead end."
+            },
+            {
+                "challenge": "Every candidate number must satisfy row, column, and 3×3 sub-grid constraints.",
+                "solution": "Implemented validation logic that checks all three Sudoku constraints before allowing a candidate value to be placed."
+            },
+            {
+                "challenge": "Connecting the fast recursive solver with a visual interface without losing the sequence of decisions made by the algorithm.",
+                "solution": "Integrated the solver with the Pygame rendering system to visually represent valid attempts, dead ends, and backtracking steps during execution."
+            },
+            {
+                "challenge": "Supporting manual gameplay, pencil marks, automatic solving, and keyboard/mouse interactions within the same application.",
+                "solution": "Implemented dedicated game-state and input-handling logic to manage cell selection, user entries, deletion, solving modes, and UI interactions."
+            },
+            {
+                "challenge": "Providing different Sudoku boards without hard-coding every puzzle directly into the application.",
+                "solution": "Used a JSON-based puzzle repository that allows Sudoku boards to be loaded dynamically from `Assets/Problems.json`."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Sudoku_1.png",
+                "label": "Normal Gameplay"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Sudoku_2.png",
+                "label": "Ask for Visualize"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Sudoku_3.png",
+                "label": "Visualizing"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Sudoku_4.png",
+                "label": "Visualize Result"
+            }
+        ]
+    },
+
+    "space-invaders": {
+        "title": "Space Invaders – 2D Arcade Space Shooter",
+        "banner": "./Assets/Project-Img/Banners/Space.png",
+        "github": "https://github.com/Harsh-Belekar/Space-Invaders",
+        "description": "A 2D arcade-style Space Invaders game developed using Python and Pygame-CE, inspired by classic space shooter gameplay. The project features a player-controlled spaceship, alien enemies, meteor hazards, dual weapon systems, collision detection, health management, animated explosions, sound effects, and persistent gameplay records. The game follows a structured object-oriented design with separate modules for the main menu, help screen, player, enemies, assets, buttons, and game mission management. It also includes win/loss states, restart functionality, real-time gameplay statistics, and a persistent record system for the lowest completion time and highest number of meteors destroyed.",
+
+        "tags": [
+            "Python",
+            "Pygame-CE",
+            "2D Game Development",
+            "Object-Oriented Programming (OOP)",
+            "Sprite-Based Game Development",
+            "File Handling",
+            "Git & GitHub"
+        ],
+
+        "features": [
+            "🎮 Interactive Main Menu with Start, Help, and Exit options",
+            "🚀 Player-Controlled Spaceship with four-direction movement",
+            "👾 Alien Enemy System with multiple alien variants and movement patterns",
+            "🔫 Dual Weapon System: Space → Standard Bullet, Shift + Space → Laser",            
+            "☄️ Meteor Hazard System with rotation and timed movement",
+            "💥 Animated Explosion Effects for different collision events",
+            "❤️ Health & Damage System with real-time health bar",
+            "🎯 Collision Detection between player, aliens, bullets, lasers, and meteors",
+            "🔊 Sound Effects & Background Music",
+            "⏱️ Real-Time Gameplay Timer",
+            "🏆 Persistent Gameplay Records: Lowest completion time, Highest meteors destroyed",
+            "🏁 Win & Game Over States",
+            "🔄 Restart & Exit Functionality",
+            "📖 Dedicated Help/Controls Screen",
+            "🧩 Centralized Asset Management for images, sounds, fonts, and UI resources"
+        ],
+
+        "impact": [
+            "🎮 Complete Playable Game : Developed a fully functional arcade-style shooter with an interactive gameplay loop, enemy system, weapons, hazards, collision detection, health management, and game-state handling.",
+            "🧩 Modular Game Architecture : Organized the project into dedicated Python modules for gameplay systems, making the codebase easier to understand, maintain, debug, and extend.",
+            "⚡ Real-Time Gameplay Experience : Implemented a 60 FPS game loop with responsive player movement, timed enemy attacks, projectile mechanics, animated explosions, and dynamic meteor events.",
+            "🏆 Persistent Player Records : Added file-based record tracking for the lowest completion time and highest meteor destruction count, giving the game a replayability and performance-tracking element.",
+            "💻 Practical Python Development : Applied Python programming concepts such as OOP, classes, inheritance, sprite groups, event handling, collision detection, file handling, modular programming, and real-time game loops in a complete software project."
+        ],
+
+        "challenges": [
+            {
+                "challenge": "Managing aliens, bullets, lasers, meteors, explosions, and the spaceship simultaneously during real-time gameplay.",
+                "solution": "Used Pygame sprite classes and sprite groups to organize, update, render, and remove game entities efficiently."
+            },
+            {
+                "challenge": "Detecting interactions between different game objects while avoiding unreliable rectangular collision checks.",
+                "solution": "Implemented Pygame's mask-based collision detection for more precise interactions between sprites."
+            },
+            {
+                "challenge": "Supporting different weapons with different behaviors and firing conditions.",
+                "solution": "Created separate projectile classes and implemented keyboard-based weapon selection using SPACE for bullets and SHIFT + SPACE for lasers."
+            },
+            {
+                "challenge": "Managing different damage levels from alien bullets and meteor collisions.",
+                "solution": "Implemented a centralized health system where different hazards apply different damage values, accompanied by visual health-bar feedback and damage/explosion effects."
+            },
+            {
+                "challenge": "Coordinating alien firing, meteor spawning, weapon cooldowns, animations, and gameplay timing.",
+                "solution": "Used Pygame timing mechanisms, cooldown tracking, and a controlled 60 FPS game loop to synchronize gameplay events."
+            },
+            {
+                "challenge": "Handling a large collection of images, sounds, fonts, UI elements, and animation frames.",
+                "solution": "Created a centralized `Assets.py` asset-management module that organizes resource paths and provides reusable loading functions."
+            }
+        ],
+
+        "gallery": [
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Space_1.png",
+                "label": "Main Menu"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Space_2.png",
+                "label": "Controls / Help Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Space_3.png",
+                "label": "Battle Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Space_4.png",
+                "label": "Low Health State"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Space_5.png",
+                "label": "Victory Screen"
+            },
+            {
+                "src": "./Assets/Project-Img/Project-Gallery/Space_6.png",
+                "label": "Game Over Screen"
+            }
+        ]
     }
 
 }
